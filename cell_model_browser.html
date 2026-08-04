@@ -248,6 +248,20 @@ textarea {
   resize: vertical;
 }
 
+/* The generic input rule above (width:100%, padding, border) is meant for
+   text fields -- it was also stretching checkbox inputs into giant,
+   effectively invisible click targets that pushed their label text off to
+   the side. Restore native checkbox sizing/appearance everywhere. */
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: revert;
+  border-radius: 0;
+  background: revert;
+  flex: 0 0 auto;
+}
+
 .view {
   display: block;
 }
