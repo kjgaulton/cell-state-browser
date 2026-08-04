@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+cell_state_app.log
+.DS_Store
+beta-cell-state-model.updated.json

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cell Model Browser</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Cell model browser</h1>
+      </div>
+      <div class="top-actions">
+        <button id="resetData" class="ghost">Reset</button>
+        <button id="showReferences" class="ghost" type="button">References</button>
+        <label class="file-button ghost">
+          <span>Load JSON</span>
+          <input id="importData" type="file" accept="application/json,.json">
+        </label>
+        <button id="exportData">Export JSON</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-band">
+        <div class="summary-text">
+          <h2>Genes to programs to states</h2>
+          <p>
+            Pick an islet cell type, edit its curated gene programs, combine
+            them into cell-state activity signatures, and compare states as
+            reusable biological process vectors.
+          </p>
+        </div>
+        <div class="concept-diagram">
+          <svg viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gpsTitle gpsDesc">
+            <title id="gpsTitle">Genes to programs to states</title>
+            <desc id="gpsDesc">A cartoon showing individual genes clustering into a few biological programs, which combine at different activity levels to define a single cell state.</desc>
+
+            <defs>
+              <marker id="gpsArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="#9aabb2"></path>
+              </marker>
+            </defs>
+
+            <text x="130" y="46" text-anchor="middle" font-weight="700" font-size="20" fill="#152126">Genes</text>
+            <text x="130" y="68" text-anchor="middle" font-size="12" fill="#647178">individual markers</text>
+
+            <g>
+              <path d="M60,110 C66,102 74,118 80,110" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M150,95 C156,87 164,103 170,95" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M40,170 C46,162 54,178 60,170" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M140,190 C146,182 154,198 160,190" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M70,250 C76,242 84,258 90,250" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M155,270 C161,262 169,278 175,270" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M55,330 C61,322 69,338 75,330" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+              <path d="M145,345 C151,337 159,353 165,345" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-linecap="round"></path>
+
+              <text x="70" y="128" font-size="10" fill="#647178">PDX1</text>
+              <text x="160" y="113" font-size="10" fill="#647178">INS</text>
+              <text x="50" y="188" font-size="10" fill="#647178">MAFA</text>
+              <text x="150" y="208" font-size="10" fill="#647178">GCK</text>
+              <text x="80" y="268" font-size="10" fill="#647178">CDKN2A</text>
+              <text x="165" y="288" font-size="10" fill="#647178">ALDH1A3</text>
+              <text x="65" y="348" font-size="10" fill="#647178">GDF15</text>
+              <text x="155" y="363" font-size="10" fill="#647178">SOX9</text>
+            </g>
+
+            <path d="M210,150 C260,150 260,150 300,155" fill="none" stroke="#9aabb2" stroke-width="2" marker-end="url(#gpsArrow)"></path>
+            <path d="M210,230 C260,230 260,230 300,230" fill="none" stroke="#9aabb2" stroke-width="2" marker-end="url(#gpsArrow)"></path>
+            <path d="M210,310 C260,310 260,310 300,305" fill="none" stroke="#9aabb2" stroke-width="2" marker-end="url(#gpsArrow)"></path>
+
+            <text x="450" y="46" text-anchor="middle" font-weight="700" font-size="20" fill="#152126">Programs</text>
+            <text x="450" y="68" text-anchor="middle" font-size="12" fill="#647178">groups of genes, one process each</text>
+
+            <g>
+              <rect x="310" y="110" width="280" height="80" rx="22" fill="#e7f4ef" stroke="#2b8a7e" stroke-width="2"></rect>
+              <circle cx="335" cy="150" r="9" fill="#2b8a7e"></circle>
+              <text x="480" y="132" text-anchor="middle" font-weight="700" font-size="14" fill="#152126">Identity</text>
+              <rect x="378" y="144" width="120" height="18" rx="9" fill="#ffffff" stroke="#2b8a7e" stroke-width="1"></rect>
+              <text x="438" y="157" text-anchor="middle" font-size="9.5" fill="#0f4a3c">Beta-cell identity</text>
+              <rect x="378" y="166" width="120" height="18" rx="9" fill="#ffffff" stroke="#2b8a7e" stroke-width="1"></rect>
+              <text x="438" y="179" text-anchor="middle" font-size="9.5" fill="#0f4a3c">Insulin biosynthesis</text>
+            </g>
+
+            <g>
+              <rect x="310" y="200" width="280" height="80" rx="22" fill="#fbf0da" stroke="#b6842f" stroke-width="2"></rect>
+              <circle cx="335" cy="240" r="9" fill="#b6842f"></circle>
+              <text x="480" y="222" text-anchor="middle" font-weight="700" font-size="14" fill="#152126">Stress response</text>
+              <rect x="378" y="234" width="120" height="18" rx="9" fill="#ffffff" stroke="#b6842f" stroke-width="1"></rect>
+              <text x="438" y="247" text-anchor="middle" font-size="9.5" fill="#7a5620">ER stress</text>
+              <rect x="378" y="256" width="120" height="18" rx="9" fill="#ffffff" stroke="#b6842f" stroke-width="1"></rect>
+              <text x="438" y="269" text-anchor="middle" font-size="9.5" fill="#7a5620">Oxidative stress</text>
+            </g>
+
+            <g>
+              <rect x="310" y="290" width="280" height="80" rx="22" fill="#f1e7f6" stroke="#8a4fa8" stroke-width="2"></rect>
+              <circle cx="335" cy="330" r="9" fill="#8a4fa8"></circle>
+              <text x="480" y="312" text-anchor="middle" font-weight="700" font-size="14" fill="#152126">Cell fate</text>
+              <rect x="378" y="324" width="120" height="18" rx="9" fill="#ffffff" stroke="#8a4fa8" stroke-width="1"></rect>
+              <text x="438" y="337" text-anchor="middle" font-size="9.5" fill="#5c2d73">Senescence</text>
+              <rect x="378" y="346" width="120" height="18" rx="9" fill="#ffffff" stroke="#8a4fa8" stroke-width="1"></rect>
+              <text x="438" y="359" text-anchor="middle" font-size="9.5" fill="#5c2d73">Dedifferentiation</text>
+            </g>
+
+            <path d="M595,150 C650,150 650,220 700,225" fill="none" stroke="#2b8a7e" stroke-width="5" marker-end="url(#gpsArrow)" opacity="0.85"></path>
+            <path d="M595,240 C650,240 650,235 700,235" fill="none" stroke="#b6842f" stroke-width="2.5" marker-end="url(#gpsArrow)" opacity="0.85"></path>
+            <path d="M595,330 C650,330 650,250 700,245" fill="none" stroke="#8a4fa8" stroke-width="3.5" marker-end="url(#gpsArrow)" opacity="0.85"></path>
+
+            <text x="800" y="46" text-anchor="middle" font-weight="700" font-size="20" fill="#152126">State</text>
+            <text x="800" y="68" text-anchor="middle" font-size="12" fill="#647178">one activity "fingerprint"</text>
+
+            <g>
+              <circle cx="800" cy="238" r="95" fill="#eef5f2" stroke="#9aabb2" stroke-width="2.5"></circle>
+              <circle cx="800" cy="238" r="22" fill="#152126" opacity="0.85"></circle>
+              <circle cx="763" cy="212" r="6" fill="#2b8a7e"></circle>
+              <circle cx="838" cy="208" r="5" fill="#b6842f"></circle>
+              <circle cx="775" cy="270" r="5" fill="#8a4fa8"></circle>
+              <circle cx="828" cy="266" r="6" fill="#2b8a7e"></circle>
+              <circle cx="800" cy="238" r="70" fill="none" stroke="#2b8a7e" stroke-width="3" stroke-dasharray="4 6"></circle>
+              <circle cx="800" cy="238" r="80" fill="none" stroke="#b6842f" stroke-width="3" stroke-dasharray="4 6"></circle>
+              <circle cx="800" cy="238" r="90" fill="none" stroke="#8a4fa8" stroke-width="3" stroke-dasharray="4 6"></circle>
+            </g>
+            <text x="800" y="360" text-anchor="middle" font-weight="700" font-size="13" fill="#152126">e.g. "Senescent beta cell"</text>
+            <text x="800" y="378" text-anchor="middle" font-size="11" fill="#647178">= this state's phenotype</text>
+
+            <text x="460" y="425" text-anchor="middle" font-size="12" fill="#647178">Ring/box color = which program a gene belongs to &#183; line thickness = how active that program is in this state</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label>
+          <span>Cell type</span>
+          <select id="cellTypeSelect"></select>
+        </label>
+      </section>
+
+      <section class="state-picker-section">
+        <div class="section-head">
+          <div>
+            <h2>Choose a state</h2>
+            <p>States and programs shown below belong to the selected cell type. Start from one cell-state option, then inspect or modify its program activity vector.</p>
+          </div>
+          <button id="addState">Add state</button>
+        </div>
+        <div id="stateOptions" class="state-options"></div>
+      </section>
+
+      <section id="stateView" class="state-workspace">
+        <div class="section-head">
+          <div>
+            <h2 id="selectedStateName">State</h2>
+            <p id="selectedStatePhenotype"></p>
+            <div id="selectedStateMarkers" class="marker-genes"></div>
+          </div>
+          <div class="section-actions">
+            <div class="view-toggle" role="group" aria-label="View mode">
+              <button id="viewModeList" type="button" aria-pressed="true">List</button>
+              <button id="viewModeNetwork" type="button" aria-pressed="false">Network</button>
+            </div>
+            <button id="editSelectedState" class="ghost">Edit state</button>
+            <button id="addProgram">Add program</button>
+          </div>
+        </div>
+        <div class="programs-heading">
+          <h3>Gene programs</h3>
+          <p>Each row below is a distinct gene program; together their activity levels in this state make up its signature.</p>
+        </div>
+        <div id="programActivityList" class="program-activity-list"></div>
+        <div id="networkView" class="network-view hidden">
+          <div class="network-toolbar">
+            <button id="expandAllPrograms" class="ghost" type="button">Expand all genes</button>
+            <button id="collapseAllPrograms" class="ghost" type="button">Collapse all genes</button>
+            <p class="network-hint">Click a program node to show or hide its genes.</p>
+          </div>
+          <svg id="networkSvg" class="network-svg" viewBox="0 0 900 900" role="img" aria-label="State, program, and gene network"></svg>
+          <div class="network-legend">
+            <span><i class="dot" data-tone="down"></i>Down / low</span>
+            <span><i class="dot" data-tone="base"></i>Baseline</span>
+            <span><i class="dot" data-tone="up"></i>Up / high</span>
+            <span><i class="dot" data-tone="peak"></i>Very high</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="editor">
+      <form method="dialog" id="editorForm">
+        <header>
+          <h2 id="editorTitle">Edit item</h2>
+          <button value="cancel" class="icon-button" aria-label="Close">x</button>
+        </header>
+        <div id="editorFields" class="editor-fields"></div>
+        <menu>
+          <button value="delete" id="deleteItem" class="danger" type="button">Delete</button>
+          <span></span>
+          <button value="cancel" type="button" id="cancelEdit" class="ghost">Cancel</button>
+          <button value="save" type="submit">Save</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="referencesDialog">
+      <header>
+        <h2>References</h2>
+        <button value="cancel" class="icon-button" aria-label="Close" id="cancelReferences">x</button>
+      </header>
+      <ul id="referencesList" class="references-list"></ul>
+    </dialog>
+
+    <dialog id="exportDialog">
+      <form method="dialog" id="exportForm">
+        <header>
+          <h2>Export model</h2>
+          <button value="cancel" class="icon-button" aria-label="Close">x</button>
+        </header>
+        <div class="editor-fields">
+          <label>
+            <span>File name</span>
+            <input id="exportFileName" name="fileName" value="beta-cell-state-model.json">
+          </label>
+        </div>
+        <menu>
+          <span></span>
+          <button value="cancel" type="button" id="cancelExport" class="ghost">Cancel</button>
+          <button value="save" type="submit">Download</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
