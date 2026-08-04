@@ -19,6 +19,8 @@
           <input id="importData" type="file" accept="application/json,.json">
         </label>
         <button id="exportData">Export JSON</button>
+        <button id="showGithubFiles" class="ghost" type="button">GitHub files</button>
+        <button id="saveToGithub" class="ghost" type="button" hidden>Save to GitHub</button>
       </div>
     </header>
 
@@ -214,6 +216,29 @@
           <button value="save" type="submit">Save</button>
         </menu>
       </form>
+    </dialog>
+
+    <dialog id="githubDialog">
+      <header>
+        <h2>GitHub files</h2>
+        <button value="cancel" class="icon-button" aria-label="Close" id="cancelGithub">x</button>
+      </header>
+      <div class="github-token-row">
+        <label>
+          <span>GitHub personal access token (only needed to save changes back)</span>
+          <input id="githubTokenInput" type="password" placeholder="ghp_...">
+        </label>
+        <label class="checkbox-row">
+          <input type="checkbox" id="githubTokenRemember">
+          <span>Remember in this browser</span>
+        </label>
+        <div class="github-token-actions">
+          <button id="githubTokenSave" class="ghost" type="button">Save token</button>
+          <span id="githubTokenStatus" class="github-token-status"></span>
+        </div>
+      </div>
+      <p class="github-file-hint">Loading a file below does not need a token. Saving changes back to it does.</p>
+      <ul id="githubFileList" class="github-file-list"></ul>
     </dialog>
 
     <dialog id="referencesDialog">

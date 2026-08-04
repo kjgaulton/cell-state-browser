@@ -645,6 +645,68 @@ menu span {
   padding: 16px;
 }
 
+.github-token-row {
+  display: grid;
+  gap: 10px;
+  padding: 16px 16px 0;
+}
+
+.github-token-row label {
+  display: grid;
+  gap: 4px;
+}
+
+.checkbox-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 6px !important;
+}
+
+.github-token-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-token-status {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.github-file-hint {
+  margin: 10px 16px 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.github-file-list {
+  list-style: none;
+  margin: 0;
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.github-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #f7f9f9;
+}
+
+.github-file-empty,
+.github-file-loading {
+  color: var(--muted);
+  padding: 8px 0;
+}
+
 .state-references {
   margin-top: 10px;
   padding-top: 10px;

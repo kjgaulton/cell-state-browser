@@ -1,6 +1,11 @@
 const STORAGE_KEY = "islet-cell-state-model-v2";
 const LEGACY_STORAGE_KEY = "beta-cell-state-model-v1";
 
+const GITHUB_OWNER = "kjgaulton";
+const GITHUB_REPO = "cell-state-browser";
+const GITHUB_BRANCH = "main";
+const GITHUB_TOKEN_KEY = "github-pat-cell-state-browser";
+
 const ACTIVITY_LEVELS = [
   { value: -2, label: "down" },
   { value: -1, label: "low" },
@@ -548,6 +553,8 @@ let editingReferenceIndex = null;
 let selectedStateId = currentCellType()?.states[0]?.id || null;
 let viewMode = "list";
 let expandedProgramIds = new Set();
+let githubToken = safeGetItem(GITHUB_TOKEN_KEY) || null;
+let githubFile = null; // { path, sha, name } for whichever repo file was last loaded
 
 const els = {
   cellTypeSelect: document.querySelector("#cellTypeSelect"),
@@ -571,7 +578,16 @@ const els = {
   exportForm: document.querySelector("#exportForm"),
   exportFileName: document.querySelector("#exportFileName"),
   referencesDialog: document.querySelector("#referencesDialog"),
-  referencesList: document.querySelector("#referencesList")
+  referencesList: document.querySelector("#referencesList"),
+  showGithubFiles: document.querySelector("#showGithubFiles"),
+  saveToGithub: document.querySelector("#saveToGithub"),
+  githubDialog: document.querySelector("#githubDialog"),
+  cancelGithub: document.querySelector("#cancelGithub"),
+  githubFileList: document.querySelector("#githubFileList"),
+  githubTokenInput: document.querySelector("#githubTokenInput"),
+  githubTokenRemember: document.querySelector("#githubTokenRemember"),
+  githubTokenSave: document.querySelector("#githubTokenSave"),
+  githubTokenStatus: document.querySelector("#githubTokenStatus")
 };
 
 document.querySelector("#resetData").addEventListener("click", () => {
@@ -618,8 +634,13 @@ els.collapseAllPrograms.addEventListener("click", () => {
 els.editorForm.addEventListener("submit", saveEditor);
 els.deleteItem.addEventListener("click", deleteEditorItem);
 els.exportForm.addEventListener("submit", exportJson);
+els.showGithubFiles.addEventListener("click", openGithubDialog);
+els.cancelGithub.addEventListener("click", () => els.githubDialog.close());
+els.githubTokenSave.addEventListener("click", saveGithubToken);
+els.saveToGithub.addEventListener("click", saveModelToGithub);
 
 render();
+updateGithubSaveButton();
 
 function currentCellType() {
   return model.cellTypes.find((cellType) => cellType.id === selectedCellTypeId) || model.cellTypes[0] || null;
@@ -1366,6 +1387,156 @@ function validateImportedModel(imported) {
   const references = Array.isArray(imported.references) ? imported.references : [];
 
   return { cellTypes, references };
+}
+
+// --- GitHub integration -----------------------------------------------
+// This app is hosted straight from the GitHub repo it lives in (via GitHub
+// Pages), so "load from repo" and "save back to repo" both go through the
+// GitHub Contents API directly from the browser. Reading the file list and
+// file contents works unauthenticated for a public repo; writing requires a
+// personal access token with write access, which the user pastes in here.
+// The token is kept only in memory unless the user opts in to remembering
+// it (in which case it's stored in this browser's localStorage) -- it is
+// never sent anywhere except the GitHub API.
+
+function openGithubDialog() {
+  updateGithubTokenStatus();
+  els.githubTokenInput.value = "";
+  els.githubTokenRemember.checked = false;
+  els.githubFileList.innerHTML = `<li class="github-file-loading">Loading files from GitHub…</li>`;
+  els.githubDialog.showModal();
+  loadGithubFileList();
+}
+
+function updateGithubTokenStatus() {
+  els.githubTokenStatus.textContent = githubToken
+    ? "Token set for this browser session"
+    : "No token set yet — you can still load files";
+}
+
+function saveGithubToken() {
+  const value = els.githubTokenInput.value.trim();
+  if (!value) {
+    showToast("Enter a token first");
+    return;
+  }
+  githubToken = value;
+  if (els.githubTokenRemember.checked) {
+    try {
+      localStorage.setItem(GITHUB_TOKEN_KEY, value);
+    } catch {
+      /* ignore */
+    }
+  }
+  els.githubTokenInput.value = "";
+  updateGithubTokenStatus();
+  showToast("GitHub token saved for this session");
+}
+
+async function loadGithubFileList() {
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/?ref=${GITHUB_BRANCH}`,
+      { headers: { Accept: "application/vnd.github+json" } }
+    );
+    if (!response.ok) throw new Error(`GitHub API error (${response.status})`);
+    const items = await response.json();
+    const jsonFiles = items.filter((item) => item.type === "file" && item.name.toLowerCase().endsWith(".json"));
+
+    if (jsonFiles.length === 0) {
+      els.githubFileList.innerHTML = `<li class="github-file-empty">No JSON files found in the repo root.</li>`;
+      return;
+    }
+
+    els.githubFileList.innerHTML = jsonFiles.map((file) => `
+      <li class="github-file-item">
+        <span>${escapeHtml(file.name)}</span>
+        <button class="ghost" type="button" data-load-github="${escapeHtml(file.path)}" data-sha="${escapeHtml(file.sha)}" data-download="${escapeHtml(file.download_url)}" data-name="${escapeHtml(file.name)}">Load</button>
+      </li>
+    `).join("");
+
+    els.githubFileList.querySelectorAll("[data-load-github]").forEach((button) => {
+      button.addEventListener("click", () => {
+        loadGithubFile(button.dataset.loadGithub, button.dataset.sha, button.dataset.download, button.dataset.name);
+      });
+    });
+  } catch (error) {
+    els.githubFileList.innerHTML = `<li class="github-file-empty">Could not list repo files: ${escapeHtml(error.message)}</li>`;
+  }
+}
+
+async function loadGithubFile(path, sha, downloadUrl, name) {
+  try {
+    const response = await fetch(downloadUrl);
+    if (!response.ok) throw new Error(`Could not fetch ${path} (${response.status})`);
+    const text = await response.text();
+    const imported = JSON.parse(text);
+    // Same reasoning as importJson(): a repo file is self-contained, so it
+    // shouldn't get the app's built-in seed content grafted onto it.
+    model = validateImportedModel(imported);
+    githubFile = { path, sha, name };
+    selectedCellTypeId = model.cellTypes[0]?.id || null;
+    selectedStateId = currentCellType()?.states[0]?.id || null;
+    expandedProgramIds = new Set();
+    saveModel();
+    render();
+    updateGithubSaveButton();
+    els.githubDialog.close();
+    showToast(`Loaded ${name} from GitHub`);
+  } catch (error) {
+    showToast(error.message || "Could not load file from GitHub");
+  }
+}
+
+function updateGithubSaveButton() {
+  els.saveToGithub.hidden = !githubFile;
+  els.saveToGithub.textContent = githubFile ? `Save to GitHub (${githubFile.name})` : "Save to GitHub";
+}
+
+async function saveModelToGithub() {
+  if (!githubFile) {
+    showToast("Load a file from GitHub first");
+    return;
+  }
+  if (!githubToken) {
+    showToast("Set a GitHub token first");
+    openGithubDialog();
+    return;
+  }
+  const proceed = confirm(`Save changes to ${githubFile.path} on the ${GITHUB_BRANCH} branch of ${GITHUB_OWNER}/${GITHUB_REPO}?`);
+  if (!proceed) return;
+
+  try {
+    const response = await fetch(
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${githubFile.path}`,
+      {
+        method: "PUT",
+        headers: {
+          Authorization: `token ${githubToken}`,
+          Accept: "application/vnd.github+json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          message: `Update ${githubFile.path} via Cell Model Browser`,
+          content: utf8ToBase64(JSON.stringify(model, null, 2)),
+          sha: githubFile.sha,
+          branch: GITHUB_BRANCH
+        })
+      }
+    );
+    const payload = await response.json().catch(() => null);
+    if (!response.ok) {
+      throw new Error(payload?.message || `GitHub save failed (${response.status})`);
+    }
+    githubFile.sha = payload?.content?.sha || githubFile.sha;
+    showToast(`Saved to GitHub: ${githubFile.path}`);
+  } catch (error) {
+    showToast(error.message || "Could not save to GitHub");
+  }
+}
+
+function utf8ToBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
 }
 
 function field(label, name, value, type = "input") {
