@@ -3431,27 +3431,27 @@
   ],
   "references": [
     {
-      "citation": "Talchai C, Xuan S, Lin HV, Sussel L, Accili D. Pancreatic \u03b2 cell dedifferentiation as a mechanism of diabetic \u03b2 cell failure. Cell. 2012;150(6):1223-1234. PMID: 22980982",
+      "citation": "Talchai C, Xuan S, Lin HV, Sussel L, Accili D. Pancreatic β cell dedifferentiation as a mechanism of diabetic β cell failure. Cell. 2012;150(6):1223-1234. PMID: 22980982",
       "note": "Foundational beta-cell dedifferentiation model: loss of identity genes, gain of progenitor markers (Neurog3, Sox9, Aldh1a3), FOXO1 nuclear exclusion, and emergence of alpha-cell-like markers underlying the dedifferentiated and transdifferentiated beta-cell states."
     },
     {
-      "citation": "Cinti F, Bouchi R, Kim-Muller JY, et al. Evidence of \u03b2-Cell Dedifferentiation in Human Type 2 Diabetes. J Clin Endocrinol Metab. 2016;101(3):1044-1054. PMID: 26713822",
+      "citation": "Cinti F, Bouchi R, Kim-Muller JY, et al. Evidence of β-Cell Dedifferentiation in Human Type 2 Diabetes. J Clin Endocrinol Metab. 2016;101(3):1044-1054. PMID: 26713822",
       "note": "Confirms ALDH1A3 as a marker of beta-cell dedifferentiation in human T2D pancreas."
     },
     {
-      "citation": "Pullen TJ, Rutter GA. When less is more: the forbidden fruits of gene repression in the adult \u03b2-cell. Diabetes Obes Metab. 2013;15(6):503-512.",
+      "citation": "Pullen TJ, Rutter GA. When less is more: the forbidden fruits of gene repression in the adult β-cell. Diabetes Obes Metab. 2013;15(6):503-512.",
       "note": "Defines 'disallowed genes' (LDHA, SLC16A1/MCT1) whose re-expression marks loss of beta-cell identity, used in the dedifferentiated state."
     },
     {
-      "citation": "Spijker HS, Song H, Ellenbroek JH, et al. Loss of \u03b2-Cell Identity Occurs in Type 2 Diabetes and Is Associated With Islet Amyloid Deposits. Diabetes. 2015;64(8):2928-2938.",
+      "citation": "Spijker HS, Song H, Ellenbroek JH, et al. Loss of β-Cell Identity Occurs in Type 2 Diabetes and Is Associated With Islet Amyloid Deposits. Diabetes. 2015;64(8):2928-2938.",
       "note": "Human evidence for beta-to-alpha cell transdifferentiation (co-expression of ARX/MAFB/GCG in insulin-lineage cells), supporting the transdifferentiated beta-cell state."
     },
     {
-      "citation": "Human pancreatic \u03b1-cell heterogeneity and trajectory inference analyses reveal SMOC1 as a \u03b2-cell dedifferentiation gene. Nat Commun. 2025. PMID: 41057332",
+      "citation": "Human pancreatic α-cell heterogeneity and trajectory inference analyses reveal SMOC1 as a β-cell dedifferentiation gene. Nat Commun. 2025. PMID: 41057332",
       "note": "Identifies SMOC1 as an alpha-lineage gene ectopically induced along the beta-to-alpha dedifferentiation/transdifferentiation trajectory in human T2D islets."
     },
     {
-      "citation": "Aguayo-Mazzucato C, Andle J, Lee TB Jr, et al. Acceleration of \u03b2 Cell Aging Determines Diabetes and Senolysis Improves Disease Outcomes. Cell Metab. 2019;30(1):129-142. PMID: 31155496",
+      "citation": "Aguayo-Mazzucato C, Andle J, Lee TB Jr, et al. Acceleration of β Cell Aging Determines Diabetes and Senolysis Improves Disease Outcomes. Cell Metab. 2019;30(1):129-142. PMID: 31155496",
       "note": "Defines beta-cell senescence markers (CDKN2A/p16, CDKN1A/p21) and use of B2M as a surface marker for FACS isolation of senescent beta cells."
     },
     {
@@ -3459,7 +3459,7 @@
       "note": "Characterizes the beta-cell senescence-associated secretory phenotype (SASP: GDF15, SERPINE1, CCL2, IL1B)."
     },
     {
-      "citation": "Zhong L, et al. / FoxM1-related studies (e.g., FoxM1 Is Up-Regulated by Obesity and Stimulates \u03b2-Cell Proliferation, Mol Endocrinol 2010; Insulin signaling regulates the FoxM1/PLK1/CENP-A pathway, PMC5382039).",
+      "citation": "Zhong L, et al. / FoxM1-related studies (e.g., FoxM1 Is Up-Regulated by Obesity and Stimulates β-Cell Proliferation, Mol Endocrinol 2010; Insulin signaling regulates the FoxM1/PLK1/CENP-A pathway, PMC5382039).",
       "note": "FOXM1/CCND2/PLK1/CENPA/BIRC5 as drivers of adaptive human beta-cell proliferation in obesity and pregnancy, supporting the proliferating beta-cell state."
     },
     {
@@ -3471,11 +3471,11 @@
       "note": "Delta-cell-enriched markers HHEX, RBP4, LEPR, GHSR used for the mature-functional-delta and delta-hypersecretory states."
     },
     {
-      "citation": "Somatostatin Containing \u03b4-Cell Number Is Reduced in Type-2 Diabetes. PMC9959292.",
+      "citation": "Somatostatin Containing δ-Cell Number Is Reduced in Type-2 Diabetes. PMC9959292.",
       "note": "Direct evidence for reduced delta-cell number/mass in human T2D, underlying the delta-reduced state."
     },
     {
-      "citation": "Dean ED, Li M, Prasad N, et al. Interrupted Glucagon Signaling Reveals Hepatic \u03b1 Cell Axis and Role for L-Glutamine in \u03b1 Cell Proliferation. Cell Metab. 2017; and Pancreatic islet \u03b1 cell function and proliferation require the arginine transporter SLC7A2. JCI 2024.",
+      "citation": "Dean ED, Li M, Prasad N, et al. Interrupted Glucagon Signaling Reveals Hepatic α Cell Axis and Role for L-Glutamine in α Cell Proliferation. Cell Metab. 2017; and Pancreatic islet α cell function and proliferation require the arginine transporter SLC7A2. JCI 2024.",
       "note": "SLC38A5/SLC7A2 amino-acid transporter induction linked to hyperglucagonemia and alpha-cell hyperplasia, used in the hyperglucagonemic alpha-cell state."
     },
     {
@@ -3487,7 +3487,7 @@
       "note": "Defines epsilon-cell markers (GHRL, ISL1, NKX2-2, absence of NKX6-1/PAX6) and developmental abundance changes used for both epsilon-cell states."
     },
     {
-      "citation": "Russell MA, Redick SD, Blodgett DM, et al. HLA Class II Antigen Processing and Presentation Pathway Components Demonstrated by Transcriptomics for Islet \u03b1, \u03b2, and \u03b4-Cells in Type 1 Diabetes. Diabetes. 2019;68(5):988-1001.",
+      "citation": "Russell MA, Redick SD, Blodgett DM, et al. HLA Class II Antigen Processing and Presentation Pathway Components Demonstrated by Transcriptomics for Islet α, β, and δ-Cells in Type 1 Diabetes. Diabetes. 2019;68(5):988-1001.",
       "note": "Documents interferon-stimulated gene/HLA class I-II induction across alpha, beta, delta (and by extension other) islet endocrine cell types during insulitis, supporting all *-inflammatory states."
     },
     {
