@@ -463,7 +463,7 @@
         {
           "id": "er-stressed",
           "name": "ER-stressed beta cell",
-          "phenotype": "Common across T2D, CFRD, and cytokine exposure",
+          "phenotype": "Beta cell undergoing endoplasmic reticulum (ER) stress",
           "genes": [
             "DDIT3",
             "HSPA5",
@@ -477,19 +477,42 @@
             "TRIB3",
             "ATF3",
             "PPP1R15A",
-            "CALR"
+            "CALR",
+            "HSP90B1",
+            "MANF"
           ],
           "activities": {
             "identity": -2,
             "insulin": -2,
+            "secretion": 0,
+            "granule": 0,
+            "metabolism": 0,
+            "mito-qc": 0,
             "er-folding": 2,
             "upr": 3,
             "oxidative-stress": 2,
-            "proteasome": 1,
             "autophagy": 1,
-            "apoptosis": 1
-          },
-          "notes": "Terminal/maladaptive UPR signature (PERK-ATF4-CHOP and IRE1-XBP1 arms) documented in T1D/T2D/CFRD islets and cytokine-exposed beta cells (Marhfour et al. 2012 Diabetologia; Eizirik & Cnop reviews)."
+            "proteasome": 1,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": 1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          }
         },
         {
           "id": "interferon-activated",
