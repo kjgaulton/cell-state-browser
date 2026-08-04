@@ -20,6 +20,7 @@
         </label>
         <button id="exportData">Export JSON</button>
         <button id="showGithubFiles" class="ghost" type="button">GitHub files</button>
+        <button id="showGithubHistory" class="ghost" type="button" hidden>Version history</button>
         <button id="saveToGithub" class="ghost" type="button" hidden>Save to GitHub</button>
       </div>
     </header>
@@ -239,6 +240,15 @@
       </div>
       <p class="github-file-hint">Loading a file below does not need a token. Saving changes back to it does.</p>
       <ul id="githubFileList" class="github-file-list"></ul>
+    </dialog>
+
+    <dialog id="githubHistoryDialog">
+      <header>
+        <h2>Version history</h2>
+        <button value="cancel" class="icon-button" aria-label="Close" id="cancelGithubHistory">x</button>
+      </header>
+      <p class="github-file-hint">Every save creates a new commit, so nothing is ever lost. Restore a version to load it back into the app, then use "Save to GitHub" to make it current.</p>
+      <ul id="githubHistoryList" class="github-file-list"></ul>
     </dialog>
 
     <dialog id="referencesDialog">
