@@ -553,6 +553,31 @@ menu span {
   align-items: center;
 }
 
+.reference-editor-list {
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #f7f9f9;
+}
+
+.reference-editor-item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: start;
+  gap: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.reference-editor-item input {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
 .marker-genes {
   margin-top: 10px;
 }

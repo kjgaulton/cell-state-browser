@@ -370,7 +370,11 @@
             "pericentral-metabolism": -2,
             "xenobiotic-metabolism": -1
           },
-          "notes": "Classic zone-1 urea cycle / gluconeogenesis genes; ASS1, CPS1, ASL, ARG1, OTC, PCK1, G6PC, HAL, SDS are canonical periportal landmark genes in the Halpern et al. 2017 Nature single-cell spatial reconstruction of mouse liver zonation."
+          "notes": "Classic zone-1 urea cycle / gluconeogenesis genes; ASS1, CPS1, ASL, ARG1, OTC, PCK1, G6PC, HAL, SDS are canonical periportal landmark genes in the Halpern et al. 2017 Nature single-cell spatial reconstruction of mouse liver zonation.",
+          "references": [
+            "ref-1",
+            "ref-2"
+          ]
         },
         {
           "id": "mid-lobular-hepatocyte",
@@ -393,7 +397,11 @@
             "protein-synthesis": 2,
             "lipid-lipoprotein": 1
           },
-          "notes": "Evidence is genuinely thin: zone 2 has no widely validated unique marker set, and most literature (e.g. the 2021 Frontiers zonation review, Halpern 2017) describes it as a transcriptional gradient/blend between zone 1 and zone 3 rather than a discrete state. IGFBP2 is the one gene reported as relatively enriched in midlobular hepatocytes (2022 bioRxiv 'IGFBP2-expressing midlobular hepatocytes' study on regeneration); the remaining genes are pan-hepatocyte identity genes included because they are expressed at intermediate levels across the lobule, not because they are zone-2-specific. Fewer than 10 genes reflects this thin state-specific evidence rather than an oversight."
+          "notes": "Evidence is genuinely thin: zone 2 has no widely validated unique marker set, and most literature (e.g. the 2021 Frontiers zonation review, Halpern 2017) describes it as a transcriptional gradient/blend between zone 1 and zone 3 rather than a discrete state. IGFBP2 is the one gene reported as relatively enriched in midlobular hepatocytes (2022 bioRxiv 'IGFBP2-expressing midlobular hepatocytes' study on regeneration); the remaining genes are pan-hepatocyte identity genes included because they are expressed at intermediate levels across the lobule, not because they are zone-2-specific. Fewer than 10 genes reflects this thin state-specific evidence rather than an oversight.",
+          "references": [
+            "ref-1",
+            "ref-2"
+          ]
         },
         {
           "id": "central-lobular-hepatocyte",
@@ -421,7 +429,13 @@
             "periportal-metabolism": -2,
             "hepatocyte-oxidative-stress": 1
           },
-          "notes": "GLUL, CYP2E1, CYP1A2, CYP3A4, OAT and RHBG are canonical zone-3/pericentral landmark genes from Halpern et al. 2017 (Nature) zonation atlas. AXIN2, LGR5, RNF43 and TBX3 mark the Wnt/RSPO3-responsive pericentral hepatocyte population described in Wang et al. 2015 (Nature, Axin2+ self-renewing pericentral hepatocytes) and Planas-Paz et al. 2016 (Nat Cell Biol, Wnt-RSPO3 axis controls zonation via TBX3)."
+          "notes": "GLUL, CYP2E1, CYP1A2, CYP3A4, OAT and RHBG are canonical zone-3/pericentral landmark genes from Halpern et al. 2017 (Nature) zonation atlas. AXIN2, LGR5, RNF43 and TBX3 mark the Wnt/RSPO3-responsive pericentral hepatocyte population described in Wang et al. 2015 (Nature, Axin2+ self-renewing pericentral hepatocytes) and Planas-Paz et al. 2016 (Nat Cell Biol, Wnt-RSPO3 axis controls zonation via TBX3).",
+          "references": [
+            "ref-1",
+            "ref-2",
+            "ref-3",
+            "ref-4"
+          ]
         },
         {
           "id": "steatotic-hepatocyte",
@@ -449,7 +463,11 @@
             "injury-response": 1,
             "pericentral-metabolism": 1
           },
-          "notes": "Lipid-droplet coating proteins (PLIN2/PLIN5/CIDEA/CIDEC), lipogenic/uptake genes (CD36, DGAT2, SCD, SREBF1, MOGAT1, FABP1, PPARG) and the two major NAFLD/NASH genetic-risk genes PNPLA3 (Romeo et al., Nat Genet 2008) and TM6SF2 (Kozlitina et al., Nat Genet 2014) are well established steatotic hepatocyte markers."
+          "notes": "Lipid-droplet coating proteins (PLIN2/PLIN5/CIDEA/CIDEC), lipogenic/uptake genes (CD36, DGAT2, SCD, SREBF1, MOGAT1, FABP1, PPARG) and the two major NAFLD/NASH genetic-risk genes PNPLA3 (Romeo et al., Nat Genet 2008) and TM6SF2 (Kozlitina et al., Nat Genet 2014) are well established steatotic hepatocyte markers.",
+          "references": [
+            "ref-16",
+            "ref-17"
+          ]
         },
         {
           "id": "hepatitis-injured-hepatocyte",
@@ -478,7 +496,10 @@
             "periportal-metabolism": -1,
             "pericentral-metabolism": -1
           },
-          "notes": "Interferon-stimulated genes (ISG15, MX1, OAS1, IFIT1, IFIT3, STAT1, IRF1) are induced in hepatocytes during viral hepatitis (HBV/HCV) as part of the intrahepatic innate antiviral response; GDF15 and FGF21 are integrated-stress-response hepatokines induced by hepatocellular injury/DILI, and CDKN1A, ATF3, EGR1, HMGB1 mark acute hepatocyte stress/damage response."
+          "notes": "Interferon-stimulated genes (ISG15, MX1, OAS1, IFIT1, IFIT3, STAT1, IRF1) are induced in hepatocytes during viral hepatitis (HBV/HCV) as part of the intrahepatic innate antiviral response; GDF15 and FGF21 are integrated-stress-response hepatokines induced by hepatocellular injury/DILI, and CDKN1A, ATF3, EGR1, HMGB1 mark acute hepatocyte stress/damage response.",
+          "references": [
+            "ref-3"
+          ]
         }
       ]
     },
@@ -707,7 +728,10 @@
             "ductular-reaction": -1,
             "cholangiocyte-apoptosis": -1
           },
-          "notes": "Canonical mature biliary epithelial identity and bile-modification genes (CFTR, AQP1, SLC4A2) consistent with the Aizarani et al. 2019 (Nature) human liver cell atlas cholangiocyte cluster definitions."
+          "notes": "Canonical mature biliary epithelial identity and bile-modification genes (CFTR, AQP1, SLC4A2) consistent with the Aizarani et al. 2019 (Nature) human liver cell atlas cholangiocyte cluster definitions.",
+          "references": [
+            "ref-12"
+          ]
         },
         {
           "id": "reactive-cholangiocyte",
@@ -733,7 +757,10 @@
             "cholangiocyte-fibrogenic": 2,
             "mucin-secretion": 2
           },
-          "notes": "NCAM1 marks the reactive/neuroendocrine phenotype of ductular-reaction cholangiocytes in PSC and biliary atresia (Guicciardi et al., Hepatology 2020, 'Spectrum of Reactive Cholangiocytes in PSC'); SPP1 (osteopontin) is a well-documented mediator of biliary inflammation/fibrosis secreted by reactive cholangiocytes; ITGB6 is induced specifically in adaptive/reactive cholangiocyte populations surrounding the fibro-obliterative ductular reaction (bile-acid-activated macrophage/integrin avb6 literature)."
+          "notes": "NCAM1 marks the reactive/neuroendocrine phenotype of ductular-reaction cholangiocytes in PSC and biliary atresia (Guicciardi et al., Hepatology 2020, 'Spectrum of Reactive Cholangiocytes in PSC'); SPP1 (osteopontin) is a well-documented mediator of biliary inflammation/fibrosis secreted by reactive cholangiocytes; ITGB6 is induced specifically in adaptive/reactive cholangiocyte populations surrounding the fibro-obliterative ductular reaction (bile-acid-activated macrophage/integrin avb6 literature).",
+          "references": [
+            "ref-13"
+          ]
         },
         {
           "id": "cholestatic-cholangiocyte",
@@ -759,7 +786,10 @@
             "cholangiocyte-fibrogenic": 2,
             "cholangiocyte-identity": -1
           },
-          "notes": "Bile-acid/bicarbonate transport genes altered under cholestasis; ABCC3 (MRP3) is a classic compensatory basolateral bile-acid transporter upregulated in cholestatic liver disease; NR1H4 (FXR) is the bile-acid-sensing nuclear receptor central to cholestatic feedback; CLDN1 was recently shown to be a mediator/therapeutic target in PSC (2025 J Hepatol). Evidence here is more general cholangiocyte/cholestasis biology rather than a scRNA-seq-defined discrete cluster."
+          "notes": "Bile-acid/bicarbonate transport genes altered under cholestasis; ABCC3 (MRP3) is a classic compensatory basolateral bile-acid transporter upregulated in cholestatic liver disease; NR1H4 (FXR) is the bile-acid-sensing nuclear receptor central to cholestatic feedback; CLDN1 was recently shown to be a mediator/therapeutic target in PSC (2025 J Hepatol). Evidence here is more general cholangiocyte/cholestasis biology rather than a scRNA-seq-defined discrete cluster.",
+          "references": [
+            "ref-11"
+          ]
         },
         {
           "id": "cholangiocarcinoma-like-cholangiocyte",
@@ -786,7 +816,10 @@
             "ductular-reaction": 2,
             "cholangiocyte-identity": -1
           },
-          "notes": "Driver mutation genes (IDH1, FGFR2 fusions, KRAS, TP53, ARID1A, BAP1, SMAD4, ERBB2, CDKN2A, PBRM1) reflect the established intrahepatic cholangiocarcinoma genomic landscape (e.g. Farshidfar et al., Cell Reports 2017, IDH-mutant molecular subtype). S100P and SPP1 were identified as subtype markers distinguishing the two molecularly distinct iCCA subtypes (perihilar large-duct vs peripheral small-duct) in a single-cell RNA-seq study (Nat Commun 2022, 'two molecularly distinct subtypes of intrahepatic cholangiocarcinoma'). MUC5AC is part of a validated serum biomarker panel for CCA diagnosis. SOX9 marks biliary/cancer-stem-like differentiation in CCA."
+          "notes": "Driver mutation genes (IDH1, FGFR2 fusions, KRAS, TP53, ARID1A, BAP1, SMAD4, ERBB2, CDKN2A, PBRM1) reflect the established intrahepatic cholangiocarcinoma genomic landscape (e.g. Farshidfar et al., Cell Reports 2017, IDH-mutant molecular subtype). S100P and SPP1 were identified as subtype markers distinguishing the two molecularly distinct iCCA subtypes (perihilar large-duct vs peripheral small-duct) in a single-cell RNA-seq study (Nat Commun 2022, 'two molecularly distinct subtypes of intrahepatic cholangiocarcinoma'). MUC5AC is part of a validated serum biomarker panel for CCA diagnosis. SOX9 marks biliary/cancer-stem-like differentiation in CCA.",
+          "references": [
+            "ref-14"
+          ]
         }
       ]
     },
@@ -1044,7 +1077,14 @@
             "capillarization": -2,
             "angiogenesis": -1
           },
-          "notes": "Canonical human/mouse LSEC identity and scavenger-receptor genes from Halpern et al. 2018 (Nat Biotechnol, paired-cell sequencing of liver endothelium), MacParland et al. 2018 (Nat Commun human liver atlas) and Aizarani et al. 2019 (Nature); OIT3 is highlighted as a robust LSEC-restricted hallmark gene (Nat. Signal Transduct Target Ther 2023)."
+          "notes": "Canonical human/mouse LSEC identity and scavenger-receptor genes from Halpern et al. 2018 (Nat Biotechnol, paired-cell sequencing of liver endothelium), MacParland et al. 2018 (Nat Commun human liver atlas) and Aizarani et al. 2019 (Nature); OIT3 is highlighted as a robust LSEC-restricted hallmark gene (Nat. Signal Transduct Target Ther 2023).",
+          "references": [
+            "ref-1",
+            "ref-2",
+            "ref-11",
+            "ref-12",
+            "ref-35"
+          ]
         },
         {
           "id": "lymphatic-endothelial-cell",
@@ -1068,7 +1108,10 @@
             "lsec-identity": -2,
             "vascular-endothelial-identity": -1
           },
-          "notes": "PROX1, PDPN(D2-40), FLT4(VEGFR3), LYVE1, CCL21 and MMRN1 are the standard pan-organ lymphatic endothelial identity panel; NRP2, SOX18 and FOXC2 are additional well-established lymphatic transcriptional regulators/markers from general vascular biology (not liver-specific), added because liver-specific lymphatic endothelial transcriptomic studies are limited (see Yamauchi et al. lymphatic marker podoplanin/D2-40 in cirrhotic liver)."
+          "notes": "PROX1, PDPN(D2-40), FLT4(VEGFR3), LYVE1, CCL21 and MMRN1 are the standard pan-organ lymphatic endothelial identity panel; NRP2, SOX18 and FOXC2 are additional well-established lymphatic transcriptional regulators/markers from general vascular biology (not liver-specific), added because liver-specific lymphatic endothelial transcriptomic studies are limited (see Yamauchi et al. lymphatic marker podoplanin/D2-40 in cirrhotic liver).",
+          "references": [
+            "ref-23"
+          ]
         },
         {
           "id": "central-vein-endothelial-cell",
@@ -1091,7 +1134,13 @@
             "lsec-identity": -1,
             "vascular-endothelial-identity": 0
           },
-          "notes": "WNT2, WNT9B and RSPO3 are the defining central-vein endothelial ligands that establish pericentral hepatocyte zonation (Wang et al. 2015 Nature; Planas-Paz et al. 2016 Nat Cell Biol; Halpern et al. 2018 Nat Biotechnol). KIT was specifically reported as abundant in central-vein-proximal liver endothelial cells and low/absent periportally (Halpern et al. 2018). PECAM1/CDH5/VWF/CD34 are generic pan-endothelial genes added to reach panel size since central-vein-specific literature is otherwise narrow; this is noted as comparatively thin state-specific evidence beyond the four Wnt-pathway genes."
+          "notes": "WNT2, WNT9B and RSPO3 are the defining central-vein endothelial ligands that establish pericentral hepatocyte zonation (Wang et al. 2015 Nature; Planas-Paz et al. 2016 Nat Cell Biol; Halpern et al. 2018 Nat Biotechnol). KIT was specifically reported as abundant in central-vein-proximal liver endothelial cells and low/absent periportally (Halpern et al. 2018). PECAM1/CDH5/VWF/CD34 are generic pan-endothelial genes added to reach panel size since central-vein-specific literature is otherwise narrow; this is noted as comparatively thin state-specific evidence beyond the four Wnt-pathway genes.",
+          "references": [
+            "ref-1",
+            "ref-2",
+            "ref-3",
+            "ref-4"
+          ]
         },
         {
           "id": "vascular-endothelial-cell",
@@ -1116,7 +1165,11 @@
             "lsec-identity": -2,
             "lsec-scavenging": -2
           },
-          "notes": "EFNB2, DLL4 and LTBP4 mark periportal/portal-vein and hepatic-artery continuous (non-fenestrated) liver endothelium as distinct from sinusoidal LSECs (Halpern et al. 2018, Nat Biotechnol paired-cell sequencing); SOX17, HEY1, NOTCH4, BMX and GJA5 are established arterial/continuous-endothelium identity genes from general vascular biology used here to characterize the non-sinusoidal hepatic vasculature."
+          "notes": "EFNB2, DLL4 and LTBP4 mark periportal/portal-vein and hepatic-artery continuous (non-fenestrated) liver endothelium as distinct from sinusoidal LSECs (Halpern et al. 2018, Nat Biotechnol paired-cell sequencing); SOX17, HEY1, NOTCH4, BMX and GJA5 are established arterial/continuous-endothelium identity genes from general vascular biology used here to characterize the non-sinusoidal hepatic vasculature.",
+          "references": [
+            "ref-1",
+            "ref-2"
+          ]
         },
         {
           "id": "capillarized-sinusoidal-endothelial-cell",
@@ -1142,7 +1195,12 @@
             "angiogenesis": 1,
             "endothelial-inflammatory": 1
           },
-          "notes": "Capillarization is defined by acquisition of a continuous-endothelium/basement-membrane phenotype: increased CD31/CD34/VWF with concurrent loss of fenestrae and gain of basement membrane genes (COL4A1, COL4A2, LAMB1, LAMA4, SPARC, FN1) (multiple LSEC defenestration/cirrhosis studies; CD34 reported as the more specific capillarization marker vs CD31). ACKR1+ and PLVAP+ endothelial cells were specifically shown by Ramachandran et al. 2019 (Nature, 'Resolving the fibrotic niche of human liver cirrhosis at single-cell level') to expand in cirrhosis and localize to the fibrotic niche, making them strong state-specific markers."
+          "notes": "Capillarization is defined by acquisition of a continuous-endothelium/basement-membrane phenotype: increased CD31/CD34/VWF with concurrent loss of fenestrae and gain of basement membrane genes (COL4A1, COL4A2, LAMB1, LAMA4, SPARC, FN1) (multiple LSEC defenestration/cirrhosis studies; CD34 reported as the more specific capillarization marker vs CD31). ACKR1+ and PLVAP+ endothelial cells were specifically shown by Ramachandran et al. 2019 (Nature, 'Resolving the fibrotic niche of human liver cirrhosis at single-cell level') to expand in cirrhosis and localize to the fibrotic niche, making them strong state-specific markers.",
+          "references": [
+            "ref-6",
+            "ref-33",
+            "ref-34"
+          ]
         }
       ]
     },
@@ -1373,7 +1431,10 @@
             "ecm-production": -1,
             "hsc-proliferation": -1
           },
-          "notes": "Canonical quiescent HSC identity and vitamin-A storage genes as reviewed in Tsuchida & Friedman 2017 (Nat Rev Gastroenterol Hepatol, 'Mechanisms of hepatic stellate cell activation'); LRAT and RBP1 are specifically required for retinyl-ester storage in quiescent HSC lipid droplets."
+          "notes": "Canonical quiescent HSC identity and vitamin-A storage genes as reviewed in Tsuchida & Friedman 2017 (Nat Rev Gastroenterol Hepatol, 'Mechanisms of hepatic stellate cell activation'); LRAT and RBP1 are specifically required for retinyl-ester storage in quiescent HSC lipid droplets.",
+          "references": [
+            "ref-9"
+          ]
         },
         {
           "id": "activated-hsc",
@@ -1404,7 +1465,11 @@
             "hsc-proliferation": 2,
             "hsc-contractility": 2
           },
-          "notes": "Standard myofibroblast transdifferentiation panel (alpha-SMA/ACTA2, TAGLN, CNN1, MYH11, PDGFRB/PDGFRA, TGF-beta/SMAD signaling, early collagen induction) per Tsuchida & Friedman 2017 review and Mederacke et al. 2013 (Nat Commun, HSC lineage tracing as origin of myofibroblasts)."
+          "notes": "Standard myofibroblast transdifferentiation panel (alpha-SMA/ACTA2, TAGLN, CNN1, MYH11, PDGFRB/PDGFRA, TGF-beta/SMAD signaling, early collagen induction) per Tsuchida & Friedman 2017 review and Mederacke et al. 2013 (Nat Commun, HSC lineage tracing as origin of myofibroblasts).",
+          "references": [
+            "ref-9",
+            "ref-10"
+          ]
         },
         {
           "id": "fibrotic-hsc",
@@ -1431,7 +1496,13 @@
             "mmp-remodeling": 1,
             "tgf-beta-signaling": 2
           },
-          "notes": "This state had zero genes previously. Sustained ECM deposition genes (COL1A1/COL1A2/COL3A1, TIMP1, PDGFRA) mark the scar-associated myofibroblast population defined by Ramachandran et al. 2019 (Nature, 'Resolving the fibrotic niche of human liver cirrhosis'); LOXL2 (collagen crosslinking) and TNC/POSTN/THBS2 (matricellular ECM genes enriched in the fibrotic niche) are drawn from Dobie et al. 2019 (Cell Reports, 'Single-cell transcriptomics uncovers zonation of function in the mesenchyme during liver fibrosis'). Note: transcriptionally, 'end-stage fibrotic' HSC/myofibroblasts overlap substantially with 'activated' HSC in current single-cell literature; a fully distinct end-stage-specific signature (vs. simply higher magnitude/duration of the activation program) is not yet crisply established, so some overlap with the activated-hsc panel is expected and appropriate."
+          "notes": "This state had zero genes previously. Sustained ECM deposition genes (COL1A1/COL1A2/COL3A1, TIMP1, PDGFRA) mark the scar-associated myofibroblast population defined by Ramachandran et al. 2019 (Nature, 'Resolving the fibrotic niche of human liver cirrhosis'); LOXL2 (collagen crosslinking) and TNC/POSTN/THBS2 (matricellular ECM genes enriched in the fibrotic niche) are drawn from Dobie et al. 2019 (Cell Reports, 'Single-cell transcriptomics uncovers zonation of function in the mesenchyme during liver fibrosis'). Note: transcriptionally, 'end-stage fibrotic' HSC/myofibroblasts overlap substantially with 'activated' HSC in current single-cell literature; a fully distinct end-stage-specific signature (vs. simply higher magnitude/duration of the activation program) is not yet crisply established, so some overlap with the activated-hsc panel is expected and appropriate.",
+          "references": [
+            "ref-5",
+            "ref-6",
+            "ref-33",
+            "ref-34"
+          ]
         },
         {
           "id": "reverting-hsc",
@@ -1453,7 +1524,11 @@
             "hsc-apoptosis": 1,
             "vitamin-a-storage": 1
           },
-          "notes": "This state had zero genes previously. Evidence is genuinely limited: Kisseleva et al. 2012 (PNAS, 'Myofibroblasts revert to an inactive phenotype during regression of liver fibrosis') and Troeger et al. 2012 (Gastroenterology, 'Deactivation of hepatic stellate cells during liver fibrosis resolution in mice') show that a fraction of activated HSC/myofibroblasts partially re-express quiescence-associated genes (RGS5, HGF, NGFR, DES, GFAP) and PPARG (adipogenic/quiescence transcription factor) while down-regulating but not fully losing activation markers (PDGFRB, VIM retained at intermediate levels), and that these 'inactivated' cells remain primed to reactivate faster upon re-injury. A precise, validated 'reverting-specific' gene signature distinct from quiescent HSC has not been firmly established in the literature, so this panel is intentionally kept under 10 genes and should be treated as lower-confidence than the other three HSC states."
+          "notes": "This state had zero genes previously. Evidence is genuinely limited: Kisseleva et al. 2012 (PNAS, 'Myofibroblasts revert to an inactive phenotype during regression of liver fibrosis') and Troeger et al. 2012 (Gastroenterology, 'Deactivation of hepatic stellate cells during liver fibrosis resolution in mice') show that a fraction of activated HSC/myofibroblasts partially re-express quiescence-associated genes (RGS5, HGF, NGFR, DES, GFAP) and PPARG (adipogenic/quiescence transcription factor) while down-regulating but not fully losing activation markers (PDGFRB, VIM retained at intermediate levels), and that these 'inactivated' cells remain primed to reactivate faster upon re-injury. A precise, validated 'reverting-specific' gene signature distinct from quiescent HSC has not been firmly established in the literature, so this panel is intentionally kept under 10 genes and should be treated as lower-confidence than the other three HSC states.",
+          "references": [
+            "ref-7",
+            "ref-8"
+          ]
         }
       ]
     },
@@ -1639,7 +1714,10 @@
             "antibody-secretion": -2,
             "b-cell-migration": 1
           },
-          "notes": "Core B-lineage identity (CD19/MS4A1/CD79A/CD79B/PAX5/BANK1/CD22) plus markers specific to the naive (antigen-inexperienced) subset: co-expression of unswitched IGHD/IGHM, TCL1A (highly and preferentially expressed in naive/transitional B cells), FCER2/CD23 and IL4R (naive/quiescence markers), and CCR7/SELL which mark recirculating naive lymphocytes not yet retained in tissue."
+          "notes": "Core B-lineage identity (CD19/MS4A1/CD79A/CD79B/PAX5/BANK1/CD22) plus markers specific to the naive (antigen-inexperienced) subset: co-expression of unswitched IGHD/IGHM, TCL1A (highly and preferentially expressed in naive/transitional B cells), FCER2/CD23 and IL4R (naive/quiescence markers), and CCR7/SELL which mark recirculating naive lymphocytes not yet retained in tissue.",
+          "references": [
+            "ref-29"
+          ]
         },
         {
           "id": "activated-b-cell",
@@ -1665,7 +1743,10 @@
             "b-cell-proliferation": 3,
             "antigen-presentation-b": 2
           },
-          "notes": "Classic B-cell activation markers upregulated upon antigen/BCR engagement and CD40 signaling (CD69, CD86, CD80, CD40, CD83, FAS/CD95), proliferation genes (MYC, MKI67, CCND2), AICDA (activation-induced deaminase, induced upon activation for SHM/CSR), early IRF4 induction preceding terminal plasma-cell commitment, and TNFRSF13B (TACI) upregulation with activation."
+          "notes": "Classic B-cell activation markers upregulated upon antigen/BCR engagement and CD40 signaling (CD69, CD86, CD80, CD40, CD83, FAS/CD95), proliferation genes (MYC, MKI67, CCND2), AICDA (activation-induced deaminase, induced upon activation for SHM/CSR), early IRF4 induction preceding terminal plasma-cell commitment, and TNFRSF13B (TACI) upregulation with activation.",
+          "references": [
+            "ref-10"
+          ]
         },
         {
           "id": "plasma-cell",
@@ -1692,7 +1773,10 @@
             "bcr-signaling": -1,
             "b-cell-proliferation": -1
           },
-          "notes": "Canonical terminally-differentiated antibody-secreting cell program: master transcription factors PRDM1(BLIMP1)/IRF4/XBP1, surface markers SDC1(CD138) and CD38, secretory-pathway/UPR genes supporting high immunoglobulin output (JCHAIN, MZB1, SSR4, DERL3, FKBP11), immunoglobulin isotype transcripts (IGHG1/IGHA1), and TNFRSF17 (BCMA), a well-established long-lived plasma cell survival receptor."
+          "notes": "Canonical terminally-differentiated antibody-secreting cell program: master transcription factors PRDM1(BLIMP1)/IRF4/XBP1, surface markers SDC1(CD138) and CD38, secretory-pathway/UPR genes supporting high immunoglobulin output (JCHAIN, MZB1, SSR4, DERL3, FKBP11), immunoglobulin isotype transcripts (IGHG1/IGHA1), and TNFRSF17 (BCMA), a well-established long-lived plasma cell survival receptor.",
+          "references": [
+            "ref-27"
+          ]
         },
         {
           "id": "memory-b-cell",
@@ -1716,7 +1800,10 @@
             "b-cell-migration": 1,
             "antibody-secretion": -1
           },
-          "notes": "CD27 is the most widely used human memory B-cell marker but is explicitly not universal (a CD27-negative memory subset exists; noted in recent literature). Panel combines CD27 with other markers reported as enriched on memory versus naive B cells (high CD80, TNFRSF13B/TACI, CD44, FAS/CD95, CR2/CD21, CD24) and recirculation/homing receptors (CXCR4, S1PR1, ITGB1, CCR6). Confidence is slightly lower here than for the other B-cell states because no single marker set is universally agreed upon for human memory B cells."
+          "notes": "CD27 is the most widely used human memory B-cell marker but is explicitly not universal (a CD27-negative memory subset exists; noted in recent literature). Panel combines CD27 with other markers reported as enriched on memory versus naive B cells (high CD80, TNFRSF13B/TACI, CD44, FAS/CD95, CR2/CD21, CD24) and recirculation/homing receptors (CXCR4, S1PR1, ITGB1, CCR6). Confidence is slightly lower here than for the other B-cell states because no single marker set is universally agreed upon for human memory B cells.",
+          "references": [
+            "ref-28"
+          ]
         }
       ]
     },
@@ -1935,7 +2022,10 @@
             "trm-program": -2,
             "t-cell-survival": 1
           },
-          "notes": "Standard naive/circulating T-cell signature: lymph-node homing receptors CCR7 and SELL (CD62L), transcription factors TCF7 and LEF1 that define stemness/naivety, costimulatory receptors CD27/CD28 retained from thymic egress, core TCR-complex genes (CD3D, CD3E, TRAC) for T-lineage identity, IL7R for naive T-cell survival, and S1PR1/KLF2 which govern egress and recirculation (and are downregulated upon tissue residency, providing contrast with the Trm state)."
+          "notes": "Standard naive/circulating T-cell signature: lymph-node homing receptors CCR7 and SELL (CD62L), transcription factors TCF7 and LEF1 that define stemness/naivety, costimulatory receptors CD27/CD28 retained from thymic egress, core TCR-complex genes (CD3D, CD3E, TRAC) for T-lineage identity, IL7R for naive T-cell survival, and S1PR1/KLF2 which govern egress and recirculation (and are downregulated upon tissue residency, providing contrast with the Trm state).",
+          "references": [
+            "ref-22"
+          ]
         },
         {
           "id": "liver-resident-memory-t-cell",
@@ -1961,7 +2051,11 @@
             "cd8-cytotoxic": 1,
             "t-cell-survival": 1
           },
-          "notes": "Reflects the well-characterized human liver Trm core signature (Pallett et al., Sci Rep 2017; Kumar et al., Cell Rep 2017): CD69 and ITGAE (CD103) as canonical residency markers, CXCR6 which is highly enriched on CD69+ intrahepatic CD8+ T cells (~90%) versus blood, ITGA1 (CD49a) and RGS1 as part of the core Trm adhesion/retention signature, and the transcription factors ZNF683 (Hobit), RUNX3 and PRDM1 that cooperatively drive tissue-resident memory differentiation. CXCR3 supports liver homing. Human hepatic Trm notably also express CD103 (ITGAE), distinguishing them from mouse Trm."
+          "notes": "Reflects the well-characterized human liver Trm core signature (Pallett et al., Sci Rep 2017; Kumar et al., Cell Rep 2017): CD69 and ITGAE (CD103) as canonical residency markers, CXCR6 which is highly enriched on CD69+ intrahepatic CD8+ T cells (~90%) versus blood, ITGA1 (CD49a) and RGS1 as part of the core Trm adhesion/retention signature, and the transcription factors ZNF683 (Hobit), RUNX3 and PRDM1 that cooperatively drive tissue-resident memory differentiation. CXCR3 supports liver homing. Human hepatic Trm notably also express CD103 (ITGAE), distinguishing them from mouse Trm.",
+          "references": [
+            "ref-22",
+            "ref-23"
+          ]
         },
         {
           "id": "cytotoxic-activated-t-cell",
@@ -1989,7 +2083,10 @@
             "t-cell-cytokine": 3,
             "trm-program": 1
           },
-          "notes": "Standard effector CD8+ cytotoxic program: cytolytic granule components (GZMB, GZMA, GZMK, PRF1, NKG7), death-receptor ligand FASLG, effector cytokines (IFNG, TNF, IL2), the master effector transcription factors TBX21 (T-bet) and EOMES, KLRG1 as a terminal-effector marker, and CD8A confirming the CD8 lineage; this program is directly implicated in hepatocyte killing in viral and autoimmune hepatitis."
+          "notes": "Standard effector CD8+ cytotoxic program: cytolytic granule components (GZMB, GZMA, GZMK, PRF1, NKG7), death-receptor ligand FASLG, effector cytokines (IFNG, TNF, IL2), the master effector transcription factors TBX21 (T-bet) and EOMES, KLRG1 as a terminal-effector marker, and CD8A confirming the CD8 lineage; this program is directly implicated in hepatocyte killing in viral and autoimmune hepatitis.",
+          "references": [
+            "ref-9"
+          ]
         },
         {
           "id": "exhausted-t-cell",
@@ -2016,7 +2113,10 @@
             "t-cell-cytokine": -1,
             "t-cell-proliferation": -1
           },
-          "notes": "Panel reflects the widely-replicated chronic-antigen/exhaustion signature seen in chronic HBV/HCV and HCC studies: co-inhibitory receptors (PDCD1, LAG3, HAVCR2/TIM-3, TIGIT, CD160, BTLA, CTLA4), the exhaustion master transcription factor TOX, markers of terminal exhaustion (ENTPD1/CD39, CD38, LAYN), the CXCL13 chemokine signature associated with dysfunctional/exhausted intratumoral and intrahepatic T cells, and TNFRSF9 (4-1BB) marking chronically antigen-engaged exhausted cells."
+          "notes": "Panel reflects the widely-replicated chronic-antigen/exhaustion signature seen in chronic HBV/HCV and HCC studies: co-inhibitory receptors (PDCD1, LAG3, HAVCR2/TIM-3, TIGIT, CD160, BTLA, CTLA4), the exhaustion master transcription factor TOX, markers of terminal exhaustion (ENTPD1/CD39, CD38, LAYN), the CXCL13 chemokine signature associated with dysfunctional/exhausted intratumoral and intrahepatic T cells, and TNFRSF9 (4-1BB) marking chronically antigen-engaged exhausted cells.",
+          "references": [
+            "ref-24"
+          ]
         },
         {
           "id": "regulatory-t-cell",
@@ -2042,7 +2142,10 @@
             "t-cell-cytokine": -1,
             "t-cell-survival": 1
           },
-          "notes": "Canonical Treg identity/suppressive program: master transcription factor FOXP3, IL2RA (CD25) and IKZF2 (Helios), co-inhibitory/costimulatory receptors CTLA4, TNFRSF18 (GITR), TNFRSF4 (OX40); the ectoenzyme pair ENTPD1 (CD39)/NT5E (CD73) mediating adenosine-based suppression, which is specifically reported as upregulated on intrahepatic Tregs; TGFB1 and IL10 as suppressive cytokines; and TIGIT, which is highly enriched on and functionally important for intrahepatic Tregs in chronic liver disease."
+          "notes": "Canonical Treg identity/suppressive program: master transcription factor FOXP3, IL2RA (CD25) and IKZF2 (Helios), co-inhibitory/costimulatory receptors CTLA4, TNFRSF18 (GITR), TNFRSF4 (OX40); the ectoenzyme pair ENTPD1 (CD39)/NT5E (CD73) mediating adenosine-based suppression, which is specifically reported as upregulated on intrahepatic Tregs; TGFB1 and IL10 as suppressive cytokines; and TIGIT, which is highly enriched on and functionally important for intrahepatic Tregs in chronic liver disease.",
+          "references": [
+            "ref-25"
+          ]
         }
       ]
     },
@@ -2267,7 +2370,10 @@
             "m1-inflammatory": -1,
             "monocyte-recruitment": -2
           },
-          "notes": "Core Kupffer-cell identity/self-renewal signature converged upon by human and mouse liver macrophage atlases (MARCO, VSIG4, CD5L, TIMD4, CLEC4F, FOLR2, CD163, VCAM1) plus the transcription factors ID3 and SPIC that specify Kupffer-cell fate, and HMOX1/SLC40A1 reflecting the iron/erythrophagocytosis handling niche function. CLEC4F is the most specific single marker in mouse; MARCO/VSIG4/CD5L/TIMD4/FOLR2/CD163 are the best cross-species human markers."
+          "notes": "Core Kupffer-cell identity/self-renewal signature converged upon by human and mouse liver macrophage atlases (MARCO, VSIG4, CD5L, TIMD4, CLEC4F, FOLR2, CD163, VCAM1) plus the transcription factors ID3 and SPIC that specify Kupffer-cell fate, and HMOX1/SLC40A1 reflecting the iron/erythrophagocytosis handling niche function. CLEC4F is the most specific single marker in mouse; MARCO/VSIG4/CD5L/TIMD4/FOLR2/CD163 are the best cross-species human markers.",
+          "references": [
+            "ref-36"
+          ]
         },
         {
           "id": "lipid-associated-macrophage",
@@ -2295,7 +2401,12 @@
             "m1-inflammatory": 1,
             "m2-reparative": 1
           },
-          "notes": "Directly matches the TREM2+CD9+ 'scar-associated macrophage' (SAM) population defined by Ramachandran et al. 2019 Nature in human cirrhotic liver, which co-expresses GPNMB, SPP1, FABP5 and CD63, and the convergent TREM2+ lipid-associated macrophage (LAM) signature from NASH/MASH liver atlases (APOE, APOC1, LPL, LGALS3, cathepsins CTSD/CTSB/CTSK reflecting the osteoclast-like lipid-handling program)."
+          "notes": "Directly matches the TREM2+CD9+ 'scar-associated macrophage' (SAM) population defined by Ramachandran et al. 2019 Nature in human cirrhotic liver, which co-expresses GPNMB, SPP1, FABP5 and CD63, and the convergent TREM2+ lipid-associated macrophage (LAM) signature from NASH/MASH liver atlases (APOE, APOC1, LPL, LGALS3, cathepsins CTSD/CTSB/CTSK reflecting the osteoclast-like lipid-handling program).",
+          "references": [
+            "ref-6",
+            "ref-33",
+            "ref-34"
+          ]
         },
         {
           "id": "inflammatory-monocyte-macrophage",
@@ -2321,7 +2432,10 @@
             "kupffer-identity": -2,
             "antigen-presentation-myeloid": 2
           },
-          "notes": "CD14+ classical monocyte-derived infiltrate signature (S100A8, S100A9, VCAN, FCN1, CD14) used to distinguish recirculating inflammatory macrophages from resident Kupffer cells in acute-on-chronic liver failure and viral-hepatitis scRNA-seq studies, combined with the CCR2/CCL2 recruitment axis and M1 pro-inflammatory effectors (TNF, IL1B, IL6, CXCL10, PTGS2)."
+          "notes": "CD14+ classical monocyte-derived infiltrate signature (S100A8, S100A9, VCAN, FCN1, CD14) used to distinguish recirculating inflammatory macrophages from resident Kupffer cells in acute-on-chronic liver failure and viral-hepatitis scRNA-seq studies, combined with the CCR2/CCL2 recruitment axis and M1 pro-inflammatory effectors (TNF, IL1B, IL6, CXCL10, PTGS2).",
+          "references": [
+            "ref-37"
+          ]
         },
         {
           "id": "restorative-macrophage",
@@ -2346,7 +2460,12 @@
             "ecm-remodeling-myeloid": 1,
             "m1-inflammatory": -2
           },
-          "notes": "Based on Ramachandran/Iredale et al. 2012 PNAS (PMID 23100531), which defined the Ly6C(lo) 'restorative' macrophage subset in resolving liver fibrosis: this population is the principal MMP-expressing subset (MMP9, MMP12, MMP13), upregulates IGF1 and GPNMB, and acquires an anti-inflammatory/efferocytic phenotype (MERTK-GAS6 axis, high phagocytic MRC1/CD163/STAB1, IL10/TGFB1). Direct human single-cell evidence for this exact state is sparser than for Kupffer cells or LAMs \u2014 this list leans on the mouse fibrosis-resolution literature translated to human orthologs, so confidence is moderate rather than high."
+          "notes": "Based on Ramachandran/Iredale et al. 2012 PNAS (PMID 23100531), which defined the Ly6C(lo) 'restorative' macrophage subset in resolving liver fibrosis: this population is the principal MMP-expressing subset (MMP9, MMP12, MMP13), upregulates IGF1 and GPNMB, and acquires an anti-inflammatory/efferocytic phenotype (MERTK-GAS6 axis, high phagocytic MRC1/CD163/STAB1, IL10/TGFB1). Direct human single-cell evidence for this exact state is sparser than for Kupffer cells or LAMs — this list leans on the mouse fibrosis-resolution literature translated to human orthologs, so confidence is moderate rather than high.",
+          "references": [
+            "ref-6",
+            "ref-33",
+            "ref-34"
+          ]
         }
       ]
     },
@@ -2510,7 +2629,10 @@
             "cytotoxicity": 2,
             "liver-residency": -2
           },
-          "notes": "Canonical CD56dim/CD16+ (FCGR3A+) peripheral-blood-derived NK signature. CX3CR1 and S1PR5 mark blood/circulating egress-competent NK cells and are specifically reported as absent from liver-resident CD56bright NK cells, providing the key discriminator from the liver-resident state. SPON2 and FGFBP2 are established CD56dim-selective transcriptomic markers from NK scRNA-seq atlases. Fewer liver-specific papers directly profile this 'default' circulating subset since most liver NK literature focuses on contrasting it against resident populations."
+          "notes": "Canonical CD56dim/CD16+ (FCGR3A+) peripheral-blood-derived NK signature. CX3CR1 and S1PR5 mark blood/circulating egress-competent NK cells and are specifically reported as absent from liver-resident CD56bright NK cells, providing the key discriminator from the liver-resident state. SPON2 and FGFBP2 are established CD56dim-selective transcriptomic markers from NK scRNA-seq atlases. Fewer liver-specific papers directly profile this 'default' circulating subset since most liver NK literature focuses on contrasting it against resident populations.",
+          "references": [
+            "ref-38"
+          ]
         },
         {
           "id": "liver-resident-nk-cell",
@@ -2535,7 +2657,12 @@
             "nk-identity": 2,
             "cytotoxicity": 1
           },
-          "notes": "CXCR6+CD49a(ITGA1)+CD69+ tissue-residency signature from Stegmann et al. 2016 (CXCR6 marks T-bet(lo)Eomes(hi) liver NK), Hudspeth/Cuff et al. 2017 Sci Rep (Hobit/ZNF683 in CD56bright liver-resident NK), and Cell Reports 2022 liver-type ILC1 scRNA-seq (IL7R, AHR, LTB, CD160, KLRB1, CD9). Both TBX21 and EOMES are included because reported transcription-factor patterns differ across studies (Marquardt et al. report Tbet+Eomes+, Stegmann et al. report Tbet-lo/Eomes-hi), reflecting genuine heterogeneity between liver-resident NK and ILC1-like subsets rather than a single settled marker set."
+          "notes": "CXCR6+CD49a(ITGA1)+CD69+ tissue-residency signature from Stegmann et al. 2016 (CXCR6 marks T-bet(lo)Eomes(hi) liver NK), Hudspeth/Cuff et al. 2017 Sci Rep (Hobit/ZNF683 in CD56bright liver-resident NK), and Cell Reports 2022 liver-type ILC1 scRNA-seq (IL7R, AHR, LTB, CD160, KLRB1, CD9). Both TBX21 and EOMES are included because reported transcription-factor patterns differ across studies (Marquardt et al. report Tbet+Eomes+, Stegmann et al. report Tbet-lo/Eomes-hi), reflecting genuine heterogeneity between liver-resident NK and ILC1-like subsets rather than a single settled marker set.",
+          "references": [
+            "ref-39",
+            "ref-40",
+            "ref-41"
+          ]
         },
         {
           "id": "cytotoxic-activated-nk-cell",
@@ -2561,7 +2688,11 @@
             "nk-cytokine": 2,
             "nk-exhaustion": -1
           },
-          "notes": "Standard cytotoxic/effector NK activation signature (granzymes, perforin, IFN-gamma, Fas-ligand, TRAIL/TNFSF10, activating receptor NKG2D/KLRK1, proliferation marker MKI67) consistent with the hyper-activated/degranulating NK phenotype described during acute viral hepatitis and anti-tumor surveillance (Bj\u00f6rkstr\u00f6m, Marquardt liver NK studies). This is a general cytotoxic-effector program rather than a liver-exclusive one, but is well established in liver immunology contexts."
+          "notes": "Standard cytotoxic/effector NK activation signature (granzymes, perforin, IFN-gamma, Fas-ligand, TRAIL/TNFSF10, activating receptor NKG2D/KLRK1, proliferation marker MKI67) consistent with the hyper-activated/degranulating NK phenotype described during acute viral hepatitis and anti-tumor surveillance (Björkström, Marquardt liver NK studies). This is a general cytotoxic-effector program rather than a liver-exclusive one, but is well established in liver immunology contexts.",
+          "references": [
+            "ref-38",
+            "ref-39"
+          ]
         },
         {
           "id": "exhausted-nk-cell",
@@ -2584,7 +2715,10 @@
             "cytotoxicity": -2,
             "nk-cytokine": -1
           },
-          "notes": "Inhibitory-receptor/exhaustion signature drawn from chronic HCV and HCC NK-dysfunction literature: HAVCR2 (TIM-3) and TIGIT co-expression marks exhausted NK in HBV/HCV-HCC (Oncoimmunology 2021); CD96 correlates with NK exhaustion and poor prognosis in HCC (Hepatology, Sun et al.); KLRC1 (NKG2A) is a defined NK exhaustion checkpoint for HCV persistence (Zhang et al., Nat Commun 2019, PMID 30944315); CD244 (2B4) is upregulated on dysfunctional NK/T cells in chronic HCV. Only 10 genes are listed because impairment of activating receptors (KLRK1/NKG2D, NCR3/NKp30, KLRD1/CD94) is reported as reduced expression/function rather than a clean 'up' marker, so this list is somewhat heterogeneous in direction \u2014 evidence is real but less uniformly 'marker-like' than the other three NK states."
+          "notes": "Inhibitory-receptor/exhaustion signature drawn from chronic HCV and HCC NK-dysfunction literature: HAVCR2 (TIM-3) and TIGIT co-expression marks exhausted NK in HBV/HCV-HCC (Oncoimmunology 2021); CD96 correlates with NK exhaustion and poor prognosis in HCC (Hepatology, Sun et al.); KLRC1 (NKG2A) is a defined NK exhaustion checkpoint for HCV persistence (Zhang et al., Nat Commun 2019, PMID 30944315); CD244 (2B4) is upregulated on dysfunctional NK/T cells in chronic HCV. Only 10 genes are listed because impairment of activating receptors (KLRK1/NKG2D, NCR3/NKp30, KLRD1/CD94) is reported as reduced expression/function rather than a clean 'up' marker, so this list is somewhat heterogeneous in direction — evidence is real but less uniformly 'marker-like' than the other three NK states.",
+          "references": [
+            "ref-43"
+          ]
         }
       ]
     },
@@ -2734,7 +2868,10 @@
             "mast-cytokine": -1,
             "mast-cell-survival": 1
           },
-          "notes": "Standard tissue-resident mast-cell identity program, present regardless of activation state: KIT (CD117) and the master transcription factors GATA2/MITF that specify mast-cell lineage, granule protease genes (TPSAB1, TPSB2, CPA3, CMA1), the high-affinity IgE receptor components (MS4A2/FcER1beta, FCER1A), histamine biosynthesis/storage machinery (HDC, SLC18A2/VMAT2) reflecting a fully granule-loaded quiescent cell, and IL1RL1 (ST2), constitutively expressed on resting mast cells."
+          "notes": "Standard tissue-resident mast-cell identity program, present regardless of activation state: KIT (CD117) and the master transcription factors GATA2/MITF that specify mast-cell lineage, granule protease genes (TPSAB1, TPSB2, CPA3, CMA1), the high-affinity IgE receptor components (MS4A2/FcER1beta, FCER1A), histamine biosynthesis/storage machinery (HDC, SLC18A2/VMAT2) reflecting a fully granule-loaded quiescent cell, and IL1RL1 (ST2), constitutively expressed on resting mast cells.",
+          "references": [
+            "ref-30"
+          ]
         },
         {
           "id": "activated-mast-cell",
@@ -2759,7 +2896,10 @@
             "ige-signaling": 3,
             "mast-cytokine": 2
           },
-          "notes": "Combines the released-granule proteases (TPSAB1, CMA1) and histamine synthesis gene (HDC) with the canonical IgE/FcERI proximal signaling cascade that triggers degranulation (FCER1A, SYK, LYN, LAT, PLCG1), plus the de novo cytokine/chemokine response mounted after activation (IL6, TNF, CXCL8, IL13), well established in IgE-mediated mast-cell activation literature."
+          "notes": "Combines the released-granule proteases (TPSAB1, CMA1) and histamine synthesis gene (HDC) with the canonical IgE/FcERI proximal signaling cascade that triggers degranulation (FCER1A, SYK, LYN, LAT, PLCG1), plus the de novo cytokine/chemokine response mounted after activation (IL6, TNF, CXCL8, IL13), well established in IgE-mediated mast-cell activation literature.",
+          "references": [
+            "ref-30"
+          ]
         },
         {
           "id": "fibrogenic-mast-cell",
@@ -2781,7 +2921,10 @@
             "degranulation": 1,
             "mast-cytokine": 2
           },
-          "notes": "Evidence for a discrete 'fibrogenic mast cell' transcriptional state is limited; this list is built from mechanistic studies showing mast-cell chymase (CMA1) and tryptase (TPSAB1) promote hepatic stellate cell activation/transdifferentiation and correlate with fibrosis stage, with TGFB1 as the principal profibrotic mediator secreted by activated mast cells, plus angiogenic/growth factors (VEGFA, FGF2) and cytokines (IL13, TNF) implicated in mast-cell-driven fibrogenesis in chronic liver disease. Kept below 10-15 genes deliberately given the thinner, largely indirect (not scRNA-seq-defined) evidence base; do not treat this as a validated single-cell signature."
+          "notes": "Evidence for a discrete 'fibrogenic mast cell' transcriptional state is limited; this list is built from mechanistic studies showing mast-cell chymase (CMA1) and tryptase (TPSAB1) promote hepatic stellate cell activation/transdifferentiation and correlate with fibrosis stage, with TGFB1 as the principal profibrotic mediator secreted by activated mast cells, plus angiogenic/growth factors (VEGFA, FGF2) and cytokines (IL13, TNF) implicated in mast-cell-driven fibrogenesis in chronic liver disease. Kept below 10-15 genes deliberately given the thinner, largely indirect (not scRNA-seq-defined) evidence base; do not treat this as a validated single-cell signature.",
+          "references": [
+            "ref-30"
+          ]
         },
         {
           "id": "mast-cell-exhausted",
@@ -2799,7 +2942,10 @@
             "mast-cell-survival": -1,
             "mast-cell-apoptosis": 1
           },
-          "notes": "No validated transcriptional signature for a distinct post-degranulation 'exhausted/refractory' mast-cell state currently exists in the literature; a 2026 bioRxiv preprint on IgE-desensitized mast cells describes ~168 upregulated genes enriched for immunoregulatory pathways but does not name a canonical marker panel, and is not yet peer-reviewed. Genes listed here reflect degranulation-history/refractoriness proxies used in functional assays (CD63 as a degranulation marker, SYK as the desensitized/uncoupled signaling node, HDC/IL6 reflecting ongoing but blunted mediator regeneration) rather than an established exhaustion signature. Intentionally left short of 10 genes rather than padded; flag this state as the weakest-supported in the whole set."
+          "notes": "No validated transcriptional signature for a distinct post-degranulation 'exhausted/refractory' mast-cell state currently exists in the literature; a 2026 bioRxiv preprint on IgE-desensitized mast cells describes ~168 upregulated genes enriched for immunoregulatory pathways but does not name a canonical marker panel, and is not yet peer-reviewed. Genes listed here reflect degranulation-history/refractoriness proxies used in functional assays (CD63 as a degranulation marker, SYK as the desensitized/uncoupled signaling node, HDC/IL6 reflecting ongoing but blunted mediator regeneration) rather than an established exhaustion signature. Intentionally left short of 10 genes rather than padded; flag this state as the weakest-supported in the whole set.",
+          "references": [
+            "ref-32"
+          ]
         }
       ]
     },
@@ -2957,7 +3103,10 @@
             "non-myelinating-program": -2,
             "repair-program": -1
           },
-          "notes": "Canonical peripheral myelin gene program: structural myelin proteins (MPZ, PLP1, MBP, PMP22, MAG, PRX, CNP), the master myelination transcription factor EGR2 (KROX20), the pan-Schwann-lineage transcription factor SOX10 and marker S100B, GJB1 (connexin-32, mutated in CMT1X, myelinating-Schwann-specific gap junction protein), and CLDN19, part of the paranodal/myelin tight-junction machinery specific to myelinating Schwann cells."
+          "notes": "Canonical peripheral myelin gene program: structural myelin proteins (MPZ, PLP1, MBP, PMP22, MAG, PRX, CNP), the master myelination transcription factor EGR2 (KROX20), the pan-Schwann-lineage transcription factor SOX10 and marker S100B, GJB1 (connexin-32, mutated in CMT1X, myelinating-Schwann-specific gap junction protein), and CLDN19, part of the paranodal/myelin tight-junction machinery specific to myelinating Schwann cells.",
+          "references": [
+            "ref-19"
+          ]
         },
         {
           "id": "non-myelinating-schwann-cell",
@@ -2981,7 +3130,10 @@
             "myelination": -2,
             "neurotrophic-signaling": 1
           },
-          "notes": "Remak/non-myelinating program per Schwann-cell marker reviews (e.g., Harty & Monk, 'Unwrapping the unappreciated: recent progress in Remak Schwann cell biology'): retained immature-state markers NGFR (p75NTR), L1CAM, NCAM1, GAP43 and EGR1, GFRA3 (GDNF-family co-receptor associated with non-myelinating fibers/nociceptive axon association), and pan-Schwann genes SOX10/S100B/ERBB3/CDH19 shared with the myelinating lineage but retained alongside the immature marker set."
+          "notes": "Remak/non-myelinating program per Schwann-cell marker reviews (e.g., Harty & Monk, 'Unwrapping the unappreciated: recent progress in Remak Schwann cell biology'): retained immature-state markers NGFR (p75NTR), L1CAM, NCAM1, GAP43 and EGR1, GFRA3 (GDNF-family co-receptor associated with non-myelinating fibers/nociceptive axon association), and pan-Schwann genes SOX10/S100B/ERBB3/CDH19 shared with the myelinating lineage but retained alongside the immature marker set.",
+          "references": [
+            "ref-19"
+          ]
         },
         {
           "id": "repair-schwann-cell",
@@ -3008,7 +3160,10 @@
             "schwann-proliferation": 2,
             "neurotrophic-signaling": 2
           },
-          "notes": "Directly reflects the Jessen & Mirsky 'repair Schwann cell' model (J Physiol 2016): c-JUN as the master regulator of the repair phenotype, driving autocrine trophic factor expression (SHH, GDNF, NRG1, IGF1, TGFB1); re-expression of developmental/precursor transcription factors SOX2 and POU3F1 (Oct6); re-upregulation of premyelinating-state markers NGFR (p75NTR), GFAP, L1CAM and NCAM1 following loss of axonal contact; and RUNX2, recently reported to drive the repair-phenotype chromatin switch and SOX2 activation after nerve injury."
+          "notes": "Directly reflects the Jessen & Mirsky 'repair Schwann cell' model (J Physiol 2016): c-JUN as the master regulator of the repair phenotype, driving autocrine trophic factor expression (SHH, GDNF, NRG1, IGF1, TGFB1); re-expression of developmental/precursor transcription factors SOX2 and POU3F1 (Oct6); re-upregulation of premyelinating-state markers NGFR (p75NTR), GFAP, L1CAM and NCAM1 following loss of axonal contact; and RUNX2, recently reported to drive the repair-phenotype chromatin switch and SOX2 activation after nerve injury.",
+          "references": [
+            "ref-18"
+          ]
         }
       ]
     }
@@ -3016,183 +3171,228 @@
   "references": [
     {
       "citation": "Halpern KB et al., Nature, 2017 (PMID 28166538) - 'Single-cell spatial reconstruction reveals global division of labour in the mammalian liver'",
-      "note": "Defines zone-1 (periportal) and zone-3 (pericentral) hepatocyte landmark genes (ASS1, CPS1, ASL, ARG1, PCK1, G6PC, HAL, SDS, GLUL, CYP2E1, CYP1A2, OAT, RHBG) used for periportal-hepatocyte and central-lobular-hepatocyte."
+      "note": "Defines zone-1 (periportal) and zone-3 (pericentral) hepatocyte landmark genes (ASS1, CPS1, ASL, ARG1, PCK1, G6PC, HAL, SDS, GLUL, CYP2E1, CYP1A2, OAT, RHBG) used for periportal-hepatocyte and central-lobular-hepatocyte.",
+      "id": "ref-1"
     },
     {
       "citation": "Halpern KB et al., Nat Biotechnol, 2018 (PMID 30222169) - 'Paired-cell sequencing enables spatial gene expression mapping of liver endothelial cells'",
-      "note": "Zonation of LSEC genes; central-vein enrichment of Wnt2/Wnt9b/Rspo3/Kit; periportal LSEC enrichment of Efnb2/Ltbp4/Dll4. Used for central-vein-endothelial-cell and vascular-endothelial-cell."
+      "note": "Zonation of LSEC genes; central-vein enrichment of Wnt2/Wnt9b/Rspo3/Kit; periportal LSEC enrichment of Efnb2/Ltbp4/Dll4. Used for central-vein-endothelial-cell and vascular-endothelial-cell.",
+      "id": "ref-2"
     },
     {
       "citation": "Wang B et al., Nature, 2015 (PMID 25419705) - 'Self-renewing diploid Axin2+ cells fuel homeostatic renewal in mouse liver'",
-      "note": "AXIN2/LGR5 mark pericentral, Wnt-responsive hepatocytes; used for central-lobular-hepatocyte."
+      "note": "AXIN2/LGR5 mark pericentral, Wnt-responsive hepatocytes; used for central-lobular-hepatocyte.",
+      "id": "ref-3"
     },
     {
       "citation": "Planas-Paz L et al., Nat Cell Biol, 2016 (PMID 27428309) - 'The RSPO-LGR4/5-ZNRF3/RNF43 module controls liver zonation and size'",
-      "note": "RSPO3/TBX3/RNF43 pericentral zonation axis; used for central-lobular-hepatocyte and central-vein-endothelial-cell."
+      "note": "RSPO3/TBX3/RNF43 pericentral zonation axis; used for central-lobular-hepatocyte and central-vein-endothelial-cell.",
+      "id": "ref-4"
     },
     {
       "citation": "Dobie R et al., Cell Reports, 2019 (PMID 31644916) - 'Single-Cell Transcriptomics Uncovers Zonation of Function in the Mesenchyme during Liver Fibrosis'",
-      "note": "Zonated HSC subpopulations and scar-associated ECM/matricellular genes (TNC, POSTN, THBS2); used for fibrotic-hsc."
+      "note": "Zonated HSC subpopulations and scar-associated ECM/matricellular genes (TNC, POSTN, THBS2); used for fibrotic-hsc.",
+      "id": "ref-5"
     },
     {
       "citation": "Ramachandran P et al., Nature, 2019 (PMID 31597160) - 'Resolving the fibrotic niche of human liver cirrhosis at single-cell level'",
-      "note": "Scar-associated myofibroblast markers (COL1A1/COL1A2/COL3A1/TIMP1/PDGFRA) and ACKR1+/PLVAP+ scar-restricted endothelial cells; used for fibrotic-hsc and capillarized-sinusoidal-endothelial-cell."
+      "note": "Scar-associated myofibroblast markers (COL1A1/COL1A2/COL3A1/TIMP1/PDGFRA) and ACKR1+/PLVAP+ scar-restricted endothelial cells; used for fibrotic-hsc and capillarized-sinusoidal-endothelial-cell.",
+      "id": "ref-6"
     },
     {
       "citation": "Kisseleva T et al., PNAS, 2012 (PMID 22566629) - 'Myofibroblasts revert to an inactive phenotype during regression of liver fibrosis'",
-      "note": "Basis for reverting-hsc partial re-expression of quiescence genes (RGS5, HGF, NGFR) with retained activation memory."
+      "note": "Basis for reverting-hsc partial re-expression of quiescence genes (RGS5, HGF, NGFR) with retained activation memory.",
+      "id": "ref-7"
     },
     {
       "citation": "Troeger JS et al., Gastroenterology, 2012 (PMID 22537434) - 'Deactivation of hepatic stellate cells during liver fibrosis resolution in mice'",
-      "note": "Further support for HSC inactivation/reverting phenotype and PPARG re-expression; used for reverting-hsc."
+      "note": "Further support for HSC inactivation/reverting phenotype and PPARG re-expression; used for reverting-hsc.",
+      "id": "ref-8"
     },
     {
       "citation": "Tsuchida T & Friedman SL, Nat Rev Gastroenterol Hepatol, 2017 (PMID 28053396) - 'Mechanisms of hepatic stellate cell activation'",
-      "note": "Review basis for quiescent-hsc and activated-hsc marker panels."
+      "note": "Review basis for quiescent-hsc and activated-hsc marker panels.",
+      "id": "ref-9"
     },
     {
       "citation": "Mederacke I et al., Nat Commun, 2013 (PMID 23978384) - 'Fate tracing reveals hepatic stellate cells as dominant contributors to liver fibrosis'",
-      "note": "Confirms HSC-to-myofibroblast lineage and activation markers used for activated-hsc."
+      "note": "Confirms HSC-to-myofibroblast lineage and activation markers used for activated-hsc.",
+      "id": "ref-10"
     },
     {
       "citation": "MacParland SA et al., Nat Commun, 2018 (PMID 30348985) - 'Single cell RNA sequencing of human liver reveals distinct intrahepatic macrophage populations'",
-      "note": "Human liver atlas cluster definitions supporting LSEC and cholangiocyte identity genes."
+      "note": "Human liver atlas cluster definitions supporting LSEC and cholangiocyte identity genes.",
+      "id": "ref-11"
     },
     {
       "citation": "Aizarani N et al., Nature, 2019 (PMID 31292543) - 'A human liver cell atlas reveals heterogeneity and epithelial progenitors'",
-      "note": "Cholangiocyte and LSEC subtype marker definitions (EPCAM, KRT19, TACSTD2, STAB2 etc.)."
+      "note": "Cholangiocyte and LSEC subtype marker definitions (EPCAM, KRT19, TACSTD2, STAB2 etc.).",
+      "id": "ref-12"
     },
     {
       "citation": "Guicciardi ME et al., Hepatology, 2020 - 'The Spectrum of Reactive Cholangiocytes in Primary Sclerosing Cholangitis'",
-      "note": "NCAM1 as a reactive/ductular-reaction cholangiocyte marker in PSC; used for reactive-cholangiocyte."
+      "note": "NCAM1 as a reactive/ductular-reaction cholangiocyte marker in PSC; used for reactive-cholangiocyte.",
+      "id": "ref-13"
     },
     {
       "citation": "Farshidfar F et al., Cell Reports, 2017 (PMID 28214436) - 'Integrative Genomic Analysis of Cholangiocarcinoma Identifies Distinct IDH-Mutant Molecular Profiles'",
-      "note": "Genomic driver landscape (IDH1, FGFR2, KRAS, TP53, ARID1A, BAP1, SMAD4) used for cholangiocarcinoma-like-cholangiocyte."
+      "note": "Genomic driver landscape (IDH1, FGFR2, KRAS, TP53, ARID1A, BAP1, SMAD4) used for cholangiocarcinoma-like-cholangiocyte.",
+      "id": "ref-14"
     },
     {
       "citation": "Nature Communications, 2022 (PMID 35361776) - 'Single-cell transcriptomic analysis suggests two molecularly distinct subtypes of intrahepatic cholangiocarcinoma'",
-      "note": "S100P and SPP1 as iCCA subtype markers; used for cholangiocarcinoma-like-cholangiocyte."
+      "note": "S100P and SPP1 as iCCA subtype markers; used for cholangiocarcinoma-like-cholangiocyte.",
+      "id": "ref-15"
     },
     {
       "citation": "Romeo S et al., Nat Genet, 2008 (PMID 18820647) - 'Genetic variation in PNPLA3 confers susceptibility to nonalcoholic fatty liver disease'",
-      "note": "PNPLA3 as steatosis marker/risk gene; used for steatotic-hepatocyte."
+      "note": "PNPLA3 as steatosis marker/risk gene; used for steatotic-hepatocyte.",
+      "id": "ref-16"
     },
     {
       "citation": "Kozlitina J et al., Nat Genet, 2014 (PMID 24531328) - 'Exome-wide association study identifies a TM6SF2 variant that confers susceptibility to NAFLD'",
-      "note": "TM6SF2 as steatosis risk/marker gene; used for steatotic-hepatocyte."
+      "note": "TM6SF2 as steatosis risk/marker gene; used for steatotic-hepatocyte.",
+      "id": "ref-17"
     },
     {
       "citation": "Jessen KR, Mirsky R. The repair Schwann cell and its function in regenerating nerves. J Physiol. 2016;594(13):3521-31. PMID: 27189767",
-      "note": "Defines the c-Jun-driven repair Schwann cell program (JUN, GFAP, NGFR, SOX2, SHH, GDNF, NRG1, IGF1, TGFB1) used for the repair-schwann-cell state."
+      "note": "Defines the c-Jun-driven repair Schwann cell program (JUN, GFAP, NGFR, SOX2, SHH, GDNF, NRG1, IGF1, TGFB1) used for the repair-schwann-cell state.",
+      "id": "ref-18"
     },
     {
       "citation": "Harty BL, Monk KR. Unwrapping the unappreciated: recent progress in Remak Schwann cell biology. Curr Opin Neurobiol. 2017. PMID: 29096241",
-      "note": "Supports the non-myelinating (Remak) Schwann cell marker set (NGFR, L1CAM, NCAM1, GFRA3, GAP43)."
+      "note": "Supports the non-myelinating (Remak) Schwann cell marker set (NGFR, L1CAM, NCAM1, GFRA3, GAP43).",
+      "id": "ref-19"
     },
     {
       "citation": "Runx2-driven repair Schwann cell phenotype switch via chromatin remodeling and Sox2 activation after nerve injury. PMC11929166",
-      "note": "Supports inclusion of RUNX2 in the repair-schwann-cell program."
+      "note": "Supports inclusion of RUNX2 in the repair-schwann-cell program.",
+      "id": "ref-20"
     },
     {
       "citation": "Fuchs A, Pallett LJ, et al. Human intrahepatic CD69+CD8+ T cells have a tissue resident memory T cell phenotype with reduced cytolytic capacity. Sci Rep. 2017;7:40116. PMC5522381",
-      "note": "Establishes CD69/CXCR6/ITGAE/CXCR3/reduced S1PR1-KLF2 as the human liver Trm phenotype."
+      "note": "Establishes CD69/CXCR6/ITGAE/CXCR3/reduced S1PR1-KLF2 as the human liver Trm phenotype.",
+      "id": "ref-21"
     },
     {
       "citation": "Kumar BV, Ma W, et al. Human Tissue-Resident Memory T Cells Are Defined by Core Transcriptional and Functional Signatures in Lymphoid and Mucosal Sites. Cell Rep. 2017;20(12):2921-2934.",
-      "note": "Defines the core human Trm signature (ITGAE, ITGA1, CXCR6, RGS1, ZNF683) applied to the liver-resident-memory-t-cell state."
+      "note": "Defines the core human Trm signature (ITGAE, ITGA1, CXCR6, RGS1, ZNF683) applied to the liver-resident-memory-t-cell state.",
+      "id": "ref-22"
     },
     {
       "citation": "Pallett LJ, Davies J, et al. Longevity and replenishment of human liver-resident memory T cells and mononuclear phagocytes. J Exp Med / PMC7478732",
-      "note": "Additional support for liver Trm identity markers and residency biology."
+      "note": "Additional support for liver Trm identity markers and residency biology.",
+      "id": "ref-23"
     },
     {
       "citation": "Prioritizing exhausted T cell marker genes highlights immune subtypes in pan-cancer. iScience. 2023. PMC/ScienceDirect S2589-0042(23)00561-8",
-      "note": "Supports the exhausted-t-cell panel (PDCD1, LAG3, HAVCR2, TIGIT, TOX, CXCL13, ENTPD1, LAYN, CD38)."
+      "note": "Supports the exhausted-t-cell panel (PDCD1, LAG3, HAVCR2, TIGIT, TOX, CXCL13, ENTPD1, LAYN, CD38).",
+      "id": "ref-24"
     },
     {
       "citation": "Dual role of TIGIT in regulatory and effector T cells in chronic liver disease. ScienceDirect 2025 (S2589555925000825)",
-      "note": "Supports TIGIT and ENTPD1/CD39 as enriched, functionally relevant markers on intrahepatic Tregs."
+      "note": "Supports TIGIT and ENTPD1/CD39 as enriched, functionally relevant markers on intrahepatic Tregs.",
+      "id": "ref-25"
     },
     {
       "citation": "IL-2 availability regulates the tissue specific phenotype of murine intra-hepatic Tregs. Front Immunol. 2022. PMC9661520",
-      "note": "Supports ENTPD1 (CD39) upregulation on intrahepatic Tregs."
+      "note": "Supports ENTPD1 (CD39) upregulation on intrahepatic Tregs.",
+      "id": "ref-26"
     },
     {
       "citation": "Nutt SL, Hodgkin PD, Tarlinton DM, Corcoran LM. The generation of antibody-secreting plasma cells. Nat Rev Immunol. 2015;15(3):160-71.",
-      "note": "Underlies the plasma-cell program (PRDM1, XBP1, IRF4, SDC1/CD138, secretory pathway genes)."
+      "note": "Underlies the plasma-cell program (PRDM1, XBP1, IRF4, SDC1/CD138, secretory pathway genes).",
+      "id": "ref-27"
     },
     {
       "citation": "CD27 is not an ideal marker for human memory B cells and can be modulated by IL-21 upon stimulation by anti-CD40. Sci Rep. 2024. PMC11467254",
-      "note": "Basis for noting the limitations of CD27 as a universal memory-B-cell marker, reflected in the memory-b-cell notes."
+      "note": "Basis for noting the limitations of CD27 as a universal memory-B-cell marker, reflected in the memory-b-cell notes.",
+      "id": "ref-28"
     },
     {
       "citation": "TCL1A in naive B cells as a therapeutic target for type 1 diabetes. eBioMedicine. 2025. PMID: 39946833",
-      "note": "Supports TCL1A as a naive/transitional B-cell-specific marker used in the naive-b-cell panel."
+      "note": "Supports TCL1A as a naive/transitional B-cell-specific marker used in the naive-b-cell panel.",
+      "id": "ref-29"
     },
     {
       "citation": "Fang Y et al. Effect of Mast Cell Chymase on Activation, Proliferation and Transdifferentiation of Hepatic Stellate Cells. PMID: 26902046",
-      "note": "Mechanistic basis for the fibrogenic-mast-cell state (CMA1/chymase driving TGFB1-mediated hepatic stellate cell activation)."
+      "note": "Mechanistic basis for the fibrogenic-mast-cell state (CMA1/chymase driving TGFB1-mediated hepatic stellate cell activation).",
+      "id": "ref-30"
     },
     {
       "citation": "Stromal mast cells and nerve fibers in various chronic liver diseases: relevance to hepatic fibrosis. PMID: 10406261",
-      "note": "Supports tryptase/chymase mast-cell density correlating with hepatic fibrosis stage."
+      "note": "Supports tryptase/chymase mast-cell density correlating with hepatic fibrosis stage.",
+      "id": "ref-31"
     },
     {
       "citation": "Mast Cell Desensitization in Allergen Immunotherapy. Front Allergy. 2022. PMC9278139; and IgE-dependent desensitization transcriptional program, bioRxiv 2026 preprint (2026.02.28.708745)",
-      "note": "Basis for flagging the mast-cell-exhausted state as having only thin, largely non-canonical/preprint-level evidence."
+      "note": "Basis for flagging the mast-cell-exhausted state as having only thin, largely non-canonical/preprint-level evidence.",
+      "id": "ref-32"
     },
     {
       "citation": "Ramachandran P, Dobie R, Wilson-Kanamori JR, et al. Resolving the fibrotic niche of human liver cirrhosis at single-cell level. Nature, 2019 (PMID 31597160)",
-      "note": "Defines the TREM2+CD9+ scar-associated macrophage (SAM/LAM) population and its GPNMB/SPP1/FABP5/CD63 signature; used for lipid-associated-macrophage panel."
+      "note": "Defines the TREM2+CD9+ scar-associated macrophage (SAM/LAM) population and its GPNMB/SPP1/FABP5/CD63 signature; used for lipid-associated-macrophage panel.",
+      "id": "ref-33"
     },
     {
       "citation": "Ramachandran P, Pellicoro A, Vernon MA, et al. Differential Ly-6C expression identifies the recruited macrophage phenotype, which orchestrates the regression of murine liver fibrosis. PNAS, 2012 (PMID 23100531)",
-      "note": "Defines Ly6C(lo) restorative macrophages and their MMP9/MMP12/MMP13/IGF1/GPNMB signature; used for restorative-macrophage panel."
+      "note": "Defines Ly6C(lo) restorative macrophages and their MMP9/MMP12/MMP13/IGF1/GPNMB signature; used for restorative-macrophage panel.",
+      "id": "ref-34"
     },
     {
       "citation": "MacParland SA, Liu JC, Ma XZ, et al. Single cell RNA sequencing of human liver reveals distinct intrahepatic macrophage populations. Nat Commun, 2018 (PMID 30348985)",
-      "note": "Human liver scRNA-seq atlas distinguishing Kupffer cells (MARCO, CD5L, VSIG4, TIMD4) from monocyte-derived macrophages; used for kupffer-cell and inflammatory-monocyte-macrophage panels."
+      "note": "Human liver scRNA-seq atlas distinguishing Kupffer cells (MARCO, CD5L, VSIG4, TIMD4) from monocyte-derived macrophages; used for kupffer-cell and inflammatory-monocyte-macrophage panels.",
+      "id": "ref-35"
     },
     {
       "citation": "Guilliams M, Bonnardel J, Haest B, et al. Spatial proteogenomics reveals distinct and evolutionarily conserved hepatic macrophage niches. Cell, 2022",
-      "note": "Cross-species Kupffer-cell identity/niche program including FOLR2, CLEC4F, SPIC, ID3; used for kupffer-cell panel."
+      "note": "Cross-species Kupffer-cell identity/niche program including FOLR2, CLEC4F, SPIC, ID3; used for kupffer-cell panel.",
+      "id": "ref-36"
     },
     {
       "citation": "Virus-associated inflammation imprints an inflammatory profile on monocyte-derived macrophages in the human liver. J Clin Invest, 2024/2025",
-      "note": "Defines CD14/S100A8/S100A9/VCAN/FCN1 signature distinguishing infiltrating inflammatory macrophages from resident Kupffer cells; used for inflammatory-monocyte-macrophage panel."
+      "note": "Defines CD14/S100A8/S100A9/VCAN/FCN1 signature distinguishing infiltrating inflammatory macrophages from resident Kupffer cells; used for inflammatory-monocyte-macrophage panel.",
+      "id": "ref-37"
     },
     {
-      "citation": "Bj\u00f6rkstr\u00f6m NK, Ljunggren HG, Sandberg JK. CD56 negative NK cells: origin, function, and role in chronic viral disease. Trends Immunol / related J Exp Med studies, 2010",
-      "note": "Establishes CD56dim/CD16+ (FCGR3A+) conventional NK phenotype and CX3CR1 expression as circulating NK hallmark; used for circulating-nk-cell panel."
+      "citation": "Björkström NK, Ljunggren HG, Sandberg JK. CD56 negative NK cells: origin, function, and role in chronic viral disease. Trends Immunol / related J Exp Med studies, 2010",
+      "note": "Establishes CD56dim/CD16+ (FCGR3A+) conventional NK phenotype and CX3CR1 expression as circulating NK hallmark; used for circulating-nk-cell panel.",
+      "id": "ref-38"
     },
     {
       "citation": "Marquardt N, Beziat V, Nystrom S, et al. Human liver-resident CD56bright/CD16neg NK cells are retained via CCR5 and CXCR6. J Hepatol / Hepatology, 2015 (PMC4718768)",
-      "note": "Defines liver-resident NK retention markers and contrasts with circulating CD56dim NK lacking CXCR6/CD69; used for both NK states."
+      "note": "Defines liver-resident NK retention markers and contrasts with circulating CD56dim NK lacking CXCR6/CD69; used for both NK states.",
+      "id": "ref-39"
     },
     {
       "citation": "Stegmann KA, Robertson F, Hansi N, et al. CXCR6 marks a novel subset of T-bet(lo)Eomes(hi) natural killer cells residing in human liver. Sci Rep, 2016 (PMC4876507)",
-      "note": "Defines CXCR6+ liver-resident NK transcription factor and residency profile; used for liver-resident-nk-cell panel."
+      "note": "Defines CXCR6+ liver-resident NK transcription factor and residency profile; used for liver-resident-nk-cell panel.",
+      "id": "ref-40"
     },
     {
       "citation": "Hudspeth K, Donadon M, Cimino M, et al. Human liver-resident CD56bright NK cells express Hobit (ZNF683). Sci Rep, 2017",
-      "note": "Confirms ZNF683/Hobit, CD69, CD49a (ITGA1) as liver-resident NK tissue-residency program; used for liver-resident-nk-cell panel."
+      "note": "Confirms ZNF683/Hobit, CD69, CD49a (ITGA1) as liver-resident NK tissue-residency program; used for liver-resident-nk-cell panel.",
+      "id": "ref-41"
     },
     {
       "citation": "Single-cell RNA sequencing identifies a population of human liver-type ILC1s. Cell Reports, 2022",
-      "note": "scRNA-seq defined liver-type ILC1 markers CXCR6, ITGA1, IL7R, AHR, LTB, CD160, KLRB1; used for liver-resident-nk-cell panel."
+      "note": "scRNA-seq defined liver-type ILC1 markers CXCR6, ITGA1, IL7R, AHR, LTB, CD160, KLRB1; used for liver-resident-nk-cell panel.",
+      "id": "ref-42"
     },
     {
       "citation": "Zhang C, Wang XM, Li SR, et al. NKG2A is a NK cell exhaustion checkpoint for HCV persistence. Nat Commun, 2019 (PMID 30944315)",
-      "note": "Establishes KLRC1 (NKG2A) as an NK exhaustion checkpoint in chronic HCV; used for exhausted-nk-cell panel."
+      "note": "Establishes KLRC1 (NKG2A) as an NK exhaustion checkpoint in chronic HCV; used for exhausted-nk-cell panel.",
+      "id": "ref-43"
     },
     {
       "citation": "Sun H, Huang Q, Huang M, et al. Human CD96 correlates to natural killer cell exhaustion and predicts the prognosis of human hepatocellular carcinoma. Hepatology, 2019",
-      "note": "Defines CD96 as an NK exhaustion marker with prognostic value in HCC; used for exhausted-nk-cell panel."
+      "note": "Defines CD96 as an NK exhaustion marker with prognostic value in HCC; used for exhausted-nk-cell panel.",
+      "id": "ref-44"
     },
     {
       "citation": "TIGIT+TIM-3+ NK cells are correlated with NK cell exhaustion and disease progression in HBV-related hepatocellular carcinoma. Oncoimmunology, 2021",
-      "note": "Co-expression of TIGIT (TIGIT) and TIM-3 (HAVCR2) defines exhausted NK phenotype in HBV-HCC; used for exhausted-nk-cell panel."
+      "note": "Co-expression of TIGIT (TIGIT) and TIM-3 (HAVCR2) defines exhausted NK phenotype in HBV-HCC; used for exhausted-nk-cell panel.",
+      "id": "ref-45"
     }
   ]
 }
