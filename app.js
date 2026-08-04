@@ -1091,6 +1091,66 @@ const seedReferences = [
     "citation": "Poitout V, Robertson RP. Glucolipotoxicity: fuel excess and beta-cell dysfunction. Endocr Rev. 2008;29(3):351-366.",
     "note": "Reviews the combined glucose/lipid toxicity signature (TXNIP, CD36, SCD, ceramide pathway) used in the glucolipotoxicity beta-cell state.",
     "id": "ref-14"
+  },
+  {
+    "id": "ref-15",
+    "citation": "Maestas MM, Ishahak M, Augsornworawat P, Veronese-Paniagua DA, et al. Identification of unique cell type responses in pancreatic islets to stress. Nat Commun. 2024;15:5567. https://www.nature.com/articles/s41467-024-49724-w",
+    "note": "Multiplexed single-cell profiling of ER and inflammatory/cytokine stress responses across human islet cell types; beta, alpha, and ductal cells show the largest transcriptional stress response, supporting ER-stressed and inflammatory/cytokine-exposed state definitions across multiple cell types."
+  },
+  {
+    "id": "ref-16",
+    "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_UNFOLDED_PROTEIN_RESPONSE: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_UNFOLDED_PROTEIN_RESPONSE.html",
+    "note": "Curated MSigDB Hallmark gene set for genes induced during the unfolded protein response; used as a cross-check for unfolded-protein-response/ER-stress program gene selection."
+  },
+  {
+    "id": "ref-17",
+    "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_INTERFERON_ALPHA_RESPONSE: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_INTERFERON_ALPHA_RESPONSE.html",
+    "note": "Curated MSigDB Hallmark gene set for genes induced by type I (alpha) interferon signaling; used as a cross-check for interferon-stimulated-gene program selection in inflammatory/interferon-activated states."
+  },
+  {
+    "id": "ref-18",
+    "citation": "Webster KL, Mirmira RG. Beta cell dedifferentiation in type 1 diabetes: sacrificing function for survival? Front Endocrinol (Lausanne). 2024;15:1427723. https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2024.1427723/full",
+    "note": "Review proposing beta-cell dedifferentiation as a stress-adaptive, potentially reversible response in type 1 diabetes rather than simple cell death, supporting the dedifferentiated beta-cell state's framing as a distinct, non-terminal phenotype."
+  },
+  {
+    "id": "ref-19",
+    "citation": "Salinno C, Buttner M, Cota P, Tritschler S, Tarquis-Medina M, Bastidas-Ponce A, Scheibner K, Burtscher I, Bottcher A, Theis FJ, Bakhti M, Lickert H. CD81 marks immature and dedifferentiated pancreatic beta-cells. Mol Metab. 2021;49:101188. PMID: 33582383",
+    "note": "Identifies CD81 as a surface marker enriched in immature and dedifferentiated beta-cell subpopulations in mouse and human islets, supporting marker selection for the dedifferentiated beta-cell state."
+  },
+  {
+    "id": "ref-20",
+    "citation": "van Gurp L, Fodoulian L, Oropeza D, Furuyama K, Bru-Tari E, Vu AN, Kaddis JS, Rodriguez I, Thorel F, Herrera PL. Generation of human islet cell type-specific identity genesets. Nat Commun. 2022;13:2020. https://www.nature.com/articles/s41467-022-29588-8",
+    "note": "Defines curated identity gene sets for each human islet endocrine and exocrine cell type from integrated single-cell atlases; cross-referenced for cell-type identity program definitions across pancreatic cell types."
+  },
+  {
+    "id": "ref-21",
+    "citation": "Li J, Klughammer J, Farlik M, Penz T, Spittler A, Barbieux C, Berishvili E, Bock C, Kubicek S. Single-cell transcriptomes reveal characteristic features of human pancreatic islet cell types. EMBO Rep. 2016;17(2):178-187. PMID: 26691212",
+    "note": "Single-cell RNA-seq resource defining transcriptomes and novel marker transcription factors for human alpha, beta, delta, PP, acinar, and ductal cells."
+  },
+  {
+    "id": "ref-22",
+    "citation": "Muraro MJ, Dharmadhikari G, Grun D, Groen N, Dielen T, Jansen E, van Gurp L, Engelse MA, Carlotti F, de Koning EJP, van Oudenaarden A. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst. 2016;3(4):385-394. https://www.sciencedirect.com/science/article/pii/S2405471216302927",
+    "note": "CEL-seq-based single-cell atlas of the human pancreas identifying cell-type-specific markers (including CD24/TM4SF4 sorting markers for alpha and beta cells) across endocrine and exocrine populations."
+  },
+  {
+    "id": "ref-23",
+    "citation": "Segerstolpe A, Palasantza A, Eliasson P, Andersson EM, Andreasson AC, Sun X, Picelli S, Sabirsh A, Clausen M, Bjursell MK, Smith DM, Kasper M, Ammala C, Sandberg R. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 2016;24(4):593-607. PMID: 27667667. https://www.sciencedirect.com/science/article/pii/S1550413116304363",
+    "note": "Defines human islet cell-type transcriptional programs and type 2 diabetes-associated expression changes at single-cell resolution; the source of the 'Segerstolpe et al. 2016 Cell Metab' textbook marker panel referenced elsewhere in this model."
+  },
+  {
+    "id": "ref-24",
+    "citation": "Schuit F, Van Lommel L, Granvik M, Goyvaerts L, de Faudeur G, Schraenen A, Lemaire K. Beta-Cell-Specific Gene Repression: A Mechanism to Protect Against Inappropriate or Maladjusted Insulin Secretion? Diabetes. 2012;61(5):969-975. PMID: 22517647",
+    "note": "Establishes the concept of beta-cell 'disallowed genes' (deeply repressed housekeeping genes such as LDHA and MCT1) whose derepression may reflect or drive inappropriate/maladjusted insulin release, supporting the dedifferentiated/stressed beta-cell state framing."
+  },
+  {
+    "id": "ref-25",
+    "citation": "Lemaire K, Granvik M, Schraenen A, Goyvaerts L, Van Lommel L, Gomez-Ruiz A, In't Veld P, Gilon P, Schuit F. How stable is repression of disallowed genes in pancreatic islets in response to metabolic stress? PLoS One. 2017;12(8):e0181651. PMID: 28792951",
+    "note": "Shows disallowed-gene repression remains largely stable in mouse islets under metabolic stressors (aging, pregnancy, high-fat diet), providing boundary conditions for when disallowed-gene derepression should be interpreted as signaling a genuine dedifferentiated/stressed state change."
+  },
+  {
+    "id": "ref-26",
+    "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_G2M_CHECKPOINT: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_G2M_CHECKPOINT.html",
+    "note": "Curated MSigDB Hallmark gene set for genes involved in the G2/M cell-cycle checkpoint; used as a cross-check for cell-cycle/proliferation program gene selection in proliferating states."
   }
 ];
 
