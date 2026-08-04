@@ -191,6 +191,13 @@ menu {
   color: var(--muted, #4c5a61);
 }
 
+.concept-note {
+  max-width: 700px;
+  margin: 12px 0 0;
+  line-height: 1.55;
+  color: var(--muted, #647178);
+}
+
 .concept-diagram {
   width: 100%;
 }
