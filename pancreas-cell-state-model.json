@@ -513,6 +513,7 @@
             "HSP90B1",
             "MANF"
           ],
+          "notes": "",
           "activities": {
             "identity": -2,
             "insulin": -2,
@@ -546,7 +547,9 @@
             "lipotoxic-stress": 0
           },
           "references": [
-            "ref-16"
+            "ref-16",
+            "ref-46",
+            "ref-47"
           ]
         },
         {
