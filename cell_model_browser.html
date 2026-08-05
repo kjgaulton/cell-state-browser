@@ -279,6 +279,10 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
+.state-workspace-actions {
+  margin: 14px 0 18px;
+}
+
 .section-actions {
   flex-wrap: wrap;
   justify-content: end;
@@ -1198,19 +1202,19 @@ menu span {
       </section>
 
       <section id="stateView" class="state-workspace">
+        <div class="section-actions state-workspace-actions">
+          <div class="view-toggle" role="group" aria-label="View mode">
+            <button id="viewModeList" type="button" aria-pressed="true">List</button>
+            <button id="viewModeNetwork" type="button" aria-pressed="false">Network</button>
+          </div>
+          <button id="editSelectedState" class="ghost">Edit state</button>
+          <button id="addProgram">Add program</button>
+        </div>
         <div class="section-head">
           <div>
             <h2 id="selectedStateName">State</h2>
             <p id="selectedStatePhenotype"></p>
             <div id="selectedStateMarkers" class="marker-genes"></div>
-          </div>
-          <div class="section-actions">
-            <div class="view-toggle" role="group" aria-label="View mode">
-              <button id="viewModeList" type="button" aria-pressed="true">List</button>
-              <button id="viewModeNetwork" type="button" aria-pressed="false">Network</button>
-            </div>
-            <button id="editSelectedState" class="ghost">Edit state</button>
-            <button id="addProgram">Add program</button>
           </div>
         </div>
         <div class="programs-heading">

@@ -272,6 +272,10 @@ input[type="checkbox"] {
   margin-bottom: 0;
 }
 
+.state-workspace-actions {
+  margin: 14px 0 18px;
+}
+
 .section-actions {
   flex-wrap: wrap;
   justify-content: end;
