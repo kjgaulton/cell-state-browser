@@ -475,19 +475,39 @@
             "VAMP2",
             "CALR"
           ],
+          "notes": "Reflects physiological (adaptive, non-terminal) UPR activation and increased prohormone-processing/secretory-granule capacity that accompanies compensatory insulin demand in pregnancy/obesity, distinct from the maladaptive terminal UPR of the er-stressed state (Lipson et al. 2006; Scheuner & Kaufman 2008 Endocr Rev).",
           "activities": {
             "identity": 2,
             "insulin": 3,
             "secretion": 2,
             "granule": 2,
+            "metabolism": 2,
+            "mito-qc": 0,
             "er-folding": 2,
             "upr": 1,
-            "metabolism": 2,
-            "autophagy": 1,
             "oxidative-stress": 1,
-            "apoptosis": -1
+            "autophagy": 1,
+            "proteasome": 0,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": -1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
           },
-          "notes": "Reflects physiological (adaptive, non-terminal) UPR activation and increased prohormone-processing/secretory-granule capacity that accompanies compensatory insulin demand in pregnancy/obesity, distinct from the maladaptive terminal UPR of the er-stressed state (Lipson et al. 2006; Scheuner & Kaufman 2008 Endocr Rev).",
           "references": [
             "ref-8"
           ]
