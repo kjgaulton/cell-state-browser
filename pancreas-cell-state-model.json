@@ -1479,18 +1479,28 @@
             "HLA-B",
             "TAP1",
             "CXCL10",
-            "IRF1"
+            "IRF1",
+            "HLA-C"
           ],
+          "notes": "Same class-wide interferon/MHC-I response documented across islet endocrine cell types (including delta cells) during insulitis (Russell et al. 2019 Diabetes).",
           "activities": {
             "delta-identity": -1,
+            "somatostatin": 0,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 1,
+            "delta-oxidative-stress": 1,
             "delta-interferon": 3,
             "delta-antigen": 3,
-            "delta-upr": 1,
-            "delta-oxidative-stress": 1
+            "delta-apoptosis": 0,
+            "delta-survival": 0
           },
-          "notes": "Same class-wide interferon/MHC-I response documented across islet endocrine cell types (including delta cells) during insulitis (Russell et al. 2019 Diabetes).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
           ]
         },
         {
