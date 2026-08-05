@@ -1421,21 +1421,33 @@
             "PAM",
             "CHGA",
             "PDX1",
-            "FFAR4"
+            "FFAR4",
+            "ABCC8",
+            "CRHR2",
+            "PCSK2",
+            "TCF4"
           ],
+          "notes": "Verified via WebSearch. HHEX, RBP4, LEPR (leptin receptor), and GHSR (ghrelin receptor, mediates paracrine ghrelin regulation of somatostatin secretion) are established delta-cell-enriched markers from purified islet-subpopulation transcriptomics (Adriaenssens et al. 2016 Diabetologia; DiGruccio et al. 2016 Mol Metab).",
           "activities": {
             "delta-identity": 3,
             "somatostatin": 3,
             "delta-secretion": 3,
             "delta-granule": 2,
             "delta-metabolism": 2,
+            "delta-er-folding": 0,
             "delta-upr": -1,
+            "delta-oxidative-stress": 0,
             "delta-interferon": -1,
-            "delta-apoptosis": -1
+            "delta-antigen": 0,
+            "delta-apoptosis": -1,
+            "delta-survival": 0
           },
-          "notes": "Verified via WebSearch. HHEX, RBP4, LEPR (leptin receptor), and GHSR (ghrelin receptor, mediates paracrine ghrelin regulation of somatostatin secretion) are established delta-cell-enriched markers from purified islet-subpopulation transcriptomics (Adriaenssens et al. 2016 Diabetologia; DiGruccio et al. 2016 Mol Metab).",
           "references": [
-            "ref-10"
+            "ref-10",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
           ]
         },
         {
