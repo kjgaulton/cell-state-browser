@@ -708,23 +708,50 @@
             "PLK1",
             "CENPA",
             "BIRC5",
-            "PCNA"
+            "PCNA",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "UBE2C"
           ],
+          "notes": "Verified via WebSearch. Compensatory replication signature retaining identity genes; FOXM1/CCND2/PLK1/CENPA axis and BIRC5 are established drivers of adaptive human beta-cell proliferation in obesity/pregnancy (Zhong lab FoxM1 studies; Aguayo-Mazzucato/Bonner-Weir compensatory expansion literature).",
           "activities": {
             "identity": 2,
             "insulin": 2,
             "secretion": 1,
+            "granule": 0,
             "metabolism": 1,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 0,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 0,
             "cell-cycle": 3,
             "dna-damage": 1,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
             "senescence": -2,
             "apoptosis": -1,
-            "survival": 2
+            "survival": 2,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
           },
-          "notes": "Verified via WebSearch. Compensatory replication signature retaining identity genes; FOXM1/CCND2/PLK1/CENPA axis and BIRC5 are established drivers of adaptive human beta-cell proliferation in obesity/pregnancy (Zhong lab FoxM1 studies; Aguayo-Mazzucato/Bonner-Weir compensatory expansion literature).",
           "references": [
             "ref-6",
-            "ref-8"
+            "ref-8",
+            "ref-57"
           ]
         },
         {
