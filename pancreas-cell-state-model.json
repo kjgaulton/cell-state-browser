@@ -1151,18 +1151,29 @@
             "HLA-B",
             "TAP1",
             "CXCL10",
-            "IRF1"
+            "IRF1",
+            "HLA-C"
           ],
+          "notes": "Interferon-stimulated gene/MHC-I signature also documented in alpha cells during insulitis, with alpha cells showing even stronger basal and induced immune/HLA responses than beta cells in T1D single-cell studies (Russell et al. 2019 Diabetes).",
           "activities": {
             "alpha-identity": -1,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 1,
+            "alpha-oxidative-stress": 1,
             "alpha-interferon": 3,
             "alpha-antigen": 3,
-            "alpha-upr": 1,
-            "alpha-oxidative-stress": 1
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
           },
-          "notes": "Interferon-stimulated gene/MHC-I signature also documented in alpha cells during insulitis, with alpha cells showing even stronger basal and induced immune/HLA responses than beta cells in T1D single-cell studies (Russell et al. 2019 Diabetes).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
           ]
         }
       ]
