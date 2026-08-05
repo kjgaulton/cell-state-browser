@@ -1212,6 +1212,42 @@
             "ref-46",
             "ref-47"
           ]
+        },
+        {
+          "id": "proliferating-alpha-cell",
+          "name": "Proliferating alpha cell",
+          "phenotype": "Alpha cell that is proliferating",
+          "genes": [
+            "BIRC5",
+            "CCNB1",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "MKI67",
+            "PCNA",
+            "TOP2A",
+            "UBE2C"
+          ],
+          "notes": "",
+          "activities": {
+            "alpha-identity": 0,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 0,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-57"
+          ]
         }
       ]
     },
