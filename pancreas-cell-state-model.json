@@ -409,25 +409,51 @@
             "GCK",
             "CHGA",
             "ABCC8",
-            "KCNJ11"
+            "KCNJ11",
+            "G6PC2",
+            "NEUROD1",
+            "PCSK2"
           ],
+          "notes": "Canonical mature beta-cell identity/function panel (transcription factors, hormone, prohormone convertase, glucose sensing, KATP channel); textbook/consensus markers used across human islet single-cell atlases (e.g., Segerstolpe et al. 2016 Cell Metab).",
           "activities": {
             "identity": 3,
             "insulin": 3,
             "secretion": 3,
             "granule": 2,
             "metabolism": 2,
+            "mito-qc": 0,
             "er-folding": 0,
-            "proteasome": 1,
             "upr": -1,
-            "interferon": -1,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 1,
             "cell-cycle": -1,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": -1,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
             "senescence": -1,
-            "apoptosis": -1
+            "apoptosis": -1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
           },
-          "notes": "Canonical mature beta-cell identity/function panel (transcription factors, hormone, prohormone convertase, glucose sensing, KATP channel); textbook/consensus markers used across human islet single-cell atlases (e.g., Segerstolpe et al. 2016 Cell Metab).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-49",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
           ]
         },
         {
