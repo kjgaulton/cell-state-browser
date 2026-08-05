@@ -642,25 +642,51 @@
             "SLC16A1",
             "NKX2-2",
             "PDX1",
-            "FOXO1"
+            "FOXO1",
+            "HK1",
+            "CD81",
+            "ID1",
+            "MAFB"
           ],
+          "notes": "Verified via WebSearch. Loss of mature identity toward a progenitor/multipotent-like and 'disallowed-gene'-expressing state: ALDH1A3/SOX9/NEUROG3/HES1/GATA6/FOXO1(nuclear exclusion) from Talchai et al. 2012 Cell and Cinti et al. 2016 JCEM (human T2D); LDHA/SLC16A1 are classic 'disallowed genes' re-expressed on identity loss (Pullen & Rutter 2013); SMOC1 is a newly identified (2025) alpha-lineage gene ectopically induced in dedifferentiating beta cells.",
           "activities": {
             "identity": -2,
             "insulin": -2,
             "secretion": -2,
             "granule": -1,
+            "metabolism": 0,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 0,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 0,
+            "cell-cycle": -1,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
             "dediff": 3,
             "development": 2,
-            "cell-cycle": -1,
+            "transdiff": 0,
             "senescence": 0,
             "apoptosis": -1,
-            "survival": 1
+            "survival": 1,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
           },
-          "notes": "Verified via WebSearch. Loss of mature identity toward a progenitor/multipotent-like and 'disallowed-gene'-expressing state: ALDH1A3/SOX9/NEUROG3/HES1/GATA6/FOXO1(nuclear exclusion) from Talchai et al. 2012 Cell and Cinti et al. 2016 JCEM (human T2D); LDHA/SLC16A1 are classic 'disallowed genes' re-expressed on identity loss (Pullen & Rutter 2013); SMOC1 is a newly identified (2025) alpha-lineage gene ectopically induced in dedifferentiating beta cells.",
           "references": [
             "ref-1",
             "ref-2",
-            "ref-3"
+            "ref-3",
+            "ref-49",
+            "ref-50"
           ]
         },
         {
