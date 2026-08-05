@@ -134,6 +134,56 @@ p {
 
 main {
   padding: 24px clamp(18px, 4vw, 48px) 48px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.app-body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tissue-sidebar {
+  flex: 0 0 200px;
+  padding: 24px 16px;
+  border-right: 1px solid var(--line);
+  background: white;
+}
+
+.tissue-sidebar h2 {
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.tissue-list {
+  display: grid;
+  gap: 6px;
+}
+
+.tissue-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  font-weight: 600;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tissue-item:hover {
+  filter: brightness(0.98);
+}
+
+.tissue-item.active {
+  border-color: #135d4e;
+  background: var(--green);
+  color: white;
 }
 
 .top-actions,
@@ -1003,6 +1053,23 @@ menu span {
   .section-head {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .app-body {
+    flex-direction: column;
+  }
+
+  .tissue-sidebar {
+    flex: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tissue-list {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(120px, 1fr);
+    overflow-x: auto;
   }
 
   .top-actions {

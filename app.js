@@ -6,6 +6,15 @@ const GITHUB_REPO = "cell-state-browser";
 const GITHUB_BRANCH = "main";
 const GITHUB_TOKEN_KEY = "github-pat-cell-state-browser";
 
+// Tissues are the top-level JSON model files the sidebar can switch between.
+// Add an entry here (plus the JSON file in the repo root) to make a new
+// tissue selectable -- no other code changes needed.
+const TISSUES = [
+  { id: "pancreas", name: "Pancreas", file: "pancreas-cell-state-model.json" },
+  { id: "liver", name: "Liver", file: "liver-cell-state-model.json" }
+];
+const ACTIVE_TISSUE_KEY = "cell-model-browser-active-tissue";
+
 const ACTIVITY_LEVELS = [
   { value: -2, label: "down" },
   { value: -1, label: "low" },
@@ -1164,8 +1173,10 @@ let viewMode = "list";
 let expandedProgramIds = new Set();
 let githubToken = safeGetItem(GITHUB_TOKEN_KEY) || null;
 let githubFile = null; // { path, sha, name } for whichever repo file was last loaded
+let currentTissueId = null; // set once a sidebar tissue has been loaded
 
 const els = {
+  tissueList: document.querySelector("#tissueList"),
   cellTypeSelect: document.querySelector("#cellTypeSelect"),
   stateOptions: document.querySelector("#stateOptions"),
   selectedStateName: document.querySelector("#selectedStateName"),
@@ -1204,6 +1215,22 @@ const els = {
 };
 
 document.querySelector("#resetData").addEventListener("click", () => {
+  // With a sidebar tissue active, "reset" means "reload this tissue fresh
+  // from its source file", clearing any locally cached edits for it --
+  // rather than wiping it back to the old hardcoded beta/alpha seed data.
+  if (currentTissueId) {
+    const tissue = TISSUES.find((t) => t.id === currentTissueId);
+    const proceed = confirm(`Reload ${tissue ? tissue.name : "this tissue"} fresh from source? Locally cached edits for it will be cleared.`);
+    if (!proceed) return;
+    try {
+      localStorage.removeItem(tissueStorageKey(currentTissueId));
+    } catch {
+      /* ignore */
+    }
+    loadTissue(currentTissueId, { force: true });
+    return;
+  }
+
   model = { cellTypes: structuredClone(seedCellTypes), references: structuredClone(seedReferences) };
   selectedCellTypeId = model.cellTypes[0]?.id || null;
   selectedStateId = currentCellType()?.states[0]?.id || null;
@@ -1256,6 +1283,11 @@ els.cancelGithubHistory.addEventListener("click", () => els.githubHistoryDialog.
 
 render();
 updateGithubSaveButton();
+renderTissueList();
+// Swap in the real tissue data shortly after the initial synchronous render
+// of the built-in demo data. Uses whichever tissue was last active, or the
+// first one, so reloading the page keeps you where you left off.
+loadTissue(safeGetItem(ACTIVE_TISSUE_KEY) || TISSUES[0].id);
 
 function currentCellType() {
   return model.cellTypes.find((cellType) => cellType.id === selectedCellTypeId) || model.cellTypes[0] || null;
@@ -1296,14 +1328,97 @@ function loadModel() {
   return { cellTypes: structuredClone(seedCellTypes), references: structuredClone(seedReferences) };
 }
 
+function tissueStorageKey(tissueId) {
+  return `${STORAGE_KEY}::tissue::${tissueId}`;
+}
+
 function saveModel() {
   // If storage is unavailable, degrade to in-memory-only for this session
   // rather than throwing and breaking every action that edits the model.
+  // While a sidebar tissue is active, edits are cached under a per-tissue
+  // key so switching tissues doesn't clobber each other's in-progress edits.
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(model));
+    const key = currentTissueId ? tissueStorageKey(currentTissueId) : STORAGE_KEY;
+    localStorage.setItem(key, JSON.stringify(model));
   } catch {
     /* ignore */
   }
+}
+
+function renderTissueList() {
+  if (!els.tissueList) return;
+  els.tissueList.innerHTML = TISSUES.map((tissue) => `
+    <button type="button" class="tissue-item${tissue.id === currentTissueId ? " active" : ""}" data-tissue="${escapeHtml(tissue.id)}">${escapeHtml(tissue.name)}</button>
+  `).join("");
+
+  els.tissueList.querySelectorAll("[data-tissue]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.tissue === currentTissueId) return;
+      loadTissue(button.dataset.tissue);
+    });
+  });
+}
+
+// Loads a tissue's JSON model file. Prefers a per-tissue localStorage cache
+// (the user's in-progress edits) unless force-refreshing from source, and
+// otherwise fetches the file relative to the current page -- this works on
+// GitHub Pages (and any static host) but requires http(s), not file://, so
+// the standalone bundled HTML degrades gracefully by just keeping whatever
+// tissue was already active.
+async function loadTissue(tissueId, options = {}) {
+  const tissue = TISSUES.find((t) => t.id === tissueId);
+  if (!tissue) return;
+
+  const cacheKey = tissueStorageKey(tissueId);
+  if (!options.force) {
+    const cached = safeGetItem(cacheKey);
+    if (cached) {
+      try {
+        applyLoadedTissue(tissueId, JSON.parse(cached));
+        return;
+      } catch {
+        /* fall through to fetching fresh */
+      }
+    }
+  }
+
+  try {
+    const response = await fetch(tissue.file, { cache: "no-cache" });
+    if (!response.ok) throw new Error(`Could not fetch ${tissue.file} (${response.status})`);
+    const imported = await response.json();
+    applyLoadedTissue(tissueId, validateImportedModel(imported));
+    showToast(`Loaded ${tissue.name}`);
+  } catch (error) {
+    showToast(error.message || `Could not load ${tissue.name}`);
+  }
+}
+
+function applyLoadedTissue(tissueId, loadedModel) {
+  const tissue = TISSUES.find((t) => t.id === tissueId);
+  currentTissueId = tissueId;
+  model = loadedModel;
+  githubFile = tissue ? { path: tissue.file, sha: null, name: tissue.file } : null;
+  selectedCellTypeId = model.cellTypes[0]?.id || null;
+  selectedStateId = currentCellType()?.states[0]?.id || null;
+  expandedProgramIds = new Set();
+  try {
+    localStorage.setItem(ACTIVE_TISSUE_KEY, tissueId);
+  } catch {
+    /* ignore */
+  }
+  saveModel();
+  renderTissueList();
+  render();
+  updateGithubSaveButton();
+}
+
+// Keeps the sidebar highlight in sync when a file is loaded via the
+// pre-existing "GitHub files" dialog or "Load JSON" import, by matching
+// against the known tissue filenames.
+function syncTissueFromPath(path) {
+  const tissue = TISSUES.find((t) => t.file === path || path?.endsWith(`/${t.file}`));
+  currentTissueId = tissue ? tissue.id : null;
+  renderTissueList();
 }
 
 function migrateModel(storedModel) {
@@ -2039,6 +2154,7 @@ function importJson(event) {
       selectedCellTypeId = model.cellTypes[0]?.id || null;
       selectedStateId = currentCellType()?.states[0]?.id || null;
       expandedProgramIds = new Set();
+      syncTissueFromPath(file.name);
       saveModel();
       render();
       showToast(`Loaded ${file.name}`);
@@ -2199,6 +2315,7 @@ async function loadGithubFile(path, sha, downloadUrl, name) {
     selectedCellTypeId = model.cellTypes[0]?.id || null;
     selectedStateId = currentCellType()?.states[0]?.id || null;
     expandedProgramIds = new Set();
+    syncTissueFromPath(path);
     saveModel();
     render();
     updateGithubSaveButton();
@@ -2323,6 +2440,21 @@ async function saveModelToGithub() {
   if (!proceed) return;
 
   try {
+    // Files loaded via the tissue sidebar come from a plain relative fetch()
+    // rather than the Contents API, so they don't arrive with a known git
+    // blob sha. Resolve it here (lazily, right before the PUT) so the save
+    // still lands on the branch tip correctly.
+    if (!githubFile.sha) {
+      const metaResponse = await fetch(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${githubFile.path}?ref=${GITHUB_BRANCH}`,
+        { headers: { Accept: "application/vnd.github+json" } }
+      );
+      if (metaResponse.ok) {
+        const meta = await metaResponse.json();
+        if (meta?.sha) githubFile.sha = meta.sha;
+      }
+    }
+
     const response = await fetch(
       `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${githubFile.path}`,
       {
