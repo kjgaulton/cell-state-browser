@@ -555,7 +555,7 @@
         {
           "id": "interferon-activated",
           "name": "Inflammatory response beta cell",
-          "phenotype": "Typical of early T1D or cytokine-driven inflammatory exposure",
+          "phenotype": "Cytokine-driven inflammatory state, typical of early T1D",
           "genes": [
             "STAT1",
             "IFIT1",
@@ -569,19 +569,46 @@
             "TAP1",
             "IRF1",
             "OAS1",
-            "PSMB9"
+            "PSMB9",
+            "HLA-C"
           ],
+          "notes": "Type I/II interferon-stimulated gene and MHC-I hyperexpression signature described in early/insulitic T1D beta cells (Russell et al. 2019 Diabetes; Marroqui et al. 2017 studies of cytokine-exposed islets).",
           "activities": {
             "identity": -1,
+            "insulin": 0,
+            "secretion": 0,
+            "granule": 0,
+            "metabolism": 0,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 1,
+            "oxidative-stress": 1,
+            "autophagy": 0,
+            "proteasome": 0,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
             "interferon": 3,
             "antigen": 3,
             "cytokine": 2,
-            "upr": 1,
-            "oxidative-stress": 1
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": 0,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
           },
-          "notes": "Type I/II interferon-stimulated gene and MHC-I hyperexpression signature described in early/insulitic T1D beta cells (Russell et al. 2019 Diabetes; Marroqui et al. 2017 studies of cytokine-exposed islets).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
           ]
         },
         {
