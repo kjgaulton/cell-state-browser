@@ -1051,21 +1051,33 @@
             "LOXL4",
             "CRYBA2",
             "GC",
-            "SLC7A2"
+            "SLC7A2",
+            "PCSK2",
+            "TM4SF4",
+            "DPP4"
           ],
+          "notes": "Verified via WebSearch. Canonical alpha-cell identity/marker panel including transcription factors and human-alpha-enriched surface/secreted markers identified in single-cell islet atlases (LOXL4, CRYBA2, GC, SLC7A2 recur across human alpha-cell scRNA-seq studies; SLC7A2 confirmed functionally required for alpha-cell proliferation/secretion, JCI 2024).",
           "activities": {
             "alpha-identity": 3,
             "glucagon": 3,
             "alpha-secretion": 3,
             "alpha-granule": 2,
             "alpha-metabolism": 2,
+            "alpha-er-folding": 0,
             "alpha-upr": -1,
+            "alpha-oxidative-stress": 0,
             "alpha-interferon": -1,
-            "alpha-apoptosis": -1
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": -1,
+            "alpha-survival": 0
           },
-          "notes": "Verified via WebSearch. Canonical alpha-cell identity/marker panel including transcription factors and human-alpha-enriched surface/secreted markers identified in single-cell islet atlases (LOXL4, CRYBA2, GC, SLC7A2 recur across human alpha-cell scRNA-seq studies; SLC7A2 confirmed functionally required for alpha-cell proliferation/secretion, JCI 2024).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
           ]
         },
         {
