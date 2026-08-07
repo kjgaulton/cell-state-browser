@@ -1051,26 +1051,38 @@
             "LOXL4",
             "CRYBA2",
             "GC",
-            "SLC7A2"
+            "SLC7A2",
+            "PCSK2",
+            "TM4SF4",
+            "DPP4"
           ],
+          "notes": "Verified via WebSearch. Canonical alpha-cell identity/marker panel including transcription factors and human-alpha-enriched surface/secreted markers identified in single-cell islet atlases (LOXL4, CRYBA2, GC, SLC7A2 recur across human alpha-cell scRNA-seq studies; SLC7A2 confirmed functionally required for alpha-cell proliferation/secretion, JCI 2024).",
           "activities": {
             "alpha-identity": 3,
             "glucagon": 3,
             "alpha-secretion": 3,
             "alpha-granule": 2,
             "alpha-metabolism": 2,
+            "alpha-er-folding": 0,
             "alpha-upr": -1,
+            "alpha-oxidative-stress": 0,
             "alpha-interferon": -1,
-            "alpha-apoptosis": -1
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": -1,
+            "alpha-survival": 0
           },
-          "notes": "Verified via WebSearch. Canonical alpha-cell identity/marker panel including transcription factors and human-alpha-enriched surface/secreted markers identified in single-cell islet atlases (LOXL4, CRYBA2, GC, SLC7A2 recur across human alpha-cell scRNA-seq studies; SLC7A2 confirmed functionally required for alpha-cell proliferation/secretion, JCI 2024).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
           ]
         },
         {
           "id": "hyperglucagonemic",
-          "name": "Hyperglucagonemic alpha cell",
+          "name": "Hyper-secretory alpha cell",
           "phenotype": "Chronic hyperglycemia-driven overactivity seen in T2D",
           "genes": [
             "GCG",
@@ -1083,6 +1095,7 @@
             "TTR",
             "TXNIP"
           ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because a distinct human single-cell transcriptomic signature for chronic hyperglucagonemia (as opposed to physiology) is not well established. SLC38A5/SLC7A2 amino-acid transporter induction is documented in the liver-alpha-cell axis literature on glucagon receptor resistance/hyperglucagonemia (Kim et al. 2017 Cell Metab; Dean lab SLC7A2 studies, JCI 2024); remaining genes reflect increased glucagon biosynthetic machinery.",
           "activities": {
             "alpha-identity": 2,
             "glucagon": 3,
@@ -1091,9 +1104,13 @@
             "alpha-metabolism": 2,
             "alpha-er-folding": 1,
             "alpha-upr": 1,
-            "alpha-oxidative-stress": 1
+            "alpha-oxidative-stress": 1,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
           },
-          "notes": "Verified via WebSearch; fewer than 10 genes because a distinct human single-cell transcriptomic signature for chronic hyperglucagonemia (as opposed to physiology) is not well established. SLC38A5/SLC7A2 amino-acid transporter induction is documented in the liver-alpha-cell axis literature on glucagon receptor resistance/hyperglucagonemia (Kim et al. 2017 Cell Metab; Dean lab SLC7A2 studies, JCI 2024); remaining genes reflect increased glucagon biosynthetic machinery.",
           "references": [
             "ref-12"
           ]
@@ -1139,18 +1156,102 @@
             "HLA-B",
             "TAP1",
             "CXCL10",
-            "IRF1"
+            "IRF1",
+            "HLA-C"
           ],
+          "notes": "Interferon-stimulated gene/MHC-I signature also documented in alpha cells during insulitis, with alpha cells showing even stronger basal and induced immune/HLA responses than beta cells in T1D single-cell studies (Russell et al. 2019 Diabetes).",
           "activities": {
             "alpha-identity": -1,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 1,
+            "alpha-oxidative-stress": 1,
             "alpha-interferon": 3,
             "alpha-antigen": 3,
-            "alpha-upr": 1,
-            "alpha-oxidative-stress": 1
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
           },
-          "notes": "Interferon-stimulated gene/MHC-I signature also documented in alpha cells during insulitis, with alpha cells showing even stronger basal and induced immune/HLA responses than beta cells in T1D single-cell studies (Russell et al. 2019 Diabetes).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "er-stress-response-alpha-cell",
+          "name": "ER stress response alpha cell",
+          "phenotype": "Alpha cell in an endoplasmic reticulum (ER) stress state",
+          "genes": [
+            "ATF4",
+            "DDIT3",
+            "DNAJB9",
+            "HERPUD1",
+            "HSP90B1",
+            "HSPA5",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A",
+            "XBP1"
+          ],
+          "notes": "",
+          "activities": {
+            "alpha-identity": 0,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 0,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-46",
+            "ref-47"
+          ]
+        },
+        {
+          "id": "proliferating-alpha-cell",
+          "name": "Proliferating alpha cell",
+          "phenotype": "Alpha cell that is proliferating",
+          "genes": [
+            "BIRC5",
+            "CCNB1",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "MKI67",
+            "PCNA",
+            "TOP2A",
+            "UBE2C"
+          ],
+          "notes": "",
+          "activities": {
+            "alpha-identity": 0,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 0,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-57"
           ]
         }
       ]
@@ -1325,21 +1426,33 @@
             "PAM",
             "CHGA",
             "PDX1",
-            "FFAR4"
+            "FFAR4",
+            "ABCC8",
+            "CRHR2",
+            "PCSK2",
+            "TCF4"
           ],
+          "notes": "Verified via WebSearch. HHEX, RBP4, LEPR (leptin receptor), and GHSR (ghrelin receptor, mediates paracrine ghrelin regulation of somatostatin secretion) are established delta-cell-enriched markers from purified islet-subpopulation transcriptomics (Adriaenssens et al. 2016 Diabetologia; DiGruccio et al. 2016 Mol Metab).",
           "activities": {
             "delta-identity": 3,
             "somatostatin": 3,
             "delta-secretion": 3,
             "delta-granule": 2,
             "delta-metabolism": 2,
+            "delta-er-folding": 0,
             "delta-upr": -1,
+            "delta-oxidative-stress": 0,
             "delta-interferon": -1,
-            "delta-apoptosis": -1
+            "delta-antigen": 0,
+            "delta-apoptosis": -1,
+            "delta-survival": 0
           },
-          "notes": "Verified via WebSearch. HHEX, RBP4, LEPR (leptin receptor), and GHSR (ghrelin receptor, mediates paracrine ghrelin regulation of somatostatin secretion) are established delta-cell-enriched markers from purified islet-subpopulation transcriptomics (Adriaenssens et al. 2016 Diabetologia; DiGruccio et al. 2016 Mol Metab).",
           "references": [
-            "ref-10"
+            "ref-10",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
           ]
         },
         {
@@ -1383,18 +1496,28 @@
             "HLA-B",
             "TAP1",
             "CXCL10",
-            "IRF1"
+            "IRF1",
+            "HLA-C"
           ],
+          "notes": "Same class-wide interferon/MHC-I response documented across islet endocrine cell types (including delta cells) during insulitis (Russell et al. 2019 Diabetes).",
           "activities": {
             "delta-identity": -1,
+            "somatostatin": 0,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 1,
+            "delta-oxidative-stress": 1,
             "delta-interferon": 3,
             "delta-antigen": 3,
-            "delta-upr": 1,
-            "delta-oxidative-stress": 1
+            "delta-apoptosis": 0,
+            "delta-survival": 0
           },
-          "notes": "Same class-wide interferon/MHC-I response documented across islet endocrine cell types (including delta cells) during insulitis (Russell et al. 2019 Diabetes).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
           ]
         },
         {
@@ -1419,6 +1542,42 @@
           "notes": "Verified via WebSearch; fewer than 10 genes because the literature (Somatostatin-containing delta-cell number is reduced in Type 2 Diabetes, PMC9959292) documents reduced delta-cell mass/number in T2D rather than a well-defined distinct transcriptional signature of surviving/declining cells. Genes reflect diminished identity-gene dosage plus the intrinsic apoptosis pathway implicated in cell loss.",
           "references": [
             "ref-11"
+          ]
+        },
+        {
+          "id": "er-stress-response-delta-cell",
+          "name": "ER stress response delta cell",
+          "phenotype": "",
+          "genes": [
+            "ATF4",
+            "DDIT3",
+            "DNAJB9",
+            "HERPUD1",
+            "HSP90B1",
+            "HSPA5",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A",
+            "XBP1"
+          ],
+          "notes": "",
+          "activities": {
+            "delta-identity": 0,
+            "somatostatin": 0,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 0,
+            "delta-oxidative-stress": 0,
+            "delta-interferon": 0,
+            "delta-antigen": 0,
+            "delta-apoptosis": 0,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-46",
+            "ref-47"
           ]
         }
       ]
@@ -2798,14 +2957,19 @@
             "IL6",
             "CX3CL1"
           ],
+          "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
           "activities": {
             "endothelial-identity": -1,
+            "vascular-barrier": -2,
+            "angiogenesis": 0,
             "leukocyte-adhesion": 3,
+            "nitric-oxide": 0,
+            "coagulation": 0,
             "endothelial-inflammatory": 3,
             "endothelial-interferon": 2,
-            "vascular-barrier": -2
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
           },
-          "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
           "references": [
             "ref-15"
           ]
