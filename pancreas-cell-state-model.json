@@ -1082,7 +1082,7 @@
         },
         {
           "id": "hyperglucagonemic",
-          "name": "Hyperglucagonemic alpha cell",
+          "name": "Hyper-secretory alpha cell",
           "phenotype": "Chronic hyperglycemia-driven overactivity seen in T2D",
           "genes": [
             "GCG",
@@ -1095,6 +1095,7 @@
             "TTR",
             "TXNIP"
           ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because a distinct human single-cell transcriptomic signature for chronic hyperglucagonemia (as opposed to physiology) is not well established. SLC38A5/SLC7A2 amino-acid transporter induction is documented in the liver-alpha-cell axis literature on glucagon receptor resistance/hyperglucagonemia (Kim et al. 2017 Cell Metab; Dean lab SLC7A2 studies, JCI 2024); remaining genes reflect increased glucagon biosynthetic machinery.",
           "activities": {
             "alpha-identity": 2,
             "glucagon": 3,
@@ -1103,9 +1104,13 @@
             "alpha-metabolism": 2,
             "alpha-er-folding": 1,
             "alpha-upr": 1,
-            "alpha-oxidative-stress": 1
+            "alpha-oxidative-stress": 1,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
           },
-          "notes": "Verified via WebSearch; fewer than 10 genes because a distinct human single-cell transcriptomic signature for chronic hyperglucagonemia (as opposed to physiology) is not well established. SLC38A5/SLC7A2 amino-acid transporter induction is documented in the liver-alpha-cell axis literature on glucagon receptor resistance/hyperglucagonemia (Kim et al. 2017 Cell Metab; Dean lab SLC7A2 studies, JCI 2024); remaining genes reflect increased glucagon biosynthetic machinery.",
           "references": [
             "ref-12"
           ]
@@ -2952,14 +2957,19 @@
             "IL6",
             "CX3CL1"
           ],
+          "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
           "activities": {
             "endothelial-identity": -1,
+            "vascular-barrier": -2,
+            "angiogenesis": 0,
             "leukocyte-adhesion": 3,
+            "nitric-oxide": 0,
+            "coagulation": 0,
             "endothelial-inflammatory": 3,
             "endothelial-interferon": 2,
-            "vascular-barrier": -2
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
           },
-          "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
           "references": [
             "ref-15"
           ]
