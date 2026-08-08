@@ -905,7 +905,7 @@
         },
         {
           "id": "er-stressed",
-          "name": "ER-stressed beta cell",
+          "name": "ER stress beta cell",
           "phenotype": "Beta cell undergoing endoplasmic reticulum (ER) stress",
           "genes": [
             "DDIT3",
@@ -1914,7 +1914,7 @@
         },
         {
           "id": "epsilon-developmental",
-          "name": "Developmental (neonatal-like) epsilon cell",
+          "name": "Neonatal-like epsilon cell",
           "phenotype": "Expanded epsilon-cell population characteristic of the fetal and neonatal pancreas",
           "genes": [
             "GHRL",
@@ -1926,18 +1926,26 @@
             "CHGA",
             "SCG2"
           ],
+          "notes": "Verified via WebSearch; fewer than 10 genes, thin literature. Reflects the expanded ghrelin+ population (~10% of islet cells at midgestation vs ~1% in adults) and sporadic co-production with pancreatic polypeptide reported in fetal/neonatal human pancreas (Andralojc et al. 2009 Diabetologia; Upchurch/Wierup developmental epsilon-cell literature).",
           "activities": {
             "ge-identity": 2,
-            "ge-hormone-biosynthesis": 2
+            "ge-hormone-biosynthesis": 2,
+            "ge-secretion": 0,
+            "ge-granule": 0,
+            "ge-metabolism": 0,
+            "ge-er-folding": 0,
+            "ge-upr": 0,
+            "ge-oxidative-stress": 0,
+            "ge-interferon": 0,
+            "ge-apoptosis": 0
           },
-          "notes": "Verified via WebSearch; fewer than 10 genes, thin literature. Reflects the expanded ghrelin+ population (~10% of islet cells at midgestation vs ~1% in adults) and sporadic co-production with pancreatic polypeptide reported in fetal/neonatal human pancreas (Andralojc et al. 2009 Diabetologia; Upchurch/Wierup developmental epsilon-cell literature).",
           "references": [
             "ref-14"
           ]
         },
         {
           "id": "epsilon-stressed",
-          "name": "Stressed epsilon cell",
+          "name": "ER stress epsilon cell",
           "phenotype": "ER-stress/apoptotic state",
           "genes": [
             "XBP1",
@@ -1947,12 +1955,19 @@
             "BAX",
             "CASP3"
           ],
+          "notes": "No published data describe a specific stress/ER-stress or apoptotic transcriptional state for epsilon cells; this cell type is essentially unstudied in this context. Genes listed are purely inferred from the generic UPR/apoptosis pathways shared by secretory endocrine cells and should be treated as placeholders, not literature-confirmed markers, until primary epsilon-cell stress data exist.",
           "activities": {
             "ge-identity": -1,
+            "ge-hormone-biosynthesis": 0,
+            "ge-secretion": 0,
+            "ge-granule": 0,
+            "ge-metabolism": 0,
+            "ge-er-folding": 0,
             "ge-upr": 2,
+            "ge-oxidative-stress": 0,
+            "ge-interferon": 0,
             "ge-apoptosis": 1
           },
-          "notes": "No published data describe a specific stress/ER-stress or apoptotic transcriptional state for epsilon cells; this cell type is essentially unstudied in this context. Genes listed are purely inferred from the generic UPR/apoptosis pathways shared by secretory endocrine cells and should be treated as placeholders, not literature-confirmed markers, until primary epsilon-cell stress data exist.",
           "references": [
             "ref-16"
           ]
