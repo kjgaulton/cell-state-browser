@@ -2295,7 +2295,7 @@
         },
         {
           "id": "acinar-metaplastic",
-          "name": "Metaplastic (ADM) acinar cell",
+          "name": "Metaplastic acinar cell",
           "phenotype": "KRAS-driven acinar-to-ductal metaplasia, a precursor state to PanIN in pancreatic cancer",
           "genes": [
             "KRT19",
@@ -2309,17 +2309,34 @@
             "MUC6",
             "SPDEF",
             "CD44",
-            "HES1"
+            "HES1",
+            "CLDN4",
+            "KRT18",
+            "KRT8",
+            "MMP7",
+            "REG3A",
+            "SPINK1"
           ],
+          "notes": "KRT19/SOX9/ONECUT1/HNF1B mark the duct-like transcriptional switch in acinar-to-ductal metaplasia (ADM); KRAS oncogene drives the transition (Kopp et al., Cancer Cell, 2012, Sox9-dependent ADM initiation of PDAC). TFF2/TFF1/MUC6/MUC1/SPDEF mark the 'mucinous/pyloric metaplasia' intermediate identified by single-cell profiling of ADM (Ma et al., Gastroenterology, 2021, 'conserved metaplasia program in pancreatic injury'; Schlesinger/Alonso-Curbelo, Nat Commun, 2020). HES1 reflects Notch pathway reactivation shown to reprogram acinar cells toward a ductal/progenitor-like state together with oncogenic Kras (De La O et al., PNAS, 2008). CD44 is a recurrent marker of the metaplastic/progenitor-like acinar-derived population in these studies.",
           "activities": {
             "acinar-identity": -2,
             "digestive-enzymes": -2,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
+            "protease-inhibition": 0,
+            "acinar-er-folding": 0,
+            "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
             "adm": 3,
-            "acinar-inflammation": 1
+            "acinar-inflammation": 1,
+            "acinar-apoptosis": 0
           },
-          "notes": "KRT19/SOX9/ONECUT1/HNF1B mark the duct-like transcriptional switch in acinar-to-ductal metaplasia (ADM); KRAS oncogene drives the transition (Kopp et al., Cancer Cell, 2012, Sox9-dependent ADM initiation of PDAC). TFF2/TFF1/MUC6/MUC1/SPDEF mark the 'mucinous/pyloric metaplasia' intermediate identified by single-cell profiling of ADM (Ma et al., Gastroenterology, 2021, 'conserved metaplasia program in pancreatic injury'; Schlesinger/Alonso-Curbelo, Nat Commun, 2020). HES1 reflects Notch pathway reactivation shown to reprogram acinar cells toward a ductal/progenitor-like state together with oncogenic Kras (De La O et al., PNAS, 2008). CD44 is a recurrent marker of the metaplastic/progenitor-like acinar-derived population in these studies.",
           "references": [
-            "ref-21"
+            "ref-21",
+            "ref-71",
+            "ref-72"
           ]
         },
         {
