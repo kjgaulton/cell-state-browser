@@ -1739,21 +1739,33 @@
             "PCSK1N",
             "PCSK2",
             "CPE",
-            "CHGA"
+            "CHGA",
+            "CHGB",
+            "FEV",
+            "MAFB",
+            "PCSK1",
+            "RFX6",
+            "TTR"
           ],
+          "notes": "Verified via WebSearch; fewer than 10 genes reflecting the limited literature specifically characterizing this rare/understudied cell type. Markers drawn from human islet single-cell atlases that resolve a distinct PPY+ gamma/PP-cell cluster (Segerstolpe et al. 2016 Cell Metab; Muraro et al. 2016 Cell Systems).",
           "activities": {
             "gamma-identity": 3,
             "pp-biosynthesis": 3,
             "gamma-secretion": 3,
             "gamma-granule": 2,
             "gamma-metabolism": 2,
+            "gamma-er-folding": 0,
             "gamma-upr": -1,
+            "gamma-oxidative-stress": 0,
             "gamma-interferon": -1,
             "gamma-apoptosis": -1
           },
-          "notes": "Verified via WebSearch; fewer than 10 genes reflecting the limited literature specifically characterizing this rare/understudied cell type. Markers drawn from human islet single-cell atlases that resolve a distinct PPY+ gamma/PP-cell cluster (Segerstolpe et al. 2016 Cell Metab; Muraro et al. 2016 Cell Systems).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-51",
+            "ref-52",
+            "ref-54",
+            "ref-65"
           ]
         },
         {
