@@ -1841,6 +1841,39 @@
             "ref-46",
             "ref-48"
           ]
+        },
+        {
+          "id": "bi-hormonal-plasticity-gamma-cell",
+          "name": "Bi-hormonal plasticity gamma cell",
+          "phenotype": "Reported population of gamma cells with activity of multiple hormones",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "FEV",
+            "GCG",
+            "IAPP",
+            "INS",
+            "PCSK1",
+            "PCSK2",
+            "PPY",
+            "SST"
+          ],
+          "notes": "",
+          "activities": {
+            "gamma-identity": 0,
+            "pp-biosynthesis": 0,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
+            "gamma-er-folding": 0,
+            "gamma-upr": 0,
+            "gamma-oxidative-stress": 0,
+            "gamma-interferon": 0,
+            "gamma-apoptosis": 0
+          },
+          "references": [
+            "ref-65"
+          ]
         }
       ]
     },
