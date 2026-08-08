@@ -2354,7 +2354,7 @@
         },
         {
           "id": "acinar-atrophic",
-          "name": "Atrophic/senescent acinar cell",
+          "name": "Senescent acinar cell",
           "phenotype": "Reduced enzyme output seen in chronic pancreatitis and aging",
           "genes": [
             "CDKN2A",
@@ -2367,13 +2367,22 @@
             "CXCL1",
             "MMP3"
           ],
+          "notes": "Direct single-cell transcriptomic characterization of atrophic/senescent human acinar cells is limited, so this panel (9 genes, below the 10-15 target) is built from the general p16/p21/p53 senescence program and senescence-associated secretory phenotype (SASP), which has been specifically linked to acinar injury: CDKN1A/p21 has been shown to limit senescence and ADM formation during pancreatitis (p21WAF1/Cip1 studies of pancreatitis-associated senescence), and elevated CDKN1A/MDM2/IL6 have been documented in senescent pancreatic stellate/acinar compartments in chronic pancreatitis models. CDKN2A/TP53 are the canonical senescence tumor-suppressor axis; SERPINE1/IL6/IL1B/CXCL1/MMP3 are core SASP factors. Flagging this state as genuinely under-supported in the literature relative to the other three acinar states.",
           "activities": {
             "acinar-identity": -1,
             "digestive-enzymes": -2,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
+            "protease-inhibition": 0,
+            "acinar-er-folding": 0,
+            "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
             "acinar-autophagy": 2,
+            "adm": 0,
+            "acinar-inflammation": 0,
             "acinar-apoptosis": 1
           },
-          "notes": "Direct single-cell transcriptomic characterization of atrophic/senescent human acinar cells is limited, so this panel (9 genes, below the 10-15 target) is built from the general p16/p21/p53 senescence program and senescence-associated secretory phenotype (SASP), which has been specifically linked to acinar injury: CDKN1A/p21 has been shown to limit senescence and ADM formation during pancreatitis (p21WAF1/Cip1 studies of pancreatitis-associated senescence), and elevated CDKN1A/MDM2/IL6 have been documented in senescent pancreatic stellate/acinar compartments in chronic pancreatitis models. CDKN2A/TP53 are the canonical senescence tumor-suppressor axis; SERPINE1/IL6/IL1B/CXCL1/MMP3 are core SASP factors. Flagging this state as genuinely under-supported in the literature relative to the other three acinar states.",
           "references": [
             "ref-7"
           ]
