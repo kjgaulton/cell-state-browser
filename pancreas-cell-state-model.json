@@ -2941,17 +2941,26 @@
             "APLNR",
             "PGF",
             "PDGFB",
-            "CXCR4"
+            "CXCR4",
+            "SOX17",
+            "EFNB2"
           ],
+          "notes": "VEGFA/KDR/FLT1/PGF are the core VEGF-receptor angiogenic axis. DLL4 is the canonical marker of angiogenic 'tip cells' that lead sprouting vessels via Notch signaling (Hellstrom et al., Nature, 2007). ESM1 (endocan) is a well-established marker of tip-cell-like activated angiogenic endothelium (Rocha et al.). APLN/APLNR and PDGFB mark proliferating/sprouting tip and stalk cells; ANGPT2 destabilizes vessels to permit VEGF-driven remodeling, consistent with islet vascular growth, wound healing, and tumor neovascularization.",
           "activities": {
             "endothelial-identity": 2,
-            "angiogenesis": 3,
             "vascular-barrier": -1,
-            "endothelial-oxidative-stress": 1
+            "angiogenesis": 3,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 1,
+            "endothelial-apoptosis": 0
           },
-          "notes": "VEGFA/KDR/FLT1/PGF are the core VEGF-receptor angiogenic axis. DLL4 is the canonical marker of angiogenic 'tip cells' that lead sprouting vessels via Notch signaling (Hellstrom et al., Nature, 2007). ESM1 (endocan) is a well-established marker of tip-cell-like activated angiogenic endothelium (Rocha et al.). APLN/APLNR and PDGFB mark proliferating/sprouting tip and stalk cells; ANGPT2 destabilizes vessels to permit VEGF-driven remodeling, consistent with islet vascular growth, wound healing, and tumor neovascularization.",
           "references": [
-            "ref-31"
+            "ref-31",
+            "ref-59"
           ]
         },
         {
