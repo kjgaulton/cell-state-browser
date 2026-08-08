@@ -189,10 +189,13 @@
           </div>
         </div>
         <div class="programs-heading">
-          <h3>Gene programs</h3>
-          <p>Each row below is a distinct gene program; together their activity levels in this state make up its signature.</p>
+          <div>
+            <h3>Gene programs</h3>
+            <p>Each row below is a distinct gene program; together their activity levels in this state make up its signature.</p>
+          </div>
+          <button id="toggleProgramsList" class="ghost" type="button" aria-expanded="false">Show gene programs</button>
         </div>
-        <div id="programActivityList" class="program-activity-list"></div>
+        <div id="programActivityList" class="program-activity-list hidden"></div>
         <div id="networkView" class="network-view hidden">
           <div class="network-toolbar">
             <button id="expandAllPrograms" class="ghost" type="button">Expand all genes</button>

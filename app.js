@@ -1251,6 +1251,11 @@ let editingId = null;
 let editingReferenceIndex = null;
 let selectedStateId = currentCellType()?.states[0]?.id || null;
 let viewMode = "list";
+// The gene-programs list is long for cell types with many programs, so it
+// starts collapsed and only renders once the user explicitly asks to see
+// it -- this preference persists as they browse between states/cell types
+// within the session, and only changes via the toggle button itself.
+let programsListExpanded = false;
 let expandedProgramIds = new Set();
 let githubToken = safeGetItem(GITHUB_TOKEN_KEY) || null;
 let githubFile = null; // { path, sha, name } for whichever repo file was last loaded
@@ -1264,6 +1269,7 @@ const els = {
   selectedStatePhenotype: document.querySelector("#selectedStatePhenotype"),
   selectedStateMarkers: document.querySelector("#selectedStateMarkers"),
   programActivityList: document.querySelector("#programActivityList"),
+  toggleProgramsList: document.querySelector("#toggleProgramsList"),
   viewModeList: document.querySelector("#viewModeList"),
   viewModeNetwork: document.querySelector("#viewModeNetwork"),
   networkView: document.querySelector("#networkView"),
@@ -1343,6 +1349,10 @@ els.viewModeList.addEventListener("click", () => {
 });
 els.viewModeNetwork.addEventListener("click", () => {
   viewMode = "network";
+  render();
+});
+els.toggleProgramsList.addEventListener("click", () => {
+  programsListExpanded = !programsListExpanded;
   render();
 });
 els.expandAllPrograms.addEventListener("click", () => {
@@ -1691,7 +1701,8 @@ function renderSelectedState() {
     els.selectedStateMarkers.innerHTML = "";
     els.programActivityList.innerHTML = "";
     els.networkView.classList.add("hidden");
-    els.programActivityList.classList.remove("hidden");
+    els.programActivityList.classList.add("hidden");
+    els.toggleProgramsList.hidden = true;
     els.networkSvg.innerHTML = "";
     return;
   }
@@ -1710,8 +1721,14 @@ function renderSelectedState() {
 
   els.viewModeList.setAttribute("aria-pressed", String(viewMode === "list"));
   els.viewModeNetwork.setAttribute("aria-pressed", String(viewMode === "network"));
-  els.programActivityList.classList.toggle("hidden", viewMode !== "list");
+  els.programActivityList.classList.toggle("hidden", viewMode !== "list" || !programsListExpanded);
   els.networkView.classList.toggle("hidden", viewMode !== "network");
+
+  // The expand/collapse toggle only applies to the list view -- network view
+  // has its own always-visible toolbar, so hide the toggle button there.
+  els.toggleProgramsList.hidden = viewMode !== "list";
+  els.toggleProgramsList.textContent = programsListExpanded ? "Hide gene programs" : "Show gene programs";
+  els.toggleProgramsList.setAttribute("aria-expanded", String(programsListExpanded));
 
   if (viewMode === "network") {
     renderNetworkView(cellType, state, programs);

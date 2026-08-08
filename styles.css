@@ -876,6 +876,10 @@ menu span {
 }
 
 .programs-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   margin-top: 18px;
   padding-top: 14px;
   border-top: 1px solid var(--line);
