@@ -2221,27 +2221,40 @@
             "PRSS1",
             "PRSS2",
             "CPA1",
+            "CPA2",
             "CELA2A",
             "CTRB1",
+            "CTRB2",
             "AMY2A",
             "PNLIP",
             "GP2",
             "SYCN",
-            "CCKAR"
+            "CCKAR",
+            "CELA3A",
+            "CELA3B"
           ],
+          "notes": "Canonical acinar identity transcription factors (PTF1A/RBPJL/NR5A2/BHLHA15 form the core acinar specification complex) plus the digestive-enzyme and zymogen-granule programs constitutively expressed by healthy acinar cells. Well established textbook biology (Masui/MacDonald acinar TF network; Logsdon & Ji enzyme biosynthesis reviews).",
           "activities": {
             "acinar-identity": 3,
             "digestive-enzymes": 3,
             "zymogen-granule": 2,
             "acinar-secretion": 2,
             "protease-inhibition": 2,
+            "acinar-er-folding": 0,
             "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
+            "adm": 0,
             "acinar-inflammation": -1,
             "acinar-apoptosis": -1
           },
-          "notes": "Canonical acinar identity transcription factors (PTF1A/RBPJL/NR5A2/BHLHA15 form the core acinar specification complex) plus the digestive-enzyme and zymogen-granule programs constitutively expressed by healthy acinar cells. Well established textbook biology (Masui/MacDonald acinar TF network; Logsdon & Ji enzyme biosynthesis reviews).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-53",
+            "ref-54",
+            "ref-61",
+            "ref-64"
           ]
         },
         {
