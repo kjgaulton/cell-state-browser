@@ -2881,7 +2881,7 @@
         },
         {
           "id": "activated-stellate",
-          "name": "Activated myofibroblast-like stellate cell",
+          "name": "Activated fibrotic stellate cell",
           "phenotype": "Fibrogenic activation driven by injury/inflammation in pancreatitis and PDAC stroma",
           "genes": [
             "ACTA2",
@@ -2896,19 +2896,28 @@
             "MMP2",
             "TIMP1",
             "S100A4",
-            "PDGFRB"
+            "PDGFRB",
+            "LOXL2",
+            "TAGLN",
+            "POSTN"
           ],
+          "notes": "Myofibroblast transdifferentiation markers (ACTA2/TAGLN/S100A4) plus the TGF-beta/SMAD3-driven fibrogenic ECM-production program (COL1A1/COL1A2/COL3A1/FN1/CTGF) and matrix remodeling (MMP2/TIMP1) that define activated PSCs in pancreatitis and PDAC desmoplasia (Apte et al.; Omary et al., J Clin Invest, 2007, PSC biology review).",
           "activities": {
             "stellate-quiescent-identity": -2,
+            "vitamin-a-storage": 0,
             "stellate-activation": 3,
             "ecm-production": 3,
             "tgf-beta-signaling": 3,
             "mmp-remodeling": 2,
-            "stellate-proliferation": 2
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": 2,
+            "stellate-apoptosis": 0
           },
-          "notes": "Myofibroblast transdifferentiation markers (ACTA2/TAGLN/S100A4) plus the TGF-beta/SMAD3-driven fibrogenic ECM-production program (COL1A1/COL1A2/COL3A1/FN1/CTGF) and matrix remodeling (MMP2/TIMP1) that define activated PSCs in pancreatitis and PDAC desmoplasia (Apte et al.; Omary et al., J Clin Invest, 2007, PSC biology review).",
           "references": [
-            "ref-44"
+            "ref-44",
+            "ref-66",
+            "ref-67"
           ]
         },
         {
