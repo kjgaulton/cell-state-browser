@@ -381,6 +381,14 @@ input[type="checkbox"] {
   margin-top: 14px;
 }
 
+/* .hidden and .program-activity-list are both single-class selectors, so
+   without this higher-specificity override, .program-activity-list's own
+   `display: grid` (declared later in this file) would win the cascade over
+   .hidden's `display: none` and the list would stay visible. */
+#programActivityList.hidden {
+  display: none;
+}
+
 .program-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
