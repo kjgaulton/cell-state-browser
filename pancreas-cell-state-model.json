@@ -2578,29 +2578,39 @@
         },
         {
           "id": "ductal-cf-dysfunction",
-          "name": "CFTR-dysfunctional ductal cell",
+          "name": "Mucinous secretory ductal cell",
           "phenotype": "Impaired bicarbonate/fluid secretion characteristic of cystic fibrosis-related exocrine pancreatic disease",
           "genes": [
-            "CFTR",
-            "SLC4A4",
-            "SLC26A6",
-            "AQP1",
-            "CA2",
-            "MUC1",
-            "MUC6",
+            "AGR2",
+            "ANXA10",
+            "CLDN18",
+            "CTSE",
+            "MUC5AC",
+            "MUC5B",
+            "SPDEF",
+            "TFF1",
             "TFF2",
-            "SPINK1",
-            "PDX1"
+            "TFF3"
           ],
+          "notes": "Cell state of ductal cells related to increased production of mucins",
           "activities": {
             "ductal-identity": 1,
+            "fluid-bicarbonate": 0,
             "mucin-secretion": 2,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": 0,
+            "ductal-oxidative-stress": 1,
+            "panin-progression": 0,
             "ductal-inflammation": 2,
-            "ductal-oxidative-stress": 1
+            "ductal-apoptosis": 0
           },
-          "notes": "Loss/dysfunction of CFTR is the direct cause of impaired ductal bicarbonate-fluid secretion in CF-related exocrine pancreatic disease (Wine/Reddy, J Cell Sci, 1993 on CFTR and MUC1 co-expression in human ductal cells; 'CFTR, Mucins and Mucus Obstruction in Cystic Fibrosis', Cold Spring Harb Perspect Med, 2012). MUC1/MUC6/TFF2 reflect mucus hypersecretion and inspissation characteristic of the CF duct. SPINK1 is a well-documented genetic modifier of pancreatic disease severity that interacts with CFTR genotype. PDX1 up-regulation has recently been reported as a consequence of CFTR loss altering ductal cell fate ('CFTR represses a PDX1 axis to govern pancreatic ductal cell fate', 2024). This panel is intentionally at 10 genes because ductal-cell-intrinsic transcriptomic data specific to CF (as opposed to CF lung epithelium) is comparatively sparse.",
           "references": [
-            "ref-27"
+            "ref-27",
+            "ref-64",
+            "ref-68",
+            "ref-73"
           ]
         },
         {
