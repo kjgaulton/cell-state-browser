@@ -1806,17 +1806,28 @@
             "HLA-A",
             "B2M",
             "TAP1",
-            "CXCL10"
+            "CXCL10",
+            "HLA-B",
+            "HLA-C",
+            "OAS1"
           ],
+          "notes": "PP-cell-specific single-cell data are sparse, but islet-wide interferon-stimulated gene induction during insulitis is documented to affect all endocrine cell types, including PP cells (Russell et al. 2019 Diabetes).",
           "activities": {
             "gamma-identity": -1,
-            "gamma-interferon": 3,
+            "pp-biosynthesis": 0,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
+            "gamma-er-folding": 0,
             "gamma-upr": 1,
-            "gamma-oxidative-stress": 1
+            "gamma-oxidative-stress": 1,
+            "gamma-interferon": 3,
+            "gamma-apoptosis": 0
           },
-          "notes": "PP-cell-specific single-cell data are sparse, but islet-wide interferon-stimulated gene induction during insulitis is documented to affect all endocrine cell types, including PP cells (Russell et al. 2019 Diabetes).",
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-46",
+            "ref-48"
           ]
         }
       ]
