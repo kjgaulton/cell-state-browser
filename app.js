@@ -11,7 +11,8 @@ const GITHUB_TOKEN_KEY = "github-pat-cell-state-browser";
 // tissue selectable -- no other code changes needed.
 const TISSUES = [
   { id: "pancreas", name: "Pancreas", file: "pancreas-cell-state-model.json" },
-  { id: "liver", name: "Liver", file: "liver-cell-state-model.json" }
+  { id: "liver", name: "Liver", file: "liver-cell-state-model.json" },
+  { id: "pancreas-condensed", name: "Pancreas (condensed)", file: "pancreas-cell-state-model-condensed.json" }
 ];
 const ACTIVE_TISSUE_KEY = "cell-model-browser-active-tissue";
 

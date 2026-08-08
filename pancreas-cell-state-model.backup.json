@@ -1,0 +1,4569 @@
+{
+  "cellTypes": [
+    {
+      "id": "beta-cell",
+      "name": "Beta cell",
+      "programs": [
+        {
+          "id": "identity",
+          "name": "Beta-cell identity",
+          "category": "Core identity",
+          "function": "Mature beta-cell transcriptional identity",
+          "genes": [
+            "INS",
+            "IAPP",
+            "PDX1",
+            "NKX6-1",
+            "MAFA",
+            "UCN3",
+            "PCSK1",
+            "SLC30A8"
+          ]
+        },
+        {
+          "id": "insulin",
+          "name": "Insulin biosynthesis",
+          "category": "Secretion",
+          "function": "Production and processing of insulin",
+          "genes": [
+            "INS",
+            "PCSK1",
+            "PCSK2",
+            "CPE",
+            "PAM",
+            "IAPP"
+          ]
+        },
+        {
+          "id": "secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Glucose sensing and insulin release",
+          "genes": [
+            "GCK",
+            "KCNJ11",
+            "ABCC8",
+            "CACNA1A",
+            "CACNA1D",
+            "SNAP25",
+            "STX1A",
+            "SYT7"
+          ]
+        },
+        {
+          "id": "granule",
+          "name": "Secretory granule biology",
+          "category": "Secretion",
+          "function": "Granule formation, trafficking, and docking",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "SCG2",
+            "SCGN",
+            "VAMP2",
+            "RAB3A",
+            "RPH3AL"
+          ]
+        },
+        {
+          "id": "metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "mito-qc",
+          "name": "Mitochondrial quality control",
+          "category": "Metabolism",
+          "function": "Mitochondrial maintenance",
+          "genes": [
+            "PINK1",
+            "PRKN",
+            "OPA1",
+            "MFN2",
+            "BNIP3"
+          ]
+        },
+        {
+          "id": "er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "HERPUD1",
+            "DNAJB9",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "TXNIP",
+            "PRDX1",
+            "PRDX4",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "autophagy",
+          "name": "Autophagy / lysosome",
+          "category": "Protein homeostasis",
+          "function": "Recycling damaged proteins and organelles",
+          "genes": [
+            "SQSTM1",
+            "MAP1LC3B",
+            "ATG",
+            "CTSB",
+            "CTSD"
+          ]
+        },
+        {
+          "id": "proteasome",
+          "name": "Proteasome",
+          "category": "Protein homeostasis",
+          "function": "Protein degradation",
+          "genes": [
+            "PSMA",
+            "PSMB",
+            "PSMC"
+          ]
+        },
+        {
+          "id": "cell-cycle",
+          "name": "Cell cycle",
+          "category": "Cell fate",
+          "function": "Cell proliferation",
+          "genes": [
+            "MKI67",
+            "TOP2A",
+            "CCNB1",
+            "CDK1"
+          ]
+        },
+        {
+          "id": "dna-damage",
+          "name": "DNA damage",
+          "category": "Cell fate",
+          "function": "DNA repair and damage response",
+          "genes": [
+            "GADD45A",
+            "CDKN1A",
+            "ATM",
+            "BRCA1"
+          ]
+        },
+        {
+          "id": "hypoxia",
+          "name": "Hypoxia",
+          "category": "Stress response",
+          "function": "Oxygen response",
+          "genes": [
+            "VEGFA",
+            "EGLN3",
+            "HIF1A targets"
+          ]
+        },
+        {
+          "id": "interferon",
+          "name": "Interferon response",
+          "category": "Immune response",
+          "function": "Antiviral and inflammatory signaling",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFIT3",
+            "IFI44L",
+            "MX1",
+            "ISG15"
+          ]
+        },
+        {
+          "id": "antigen",
+          "name": "Antigen presentation",
+          "category": "Immune response",
+          "function": "Immune visibility",
+          "genes": [
+            "B2M",
+            "HLA-A",
+            "HLA-B",
+            "HLA-C",
+            "TAP1",
+            "TAP2"
+          ]
+        },
+        {
+          "id": "cytokine",
+          "name": "Cytokine signaling",
+          "category": "Immune response",
+          "function": "TNF, IL1, and JAK-STAT signaling",
+          "genes": [
+            "SOCS1",
+            "NFKBIA",
+            "CCL2",
+            "CXCL10"
+          ]
+        },
+        {
+          "id": "dediff",
+          "name": "Dedifferentiation",
+          "category": "Cell fate",
+          "function": "Loss of mature identity",
+          "genes": [
+            "ALDH1A3",
+            "SOX9",
+            "NEUROG3",
+            "FOSL1"
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Developmental plasticity",
+          "category": "Cell fate",
+          "function": "Progenitor-like programs",
+          "genes": [
+            "PAX4",
+            "NKX2-2",
+            "ISL1",
+            "HES1"
+          ]
+        },
+        {
+          "id": "transdiff",
+          "name": "Beta-to-alpha transdifferentiation",
+          "category": "Cell fate",
+          "function": "Ectopic activation of alpha-cell lineage genes with loss of beta-cell identity",
+          "genes": [
+            "ARX",
+            "MAFB",
+            "GCG",
+            "IRX2"
+          ]
+        },
+        {
+          "id": "senescence",
+          "name": "Senescence",
+          "category": "Cell fate",
+          "function": "Stable stress and cell-cycle arrest",
+          "genes": [
+            "CDKN2A",
+            "CDKN1A",
+            "GDF15",
+            "SERPINE1"
+          ]
+        },
+        {
+          "id": "apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic programs",
+          "genes": [
+            "BCL2L1",
+            "MCL1",
+            "MANF"
+          ]
+        },
+        {
+          "id": "zinc",
+          "name": "Zinc homeostasis",
+          "category": "Structural maintenance",
+          "function": "Insulin crystallization",
+          "genes": [
+            "SLC30A8",
+            "MT1X",
+            "MT2A"
+          ]
+        },
+        {
+          "id": "calcium",
+          "name": "Calcium homeostasis",
+          "category": "Structural maintenance",
+          "function": "Calcium handling",
+          "genes": [
+            "ATP2A2",
+            "RYR2",
+            "ITPR3",
+            "CALM"
+          ]
+        },
+        {
+          "id": "cytoskeleton",
+          "name": "Cytoskeleton",
+          "category": "Structural maintenance",
+          "function": "Vesicle movement",
+          "genes": [
+            "ACTB",
+            "TUBA1B",
+            "MYH9"
+          ]
+        },
+        {
+          "id": "ecm",
+          "name": "ECM interaction",
+          "category": "Structural maintenance",
+          "function": "Adhesion and matrix sensing",
+          "genes": [
+            "ITGA6",
+            "ITGB1",
+            "LAMB1",
+            "COL4A1"
+          ]
+        },
+        {
+          "id": "lipid-handling",
+          "name": "Lipid uptake and handling",
+          "category": "Metabolism",
+          "function": "Fatty acid uptake, intracellular lipid trafficking, and lipid droplet buffering",
+          "genes": [
+            "CD36",
+            "FABP3",
+            "FABP5",
+            "PLIN2",
+            "DGAT1",
+            "DGAT2"
+          ]
+        },
+        {
+          "id": "fatty-acid-oxidation",
+          "name": "Fatty acid oxidation",
+          "category": "Metabolism",
+          "function": "Mitochondrial beta-oxidation and lipid-derived energy metabolism",
+          "genes": [
+            "CPT1A",
+            "CPT2",
+            "ACADVL",
+            "ACADM",
+            "HADHA",
+            "PPARA"
+          ]
+        },
+        {
+          "id": "lipotoxic-stress",
+          "name": "Lipotoxic stress",
+          "category": "Stress response",
+          "function": "Cellular stress from excess saturated fatty acids and toxic lipid intermediates",
+          "genes": [
+            "SCD",
+            "ELOVL6",
+            "ACSL4",
+            "CERS2",
+            "CERS6",
+            "DDIT3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional",
+          "name": "Mature functional beta cell",
+          "phenotype": "Canonical healthy beta cell",
+          "genes": [
+            "INS",
+            "IAPP",
+            "PDX1",
+            "NKX6-1",
+            "MAFA",
+            "UCN3",
+            "PCSK1",
+            "SLC30A8",
+            "GCK",
+            "CHGA",
+            "ABCC8",
+            "KCNJ11",
+            "G6PC2",
+            "NEUROD1",
+            "PCSK2"
+          ],
+          "notes": "Canonical mature beta-cell identity/function panel (transcription factors, hormone, prohormone convertase, glucose sensing, KATP channel); textbook/consensus markers used across human islet single-cell atlases (e.g., Segerstolpe et al. 2016 Cell Metab).",
+          "activities": {
+            "identity": 3,
+            "insulin": 3,
+            "secretion": 3,
+            "granule": 2,
+            "metabolism": 2,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": -1,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 1,
+            "cell-cycle": -1,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": -1,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": -1,
+            "apoptosis": -1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-9",
+            "ref-49",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
+          ]
+        },
+        {
+          "id": "secretory-adapted",
+          "name": "Secretory-adapted beta cell",
+          "phenotype": "Prolonged insulin demand; compensation, obesity, or pregnancy",
+          "genes": [
+            "INS",
+            "IAPP",
+            "HSPA5",
+            "XBP1",
+            "PDIA6",
+            "CHGA",
+            "SCGN",
+            "CPE",
+            "PCSK1",
+            "PCSK2",
+            "PAM",
+            "VAMP2",
+            "CALR"
+          ],
+          "notes": "Reflects physiological (adaptive, non-terminal) UPR activation and increased prohormone-processing/secretory-granule capacity that accompanies compensatory insulin demand in pregnancy/obesity, distinct from the maladaptive terminal UPR of the er-stressed state (Lipson et al. 2006; Scheuner & Kaufman 2008 Endocr Rev).",
+          "activities": {
+            "identity": 2,
+            "insulin": 3,
+            "secretion": 2,
+            "granule": 2,
+            "metabolism": 2,
+            "mito-qc": 0,
+            "er-folding": 2,
+            "upr": 1,
+            "oxidative-stress": 1,
+            "autophagy": 1,
+            "proteasome": 0,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": -1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-8"
+          ]
+        },
+        {
+          "id": "er-stressed",
+          "name": "ER-stressed beta cell",
+          "phenotype": "Beta cell undergoing endoplasmic reticulum (ER) stress",
+          "genes": [
+            "DDIT3",
+            "HSPA5",
+            "HERPUD1",
+            "DNAJB9",
+            "PDIA4",
+            "ATF4",
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "TRIB3",
+            "ATF3",
+            "PPP1R15A",
+            "CALR",
+            "HSP90B1",
+            "MANF"
+          ],
+          "notes": "",
+          "activities": {
+            "identity": -2,
+            "insulin": -2,
+            "secretion": 0,
+            "granule": 0,
+            "metabolism": 0,
+            "mito-qc": 0,
+            "er-folding": 2,
+            "upr": 3,
+            "oxidative-stress": 2,
+            "autophagy": 1,
+            "proteasome": 1,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": 1,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-16",
+            "ref-46",
+            "ref-47"
+          ]
+        },
+        {
+          "id": "interferon-activated",
+          "name": "Inflammatory response beta cell",
+          "phenotype": "Cytokine-driven inflammatory state, typical of early T1D",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15",
+            "HLA-A",
+            "B2M",
+            "CXCL10",
+            "HLA-B",
+            "TAP1",
+            "IRF1",
+            "OAS1",
+            "PSMB9",
+            "HLA-C"
+          ],
+          "notes": "Type I/II interferon-stimulated gene and MHC-I hyperexpression signature described in early/insulitic T1D beta cells (Russell et al. 2019 Diabetes; Marroqui et al. 2017 studies of cytokine-exposed islets).",
+          "activities": {
+            "identity": -1,
+            "insulin": 0,
+            "secretion": 0,
+            "granule": 0,
+            "metabolism": 0,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 1,
+            "oxidative-stress": 1,
+            "autophagy": 0,
+            "proteasome": 0,
+            "cell-cycle": 0,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 3,
+            "antigen": 3,
+            "cytokine": 2,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": 0,
+            "survival": 0,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-15",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "glucolipotoxicity",
+          "name": "Glucolipotoxicity beta cell",
+          "phenotype": "Combined high glucose and elevated lipid exposure, often associated with metabolic stress in T2D",
+          "genes": [
+            "TXNIP",
+            "SCD",
+            "CD36",
+            "PLIN2",
+            "DDIT3",
+            "HSPA5",
+            "SOD2",
+            "CPT1A",
+            "CXCL10",
+            "ELOVL6",
+            "ACSL4",
+            "DGAT2",
+            "CERS2"
+          ],
+          "activities": {
+            "identity": -1,
+            "insulin": -1,
+            "secretion": -1,
+            "metabolism": 1,
+            "mito-qc": 1,
+            "er-folding": 2,
+            "upr": 2,
+            "oxidative-stress": 3,
+            "autophagy": 1,
+            "proteasome": 1,
+            "cytokine": 1,
+            "dediff": 1,
+            "apoptosis": 1,
+            "lipid-handling": 3,
+            "fatty-acid-oxidation": 2,
+            "lipotoxic-stress": 3
+          },
+          "notes": "Combined high glucose (TXNIP induction) and elevated free fatty acid signature (lipid droplet/ceramide/lipogenic and oxidative-stress genes) seen in glucolipotoxic beta-cell models relevant to T2D (Poitout & Robertson 2008 Endocr Rev; Cnop lab lipotoxicity/ceramide studies).",
+          "references": [
+            "ref-17"
+          ]
+        },
+        {
+          "id": "dedifferentiated",
+          "name": "Dedifferentiated beta cell",
+          "phenotype": "Loss of mature beta-cell identity toward an ALDH1A3+ progenitor-like state, described in type 2 diabetes and aging",
+          "genes": [
+            "ALDH1A3",
+            "SOX9",
+            "NEUROG3",
+            "HES1",
+            "GATA6",
+            "MYCL",
+            "SMOC1",
+            "LDHA",
+            "SLC16A1",
+            "NKX2-2",
+            "PDX1",
+            "FOXO1",
+            "HK1",
+            "CD81",
+            "ID1",
+            "MAFB"
+          ],
+          "notes": "Verified via WebSearch. Loss of mature identity toward a progenitor/multipotent-like and 'disallowed-gene'-expressing state: ALDH1A3/SOX9/NEUROG3/HES1/GATA6/FOXO1(nuclear exclusion) from Talchai et al. 2012 Cell and Cinti et al. 2016 JCEM (human T2D); LDHA/SLC16A1 are classic 'disallowed genes' re-expressed on identity loss (Pullen & Rutter 2013); SMOC1 is a newly identified (2025) alpha-lineage gene ectopically induced in dedifferentiating beta cells.",
+          "activities": {
+            "identity": -2,
+            "insulin": -2,
+            "secretion": -2,
+            "granule": -1,
+            "metabolism": 0,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 0,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 0,
+            "cell-cycle": -1,
+            "dna-damage": 0,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 3,
+            "development": 2,
+            "transdiff": 0,
+            "senescence": 0,
+            "apoptosis": -1,
+            "survival": 1,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-1",
+            "ref-2",
+            "ref-3",
+            "ref-49",
+            "ref-50"
+          ]
+        },
+        {
+          "id": "transdifferentiated",
+          "name": "Transdifferentiated beta cell",
+          "phenotype": "Beta-to-alpha lineage conversion with ectopic glucagon expression, an extreme form of beta-cell plasticity reported in longstanding diabetes",
+          "genes": [
+            "ARX",
+            "MAFB",
+            "GCG",
+            "ALDH1A3",
+            "IRX2",
+            "POU6F2",
+            "FEV",
+            "KCNJ3",
+            "SV2B",
+            "SMOC1"
+          ],
+          "activities": {
+            "identity": -2,
+            "insulin": -2,
+            "secretion": -1,
+            "dediff": 2,
+            "development": 2,
+            "transdiff": 3,
+            "cell-cycle": -1,
+            "apoptosis": -1,
+            "survival": 1
+          },
+          "notes": "Verified via WebSearch. Beta-to-alpha lineage conversion signature (ectopic acquisition of full alpha-cell transcriptional program) from human islet studies of longstanding diabetes (Spijker et al. 2015 Diabetes; SMOC1 trajectory-inference paper, Nat Commun 2025).",
+          "references": [
+            "ref-4"
+          ]
+        },
+        {
+          "id": "proliferating",
+          "name": "Proliferating beta cell",
+          "phenotype": "Compensatory beta-cell replication seen in pregnancy, obesity, and early compensatory hyperplasia; identity is largely retained while cycling",
+          "genes": [
+            "MKI67",
+            "TOP2A",
+            "CCNB1",
+            "INS",
+            "PDX1",
+            "FOXM1",
+            "CCND2",
+            "CCND1",
+            "PLK1",
+            "CENPA",
+            "BIRC5",
+            "PCNA",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "UBE2C"
+          ],
+          "notes": "Verified via WebSearch. Compensatory replication signature retaining identity genes; FOXM1/CCND2/PLK1/CENPA axis and BIRC5 are established drivers of adaptive human beta-cell proliferation in obesity/pregnancy (Zhong lab FoxM1 studies; Aguayo-Mazzucato/Bonner-Weir compensatory expansion literature).",
+          "activities": {
+            "identity": 2,
+            "insulin": 2,
+            "secretion": 1,
+            "granule": 0,
+            "metabolism": 1,
+            "mito-qc": 0,
+            "er-folding": 0,
+            "upr": 0,
+            "oxidative-stress": 0,
+            "autophagy": 0,
+            "proteasome": 0,
+            "cell-cycle": 3,
+            "dna-damage": 1,
+            "hypoxia": 0,
+            "interferon": 0,
+            "antigen": 0,
+            "cytokine": 0,
+            "dediff": 0,
+            "development": 0,
+            "transdiff": 0,
+            "senescence": -2,
+            "apoptosis": -1,
+            "survival": 2,
+            "zinc": 0,
+            "calcium": 0,
+            "cytoskeleton": 0,
+            "ecm": 0,
+            "lipid-handling": 0,
+            "fatty-acid-oxidation": 0,
+            "lipotoxic-stress": 0
+          },
+          "references": [
+            "ref-6",
+            "ref-8",
+            "ref-57"
+          ]
+        },
+        {
+          "id": "senescent",
+          "name": "Senescent beta cell",
+          "phenotype": "Cell-cycle-arrested, apoptosis-resistant beta cell with a senescence-associated secretory phenotype (SASP), implicated in aging and type 2 diabetes",
+          "genes": [
+            "CDKN2A",
+            "CDKN1A",
+            "GDF15",
+            "SERPINE1",
+            "CCL2",
+            "TP53",
+            "B2M",
+            "IL1B",
+            "GLB1",
+            "TNFRSF1B"
+          ],
+          "activities": {
+            "identity": -1,
+            "insulin": -1,
+            "senescence": 3,
+            "cell-cycle": -2,
+            "oxidative-stress": 2,
+            "cytokine": 2,
+            "apoptosis": -1,
+            "survival": 1,
+            "upr": 1
+          },
+          "notes": "Verified via WebSearch. p16/CDKN2A (stable arrest) and p21/CDKN1A (early arrest) plus SASP factors (GDF15, SERPINE1/PAI-1, CCL2, IL1B) from Aguayo-Mazzucato et al. 2019 Cell Metab and Thompson et al. 2019 Cell Metab; B2M was used as a cell-surface sorting marker for senescent human beta cells in the same studies; GLB1 encodes SA-beta-galactosidase, the classical senescence enzyme marker.",
+          "references": [
+            "ref-6",
+            "ref-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alpha-cell",
+      "name": "Alpha cell",
+      "programs": [
+        {
+          "id": "alpha-identity",
+          "name": "Alpha-cell identity",
+          "category": "Core identity",
+          "function": "Mature alpha-cell transcriptional identity",
+          "genes": [
+            "GCG",
+            "ARX",
+            "MAFB",
+            "IRX2",
+            "IRX1",
+            "TTR"
+          ]
+        },
+        {
+          "id": "glucagon",
+          "name": "Glucagon biosynthesis",
+          "category": "Secretion",
+          "function": "Production and processing of glucagon",
+          "genes": [
+            "GCG",
+            "PCSK2",
+            "CPE",
+            "PAM"
+          ]
+        },
+        {
+          "id": "alpha-secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Low-glucose sensing and glucagon release",
+          "genes": [
+            "KCNK16",
+            "CACNA1A",
+            "SCN9A",
+            "SNAP25",
+            "STX1A",
+            "SYT7"
+          ]
+        },
+        {
+          "id": "alpha-granule",
+          "name": "Secretory granule biology",
+          "category": "Secretion",
+          "function": "Granule formation, trafficking, and docking",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "SCG2",
+            "RAB3A",
+            "VAMP2"
+          ]
+        },
+        {
+          "id": "alpha-metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "alpha-er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "alpha-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "alpha-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "alpha-interferon",
+          "name": "Interferon response",
+          "category": "Immune response",
+          "function": "Antiviral and inflammatory signaling",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15"
+          ]
+        },
+        {
+          "id": "alpha-antigen",
+          "name": "Antigen presentation",
+          "category": "Immune response",
+          "function": "Immune visibility",
+          "genes": [
+            "B2M",
+            "HLA-A",
+            "HLA-B",
+            "TAP1",
+            "TAP2"
+          ]
+        },
+        {
+          "id": "alpha-dediff",
+          "name": "Dedifferentiation / transdifferentiation",
+          "category": "Cell fate",
+          "function": "Loss of alpha identity and drift toward a beta-like or progenitor state",
+          "genes": [
+            "ARX",
+            "PAX4",
+            "MAFB",
+            "SOX9"
+          ]
+        },
+        {
+          "id": "alpha-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "alpha-survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic programs",
+          "genes": [
+            "BCL2L1",
+            "MCL1"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-alpha",
+          "name": "Mature functional alpha cell",
+          "phenotype": "Canonical healthy alpha cell",
+          "genes": [
+            "GCG",
+            "ARX",
+            "MAFB",
+            "TTR",
+            "IRX2",
+            "IRX1",
+            "PAX6",
+            "FEV",
+            "LOXL4",
+            "CRYBA2",
+            "GC",
+            "SLC7A2",
+            "PCSK2",
+            "TM4SF4",
+            "DPP4"
+          ],
+          "notes": "Verified via WebSearch. Canonical alpha-cell identity/marker panel including transcription factors and human-alpha-enriched surface/secreted markers identified in single-cell islet atlases (LOXL4, CRYBA2, GC, SLC7A2 recur across human alpha-cell scRNA-seq studies; SLC7A2 confirmed functionally required for alpha-cell proliferation/secretion, JCI 2024).",
+          "activities": {
+            "alpha-identity": 3,
+            "glucagon": 3,
+            "alpha-secretion": 3,
+            "alpha-granule": 2,
+            "alpha-metabolism": 2,
+            "alpha-er-folding": 0,
+            "alpha-upr": -1,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": -1,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": -1,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-9",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
+          ]
+        },
+        {
+          "id": "hyperglucagonemic",
+          "name": "Hyper-secretory alpha cell",
+          "phenotype": "Chronic hyperglycemia-driven overactivity seen in T2D",
+          "genes": [
+            "GCG",
+            "PCSK2",
+            "CHGA",
+            "SLC7A2",
+            "SLC38A5",
+            "ARX",
+            "MAFB",
+            "TTR",
+            "TXNIP"
+          ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because a distinct human single-cell transcriptomic signature for chronic hyperglucagonemia (as opposed to physiology) is not well established. SLC38A5/SLC7A2 amino-acid transporter induction is documented in the liver-alpha-cell axis literature on glucagon receptor resistance/hyperglucagonemia (Kim et al. 2017 Cell Metab; Dean lab SLC7A2 studies, JCI 2024); remaining genes reflect increased glucagon biosynthetic machinery.",
+          "activities": {
+            "alpha-identity": 2,
+            "glucagon": 3,
+            "alpha-secretion": 2,
+            "alpha-granule": 2,
+            "alpha-metabolism": 2,
+            "alpha-er-folding": 1,
+            "alpha-upr": 1,
+            "alpha-oxidative-stress": 1,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-12"
+          ]
+        },
+        {
+          "id": "alpha-dedifferentiated",
+          "name": "Dedifferentiated alpha cell",
+          "phenotype": "Loss of alpha identity reported in long-standing T1D and T2D",
+          "genes": [
+            "PAX4",
+            "SOX9",
+            "NKX6-1",
+            "PDX1",
+            "INS",
+            "MAFA",
+            "GATA6",
+            "HES1"
+          ],
+          "activities": {
+            "alpha-identity": -2,
+            "glucagon": -2,
+            "alpha-dediff": 3,
+            "alpha-oxidative-stress": 1,
+            "alpha-apoptosis": 1
+          },
+          "notes": "Verified via WebSearch; fewer than 10 genes as human evidence for alpha-cell dedifferentiation is much thinner than for beta cells. PAX4 gain and reduced ARX with increased NKX6.1 in alpha cells accompanying reduced beta-cell mass was directly shown in human pancreas (Sci Rep 2021, 'Increased NKX6.1... decreased ARX expression in alpha cells'); SOX9/GATA6/HES1 are shared progenitor-reversion markers by analogy to beta-cell dedifferentiation literature.",
+          "references": [
+            "ref-13"
+          ]
+        },
+        {
+          "id": "alpha-inflammatory",
+          "name": "Inflammatory response alpha cell",
+          "phenotype": "Cytokine and interferon exposure typical of insulitis in T1D",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "B2M",
+            "IFI44L",
+            "MX1",
+            "ISG15",
+            "HLA-A",
+            "HLA-B",
+            "TAP1",
+            "CXCL10",
+            "IRF1",
+            "HLA-C"
+          ],
+          "notes": "Interferon-stimulated gene/MHC-I signature also documented in alpha cells during insulitis, with alpha cells showing even stronger basal and induced immune/HLA responses than beta cells in T1D single-cell studies (Russell et al. 2019 Diabetes).",
+          "activities": {
+            "alpha-identity": -1,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 1,
+            "alpha-oxidative-stress": 1,
+            "alpha-interferon": 3,
+            "alpha-antigen": 3,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-15",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "er-stress-response-alpha-cell",
+          "name": "ER stress response alpha cell",
+          "phenotype": "Alpha cell in an endoplasmic reticulum (ER) stress state",
+          "genes": [
+            "ATF4",
+            "DDIT3",
+            "DNAJB9",
+            "HERPUD1",
+            "HSP90B1",
+            "HSPA5",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A",
+            "XBP1"
+          ],
+          "notes": "",
+          "activities": {
+            "alpha-identity": 0,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 0,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-46",
+            "ref-47"
+          ]
+        },
+        {
+          "id": "proliferating-alpha-cell",
+          "name": "Proliferating alpha cell",
+          "phenotype": "Alpha cell that is proliferating",
+          "genes": [
+            "BIRC5",
+            "CCNB1",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "MKI67",
+            "PCNA",
+            "TOP2A",
+            "UBE2C"
+          ],
+          "notes": "",
+          "activities": {
+            "alpha-identity": 0,
+            "glucagon": 0,
+            "alpha-secretion": 0,
+            "alpha-granule": 0,
+            "alpha-metabolism": 0,
+            "alpha-er-folding": 0,
+            "alpha-upr": 0,
+            "alpha-oxidative-stress": 0,
+            "alpha-interferon": 0,
+            "alpha-antigen": 0,
+            "alpha-dediff": 0,
+            "alpha-apoptosis": 0,
+            "alpha-survival": 0
+          },
+          "references": [
+            "ref-57"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delta-cell",
+      "name": "Delta cell",
+      "programs": [
+        {
+          "id": "delta-identity",
+          "name": "Delta-cell identity",
+          "category": "Core identity",
+          "function": "Mature delta-cell transcriptional identity",
+          "genes": [
+            "SST",
+            "HHEX",
+            "RBP4",
+            "LEPR",
+            "PDX1"
+          ]
+        },
+        {
+          "id": "somatostatin",
+          "name": "Somatostatin biosynthesis",
+          "category": "Secretion",
+          "function": "Production and processing of somatostatin",
+          "genes": [
+            "SST",
+            "PCSK1",
+            "CPE",
+            "PAM"
+          ]
+        },
+        {
+          "id": "delta-secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Paracrine (ghrelin/glucose)-driven somatostatin release",
+          "genes": [
+            "GHSR",
+            "CACNA1A",
+            "SNAP25",
+            "STX1A"
+          ]
+        },
+        {
+          "id": "delta-granule",
+          "name": "Secretory granule biology",
+          "category": "Secretion",
+          "function": "Granule formation, trafficking, and docking",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "SCG2",
+            "RAB3A",
+            "VAMP2"
+          ]
+        },
+        {
+          "id": "delta-metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "delta-er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "delta-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "delta-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "delta-interferon",
+          "name": "Interferon response",
+          "category": "Immune response",
+          "function": "Antiviral and inflammatory signaling",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15"
+          ]
+        },
+        {
+          "id": "delta-antigen",
+          "name": "Antigen presentation",
+          "category": "Immune response",
+          "function": "Immune visibility",
+          "genes": [
+            "B2M",
+            "HLA-A",
+            "HLA-B",
+            "TAP1",
+            "TAP2"
+          ]
+        },
+        {
+          "id": "delta-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "delta-survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic programs",
+          "genes": [
+            "BCL2L1",
+            "MCL1"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-delta",
+          "name": "Mature functional delta cell",
+          "phenotype": "Canonical healthy delta cell providing paracrine inhibition of insulin and glucagon release",
+          "genes": [
+            "SST",
+            "HHEX",
+            "RBP4",
+            "LEPR",
+            "GHSR",
+            "PCSK1",
+            "CPE",
+            "PAM",
+            "CHGA",
+            "PDX1",
+            "FFAR4",
+            "ABCC8",
+            "CRHR2",
+            "PCSK2",
+            "TCF4"
+          ],
+          "notes": "Verified via WebSearch. HHEX, RBP4, LEPR (leptin receptor), and GHSR (ghrelin receptor, mediates paracrine ghrelin regulation of somatostatin secretion) are established delta-cell-enriched markers from purified islet-subpopulation transcriptomics (Adriaenssens et al. 2016 Diabetologia; DiGruccio et al. 2016 Mol Metab).",
+          "activities": {
+            "delta-identity": 3,
+            "somatostatin": 3,
+            "delta-secretion": 3,
+            "delta-granule": 2,
+            "delta-metabolism": 2,
+            "delta-er-folding": 0,
+            "delta-upr": -1,
+            "delta-oxidative-stress": 0,
+            "delta-interferon": -1,
+            "delta-antigen": 0,
+            "delta-apoptosis": -1,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-10",
+            "ref-51",
+            "ref-52",
+            "ref-53",
+            "ref-54"
+          ]
+        },
+        {
+          "id": "delta-hypersecretory",
+          "name": "Hyper-secretory delta cell",
+          "phenotype": "Increased somatostatin tone reported in some models of islet dysfunction and aging",
+          "genes": [
+            "SST",
+            "PCSK1",
+            "LEPR",
+            "GHSR",
+            "CHGA",
+            "PCSK2",
+            "HHEX"
+          ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because a discrete 'hypersecretory' delta-cell transcriptional state is not clearly defined in the literature. Genes reflect somatostatin biosynthesis/secretion machinery and the known leptin-LEPR and ghrelin-GHSR regulatory loops shown to modulate delta-cell somatostatin output (leptin regulates delta-cell somatostatin secretion, ADA meeting abstract/Diabetes 2023; Adriaenssens et al. 2016).",
+          "activities": {
+            "delta-identity": 2,
+            "somatostatin": 3,
+            "delta-secretion": 2,
+            "delta-granule": 2,
+            "delta-metabolism": 0,
+            "delta-er-folding": 1,
+            "delta-upr": 1,
+            "delta-oxidative-stress": 0,
+            "delta-interferon": 0,
+            "delta-antigen": 0,
+            "delta-apoptosis": 0,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-10"
+          ]
+        },
+        {
+          "id": "delta-inflammatory",
+          "name": "Inflammatory response delta cell",
+          "phenotype": "Cytokine/interferon exposure typical of insulitis",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "B2M",
+            "IFI44L",
+            "MX1",
+            "ISG15",
+            "HLA-A",
+            "HLA-B",
+            "TAP1",
+            "CXCL10",
+            "IRF1",
+            "HLA-C"
+          ],
+          "notes": "Same class-wide interferon/MHC-I response documented across islet endocrine cell types (including delta cells) during insulitis (Russell et al. 2019 Diabetes).",
+          "activities": {
+            "delta-identity": -1,
+            "somatostatin": 0,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 1,
+            "delta-oxidative-stress": 1,
+            "delta-interferon": 3,
+            "delta-antigen": 3,
+            "delta-apoptosis": 0,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-15",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "delta-reduced",
+          "name": "Reduced function delta cell",
+          "phenotype": "Loss of delta-cell mass and function reported in longstanding diabetes",
+          "genes": [
+            "SST",
+            "HHEX",
+            "RBP4",
+            "BAX",
+            "CASP3",
+            "BBC3",
+            "PMAIP1"
+          ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because the literature (Somatostatin-containing delta-cell number is reduced in Type 2 Diabetes, PMC9959292) documents reduced delta-cell mass/number in T2D rather than a well-defined distinct transcriptional signature of surviving/declining cells. Genes reflect diminished identity-gene dosage plus the intrinsic apoptosis pathway implicated in cell loss.",
+          "activities": {
+            "delta-identity": -2,
+            "somatostatin": -2,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 0,
+            "delta-oxidative-stress": 1,
+            "delta-interferon": 0,
+            "delta-antigen": 0,
+            "delta-apoptosis": 1,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-11"
+          ]
+        },
+        {
+          "id": "er-stress-response-delta-cell",
+          "name": "ER stress response delta cell",
+          "phenotype": "",
+          "genes": [
+            "ATF4",
+            "DDIT3",
+            "DNAJB9",
+            "HERPUD1",
+            "HSP90B1",
+            "HSPA5",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A",
+            "XBP1"
+          ],
+          "notes": "",
+          "activities": {
+            "delta-identity": 0,
+            "somatostatin": 0,
+            "delta-secretion": 0,
+            "delta-granule": 0,
+            "delta-metabolism": 0,
+            "delta-er-folding": 0,
+            "delta-upr": 0,
+            "delta-oxidative-stress": 0,
+            "delta-interferon": 0,
+            "delta-antigen": 0,
+            "delta-apoptosis": 0,
+            "delta-survival": 0
+          },
+          "references": [
+            "ref-46",
+            "ref-47"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gamma-cell",
+      "name": "Gamma cell (PP cell)",
+      "programs": [
+        {
+          "id": "gamma-identity",
+          "name": "Gamma-cell (PP-cell) identity",
+          "category": "Core identity",
+          "function": "Mature PP-cell transcriptional identity",
+          "genes": [
+            "PPY",
+            "MEIS1",
+            "ETV1",
+            "PAX6"
+          ]
+        },
+        {
+          "id": "pp-biosynthesis",
+          "name": "Pancreatic polypeptide biosynthesis",
+          "category": "Secretion",
+          "function": "Production and processing of pancreatic polypeptide",
+          "genes": [
+            "PPY",
+            "PCSK1N",
+            "PCSK2",
+            "CPE"
+          ]
+        },
+        {
+          "id": "gamma-secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Vagally-mediated and meal-stimulated PP release",
+          "genes": [
+            "CACNA1A",
+            "SNAP25",
+            "STX1A",
+            "SYT7"
+          ]
+        },
+        {
+          "id": "gamma-granule",
+          "name": "Secretory granule biology",
+          "category": "Secretion",
+          "function": "Granule formation, trafficking, and docking",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "SCG2",
+            "RAB3A"
+          ]
+        },
+        {
+          "id": "gamma-metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "gamma-er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "gamma-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "gamma-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "gamma-interferon",
+          "name": "Interferon response",
+          "category": "Immune response",
+          "function": "Antiviral and inflammatory signaling",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15"
+          ]
+        },
+        {
+          "id": "gamma-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-gamma",
+          "name": "Mature functional gamma cell",
+          "phenotype": "Canonical healthy PP cell regulating pancreatic exocrine secretion and appetite via PPY",
+          "genes": [
+            "PPY",
+            "MEIS1",
+            "ETV1",
+            "PAX6",
+            "ISL1",
+            "PCSK1N",
+            "PCSK2",
+            "CPE",
+            "CHGA",
+            "CHGB",
+            "FEV",
+            "MAFB",
+            "PCSK1",
+            "RFX6",
+            "TTR"
+          ],
+          "notes": "Verified via WebSearch; fewer than 10 genes reflecting the limited literature specifically characterizing this rare/understudied cell type. Markers drawn from human islet single-cell atlases that resolve a distinct PPY+ gamma/PP-cell cluster (Segerstolpe et al. 2016 Cell Metab; Muraro et al. 2016 Cell Systems).",
+          "activities": {
+            "gamma-identity": 3,
+            "pp-biosynthesis": 3,
+            "gamma-secretion": 3,
+            "gamma-granule": 2,
+            "gamma-metabolism": 2,
+            "gamma-er-folding": 0,
+            "gamma-upr": -1,
+            "gamma-oxidative-stress": 0,
+            "gamma-interferon": -1,
+            "gamma-apoptosis": -1
+          },
+          "references": [
+            "ref-9",
+            "ref-51",
+            "ref-52",
+            "ref-54",
+            "ref-65"
+          ]
+        },
+        {
+          "id": "gamma-stress",
+          "name": "ER stress gamma cell",
+          "phenotype": "Secretory-overload ER stress state",
+          "genes": [
+            "PPY",
+            "HSPA5",
+            "DDIT3",
+            "XBP1",
+            "ATF4",
+            "HERPUD1",
+            "ATF6",
+            "DNAJB9",
+            "HSP90B1",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A"
+          ],
+          "notes": "No PP/gamma-cell-specific stress transcriptomic study was found; genes are inferred from the generic UPR pathway shared across secretory endocrine cells rather than from direct published PP-cell data. Flagged as lower-confidence/generic.",
+          "activities": {
+            "gamma-identity": 2,
+            "pp-biosynthesis": 2,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
+            "gamma-er-folding": 2,
+            "gamma-upr": 2,
+            "gamma-oxidative-stress": 1,
+            "gamma-interferon": 0,
+            "gamma-apoptosis": 0
+          },
+          "references": [
+            "ref-16",
+            "ref-46",
+            "ref-47"
+          ]
+        },
+        {
+          "id": "gamma-inflammatory",
+          "name": "Inflammatory response gamma cell",
+          "phenotype": "Cytokine/interferon exposure typical of insulitis",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15",
+            "HLA-A",
+            "B2M",
+            "TAP1",
+            "CXCL10",
+            "HLA-B",
+            "HLA-C",
+            "OAS1"
+          ],
+          "notes": "PP-cell-specific single-cell data are sparse, but islet-wide interferon-stimulated gene induction during insulitis is documented to affect all endocrine cell types, including PP cells (Russell et al. 2019 Diabetes).",
+          "activities": {
+            "gamma-identity": -1,
+            "pp-biosynthesis": 0,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
+            "gamma-er-folding": 0,
+            "gamma-upr": 1,
+            "gamma-oxidative-stress": 1,
+            "gamma-interferon": 3,
+            "gamma-apoptosis": 0
+          },
+          "references": [
+            "ref-15",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "bi-hormonal-plasticity-gamma-cell",
+          "name": "Bi-hormonal plasticity gamma cell",
+          "phenotype": "Reported population of gamma cells with activity of multiple hormones",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "FEV",
+            "GCG",
+            "IAPP",
+            "INS",
+            "PCSK1",
+            "PCSK2",
+            "PPY",
+            "SST"
+          ],
+          "notes": "",
+          "activities": {
+            "gamma-identity": 0,
+            "pp-biosynthesis": 0,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
+            "gamma-er-folding": 0,
+            "gamma-upr": 0,
+            "gamma-oxidative-stress": 0,
+            "gamma-interferon": 0,
+            "gamma-apoptosis": 0
+          },
+          "references": [
+            "ref-65"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epsilon-cell",
+      "name": "Epsilon cell",
+      "programs": [
+        {
+          "id": "epsilon-identity",
+          "name": "Epsilon-cell identity",
+          "category": "Core identity",
+          "function": "Ghrelin-cell transcriptional identity",
+          "genes": [
+            "GHRL",
+            "ISL1",
+            "NKX2-2"
+          ]
+        },
+        {
+          "id": "ghrelin-biosynthesis",
+          "name": "Ghrelin biosynthesis",
+          "category": "Secretion",
+          "function": "Production and acylation of ghrelin",
+          "genes": [
+            "GHRL",
+            "MBOAT4",
+            "PCSK1"
+          ]
+        },
+        {
+          "id": "epsilon-secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Regulated ghrelin release",
+          "genes": [
+            "CACNA1A",
+            "SNAP25",
+            "STX1A"
+          ]
+        },
+        {
+          "id": "epsilon-granule",
+          "name": "Secretory granule biology",
+          "category": "Secretion",
+          "function": "Granule formation, trafficking, and docking",
+          "genes": [
+            "CHGA",
+            "CHGB",
+            "SCG2"
+          ]
+        },
+        {
+          "id": "epsilon-metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "epsilon-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "epsilon-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-epsilon",
+          "name": "Mature functional epsilon cell",
+          "phenotype": "Ghrelin-producing cell, abundant in fetal islets and rare in the healthy adult pancreas",
+          "genes": [
+            "GHRL",
+            "ISL1",
+            "NKX2-2",
+            "MBOAT4",
+            "PCSK1",
+            "CHGA",
+            "CHGB",
+            "SCG2"
+          ],
+          "activities": {
+            "epsilon-identity": 3,
+            "ghrelin-biosynthesis": 3,
+            "epsilon-secretion": 2,
+            "epsilon-granule": 2,
+            "epsilon-metabolism": 1
+          },
+          "notes": "Verified via WebSearch; fewer than 10 genes because epsilon cells are rare (~1% of adult islet cells) and poorly studied. GHRL/ISL1/NKX2-2 co-expression (notably without NKX6-1 or PAX6) is directly documented in human fetal and adult pancreas (Andralojc et al. 2009 Diabetologia); MBOAT4 (ghrelin O-acyltransferase) is required for ghrelin activation.",
+          "references": [
+            "ref-14"
+          ]
+        },
+        {
+          "id": "epsilon-developmental",
+          "name": "Developmental (neonatal-like) epsilon cell",
+          "phenotype": "Expanded epsilon-cell population characteristic of the fetal and neonatal pancreas",
+          "genes": [
+            "GHRL",
+            "NKX2-2",
+            "ISL1",
+            "PPY",
+            "MBOAT4",
+            "PCSK1",
+            "CHGA",
+            "SCG2"
+          ],
+          "activities": {
+            "epsilon-identity": 2,
+            "ghrelin-biosynthesis": 2
+          },
+          "notes": "Verified via WebSearch; fewer than 10 genes, thin literature. Reflects the expanded ghrelin+ population (~10% of islet cells at midgestation vs ~1% in adults) and sporadic co-production with pancreatic polypeptide reported in fetal/neonatal human pancreas (Andralojc et al. 2009 Diabetologia; Upchurch/Wierup developmental epsilon-cell literature).",
+          "references": [
+            "ref-14"
+          ]
+        },
+        {
+          "id": "epsilon-stressed",
+          "name": "Stressed epsilon cell",
+          "phenotype": "ER-stress/apoptotic state",
+          "genes": [
+            "XBP1",
+            "DDIT3",
+            "ATF4",
+            "HSPA5",
+            "BAX",
+            "CASP3"
+          ],
+          "activities": {
+            "epsilon-identity": -1,
+            "epsilon-upr": 2,
+            "epsilon-apoptosis": 1
+          },
+          "notes": "No published data describe a specific stress/ER-stress or apoptotic transcriptional state for epsilon cells; this cell type is essentially unstudied in this context. Genes listed are purely inferred from the generic UPR/apoptosis pathways shared by secretory endocrine cells and should be treated as placeholders, not literature-confirmed markers, until primary epsilon-cell stress data exist.",
+          "references": [
+            "ref-16"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acinar-cell",
+      "name": "Acinar cell",
+      "programs": [
+        {
+          "id": "acinar-identity",
+          "name": "Acinar-cell identity",
+          "category": "Core identity",
+          "function": "Mature acinar-cell transcriptional identity",
+          "genes": [
+            "PTF1A",
+            "RBPJL",
+            "GATA4",
+            "NR5A2",
+            "BHLHA15"
+          ]
+        },
+        {
+          "id": "digestive-enzymes",
+          "name": "Digestive enzyme biosynthesis",
+          "category": "Secretion",
+          "function": "Production of proteases, lipases, and amylase for digestion",
+          "genes": [
+            "PRSS1",
+            "PRSS2",
+            "CPA1",
+            "CELA2A",
+            "CTRB1",
+            "CTRB2",
+            "AMY2A",
+            "PNLIP"
+          ]
+        },
+        {
+          "id": "zymogen-granule",
+          "name": "Zymogen granule biology",
+          "category": "Secretion",
+          "function": "Packaging and regulated exocytosis of digestive zymogens",
+          "genes": [
+            "GP2",
+            "SYCN",
+            "CHGB",
+            "RAB3D",
+            "VAMP8"
+          ]
+        },
+        {
+          "id": "acinar-secretion",
+          "name": "Stimulus-secretion coupling",
+          "category": "Secretion",
+          "function": "Cholecystokinin/acetylcholine-driven exocrine secretion",
+          "genes": [
+            "CCKAR",
+            "CHRM3",
+            "RYR2",
+            "ITPR1"
+          ]
+        },
+        {
+          "id": "protease-inhibition",
+          "name": "Zymogen activation control",
+          "category": "Protein homeostasis",
+          "function": "Protection against premature intracellular trypsinogen activation",
+          "genes": [
+            "SPINK1",
+            "CTRC"
+          ]
+        },
+        {
+          "id": "acinar-er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "acinar-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress from very high secretory burden",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "acinar-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "acinar-metabolism",
+          "name": "Oxidative metabolism",
+          "category": "Metabolism",
+          "function": "ATP production and glucose oxidation",
+          "genes": [
+            "IDH3A",
+            "SDHB",
+            "NDUFA",
+            "COX",
+            "ATP5"
+          ]
+        },
+        {
+          "id": "acinar-autophagy",
+          "name": "Autophagy / lysosome",
+          "category": "Protein homeostasis",
+          "function": "Recycling damaged proteins and organelles",
+          "genes": [
+            "SQSTM1",
+            "MAP1LC3B",
+            "CTSB",
+            "CTSL"
+          ]
+        },
+        {
+          "id": "adm",
+          "name": "Acinar-to-ductal metaplasia",
+          "category": "Cell fate",
+          "function": "Dedifferentiation toward a ductal-like progenitor state, a precursor process in pancreatitis and PanIN/PDAC initiation",
+          "genes": [
+            "KRT19",
+            "SOX9",
+            "KRAS",
+            "ONECUT1"
+          ]
+        },
+        {
+          "id": "acinar-inflammation",
+          "name": "Inflammatory signaling",
+          "category": "Immune response",
+          "function": "NF-kB-driven cytokine/chemokine production in pancreatitis",
+          "genes": [
+            "NFKBIA",
+            "TNF",
+            "IL6",
+            "CXCL1",
+            "CCL2"
+          ]
+        },
+        {
+          "id": "acinar-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-acinar",
+          "name": "Mature functional acinar cell",
+          "phenotype": "Canonical healthy acinar cell producing digestive enzymes",
+          "genes": [
+            "PTF1A",
+            "RBPJL",
+            "GATA4",
+            "NR5A2",
+            "BHLHA15",
+            "PRSS1",
+            "PRSS2",
+            "CPA1",
+            "CPA2",
+            "CELA2A",
+            "CTRB1",
+            "CTRB2",
+            "AMY2A",
+            "PNLIP",
+            "GP2",
+            "SYCN",
+            "CCKAR",
+            "CELA3A",
+            "CELA3B"
+          ],
+          "notes": "Canonical acinar identity transcription factors (PTF1A/RBPJL/NR5A2/BHLHA15 form the core acinar specification complex) plus the digestive-enzyme and zymogen-granule programs constitutively expressed by healthy acinar cells. Well established textbook biology (Masui/MacDonald acinar TF network; Logsdon & Ji enzyme biosynthesis reviews).",
+          "activities": {
+            "acinar-identity": 3,
+            "digestive-enzymes": 3,
+            "zymogen-granule": 2,
+            "acinar-secretion": 2,
+            "protease-inhibition": 2,
+            "acinar-er-folding": 0,
+            "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
+            "adm": 0,
+            "acinar-inflammation": -1,
+            "acinar-apoptosis": -1
+          },
+          "references": [
+            "ref-9",
+            "ref-53",
+            "ref-54",
+            "ref-61",
+            "ref-64"
+          ]
+        },
+        {
+          "id": "acinar-pancreatitis",
+          "name": "Pancreatitis-associated acinar cell",
+          "phenotype": "Premature zymogen activation and ER stress characteristic of acute/chronic pancreatitis",
+          "genes": [
+            "PRSS1",
+            "SPINK1",
+            "CTRC",
+            "CELA2A",
+            "CTSB",
+            "HSPA5",
+            "DDIT3",
+            "XBP1",
+            "ATF4",
+            "NFKBIA",
+            "IL6",
+            "TNF",
+            "CXCL1",
+            "REG3A",
+            "DMBT1",
+            "PDIA2",
+            "REG1A",
+            "REG1B",
+            "REG3G"
+          ],
+          "notes": "PRSS1/SPINK1/CTRC are the classic hereditary/chronic pancreatitis susceptibility genes governing premature trypsinogen activation and its control. CTSB drives lysosomal cathepsin B-mediated intra-acinar trypsinogen activation, the initiating event of acute pancreatitis (Halangk et al., J Clin Invest, 2000). HSPA5/DDIT3/XBP1/ATF4 reflect the unfolded protein response documented in pancreatitis acinar cells (Ji & Logsdon lab studies on ER stress in pancreatitis). NFKBIA/IL6/TNF/CXCL1 reflect NF-kB-driven acinar cell-intrinsic inflammatory signaling shown to be an early, causal event in experimental pancreatitis (Gukovsky & Gukovskaya reviews on NF-kB in pancreatitis). REG3A (rat homolog PAP, 'pancreatitis-associated protein') is a long-established acute-phase/regenerative gene induced specifically in pancreatitis.",
+          "activities": {
+            "acinar-identity": -1,
+            "digestive-enzymes": -1,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
+            "protease-inhibition": -2,
+            "acinar-er-folding": 2,
+            "acinar-upr": 3,
+            "acinar-oxidative-stress": 2,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
+            "adm": 0,
+            "acinar-inflammation": 3,
+            "acinar-apoptosis": 1
+          },
+          "references": [
+            "ref-18",
+            "ref-19",
+            "ref-64",
+            "ref-71",
+            "ref-73"
+          ]
+        },
+        {
+          "id": "acinar-metaplastic",
+          "name": "Metaplastic acinar cell",
+          "phenotype": "KRAS-driven acinar-to-ductal metaplasia, a precursor state to PanIN in pancreatic cancer",
+          "genes": [
+            "KRT19",
+            "SOX9",
+            "KRAS",
+            "ONECUT1",
+            "HNF1B",
+            "MUC1",
+            "TFF2",
+            "TFF1",
+            "MUC6",
+            "SPDEF",
+            "CD44",
+            "HES1",
+            "CLDN4",
+            "KRT18",
+            "KRT8",
+            "MMP7",
+            "REG3A",
+            "SPINK1"
+          ],
+          "notes": "KRT19/SOX9/ONECUT1/HNF1B mark the duct-like transcriptional switch in acinar-to-ductal metaplasia (ADM); KRAS oncogene drives the transition (Kopp et al., Cancer Cell, 2012, Sox9-dependent ADM initiation of PDAC). TFF2/TFF1/MUC6/MUC1/SPDEF mark the 'mucinous/pyloric metaplasia' intermediate identified by single-cell profiling of ADM (Ma et al., Gastroenterology, 2021, 'conserved metaplasia program in pancreatic injury'; Schlesinger/Alonso-Curbelo, Nat Commun, 2020). HES1 reflects Notch pathway reactivation shown to reprogram acinar cells toward a ductal/progenitor-like state together with oncogenic Kras (De La O et al., PNAS, 2008). CD44 is a recurrent marker of the metaplastic/progenitor-like acinar-derived population in these studies.",
+          "activities": {
+            "acinar-identity": -2,
+            "digestive-enzymes": -2,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
+            "protease-inhibition": 0,
+            "acinar-er-folding": 0,
+            "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
+            "adm": 3,
+            "acinar-inflammation": 1,
+            "acinar-apoptosis": 0
+          },
+          "references": [
+            "ref-21",
+            "ref-71",
+            "ref-72"
+          ]
+        },
+        {
+          "id": "acinar-atrophic",
+          "name": "Senescent acinar cell",
+          "phenotype": "Reduced enzyme output seen in chronic pancreatitis and aging",
+          "genes": [
+            "CDKN2A",
+            "CDKN1A",
+            "TP53",
+            "MDM2",
+            "SERPINE1",
+            "IL6",
+            "IL1B",
+            "CXCL1",
+            "MMP3"
+          ],
+          "notes": "Direct single-cell transcriptomic characterization of atrophic/senescent human acinar cells is limited, so this panel (9 genes, below the 10-15 target) is built from the general p16/p21/p53 senescence program and senescence-associated secretory phenotype (SASP), which has been specifically linked to acinar injury: CDKN1A/p21 has been shown to limit senescence and ADM formation during pancreatitis (p21WAF1/Cip1 studies of pancreatitis-associated senescence), and elevated CDKN1A/MDM2/IL6 have been documented in senescent pancreatic stellate/acinar compartments in chronic pancreatitis models. CDKN2A/TP53 are the canonical senescence tumor-suppressor axis; SERPINE1/IL6/IL1B/CXCL1/MMP3 are core SASP factors. Flagging this state as genuinely under-supported in the literature relative to the other three acinar states.",
+          "activities": {
+            "acinar-identity": -1,
+            "digestive-enzymes": -2,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
+            "protease-inhibition": 0,
+            "acinar-er-folding": 0,
+            "acinar-upr": 0,
+            "acinar-oxidative-stress": 0,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 2,
+            "adm": 0,
+            "acinar-inflammation": 0,
+            "acinar-apoptosis": 1
+          },
+          "references": [
+            "ref-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ductal-cell",
+      "name": "Ductal cell",
+      "programs": [
+        {
+          "id": "ductal-identity",
+          "name": "Ductal-cell identity",
+          "category": "Core identity",
+          "function": "Mature ductal-cell transcriptional identity",
+          "genes": [
+            "KRT19",
+            "KRT7",
+            "SOX9",
+            "HNF1B",
+            "ONECUT1"
+          ]
+        },
+        {
+          "id": "fluid-bicarbonate",
+          "name": "Fluid and bicarbonate secretion",
+          "category": "Secretion",
+          "function": "CFTR-driven ductal fluid and bicarbonate secretion",
+          "genes": [
+            "CFTR",
+            "SLC4A4",
+            "AQP1",
+            "CA2",
+            "SLC26A6"
+          ]
+        },
+        {
+          "id": "mucin-secretion",
+          "name": "Mucin secretion",
+          "category": "Secretion",
+          "function": "Protective mucin layer production",
+          "genes": [
+            "MUC1",
+            "TFF1",
+            "TFF2"
+          ]
+        },
+        {
+          "id": "ductal-junctions",
+          "name": "Tight junction and barrier maintenance",
+          "category": "Structural maintenance",
+          "function": "Ductal epithelial barrier integrity",
+          "genes": [
+            "CLDN1",
+            "CLDN4",
+            "CLDN18",
+            "TJP1"
+          ]
+        },
+        {
+          "id": "ductal-progenitor",
+          "name": "Facultative progenitor potential",
+          "category": "Cell fate",
+          "function": "Latent capacity for endocrine/acinar trans-differentiation implicated in regeneration",
+          "genes": [
+            "SOX9",
+            "NEUROG3",
+            "HES1"
+          ]
+        },
+        {
+          "id": "ductal-er-folding",
+          "name": "ER protein folding",
+          "category": "Protein homeostasis",
+          "function": "Folding of secreted proteins",
+          "genes": [
+            "HSPA5",
+            "PDIA4",
+            "PDIA6",
+            "CALR",
+            "CANX"
+          ]
+        },
+        {
+          "id": "ductal-upr",
+          "name": "Unfolded protein response",
+          "category": "Protein homeostasis",
+          "function": "Adaptive ER stress",
+          "genes": [
+            "XBP1",
+            "ATF6",
+            "EIF2AK3",
+            "DDIT3",
+            "ATF4"
+          ]
+        },
+        {
+          "id": "ductal-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "panin-progression",
+          "name": "Neoplastic transformation (PanIN/PDAC)",
+          "category": "Cell fate",
+          "function": "KRAS/TP53/CDKN2A/SMAD4-driven progression through pancreatic intraepithelial neoplasia to adenocarcinoma",
+          "genes": [
+            "KRAS",
+            "TP53",
+            "CDKN2A",
+            "SMAD4",
+            "MUC5AC"
+          ]
+        },
+        {
+          "id": "ductal-inflammation",
+          "name": "Inflammatory signaling",
+          "category": "Immune response",
+          "function": "Cytokine/chemokine production in chronic pancreatitis",
+          "genes": [
+            "NFKBIA",
+            "IL6",
+            "CXCL8",
+            "CCL2"
+          ]
+        },
+        {
+          "id": "ductal-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "mature-functional-ductal",
+          "name": "Mature functional ductal cell",
+          "phenotype": "Canonical healthy ductal cell secreting bicarbonate-rich fluid",
+          "genes": [
+            "KRT19",
+            "KRT7",
+            "SOX9",
+            "HNF1B",
+            "ONECUT1",
+            "CFTR",
+            "SLC4A4",
+            "AQP1",
+            "CA2",
+            "SLC26A6",
+            "MUC1",
+            "TFF1",
+            "CLDN18",
+            "TJP1",
+            "CLDN1",
+            "ANXA4",
+            "EPCAM",
+            "SPP1"
+          ],
+          "notes": "Canonical ductal identity/transcription factor and fluid-bicarbonate secretion program of the healthy exocrine duct. Standard, well-established ductal cell markers (pancreas single-cell atlases, e.g., Muraro et al., Cell Syst 2016; Baron et al., Cell Syst 2016).",
+          "activities": {
+            "ductal-identity": 3,
+            "fluid-bicarbonate": 3,
+            "mucin-secretion": 1,
+            "ductal-junctions": 2,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": -1,
+            "ductal-oxidative-stress": 0,
+            "panin-progression": -2,
+            "ductal-inflammation": 0,
+            "ductal-apoptosis": -1
+          },
+          "references": [
+            "ref-9",
+            "ref-53",
+            "ref-54",
+            "ref-61",
+            "ref-64"
+          ]
+        },
+        {
+          "id": "ductal-cf-dysfunction",
+          "name": "Mucinous secretory ductal cell",
+          "phenotype": "Impaired bicarbonate/fluid secretion characteristic of cystic fibrosis-related exocrine pancreatic disease",
+          "genes": [
+            "AGR2",
+            "ANXA10",
+            "CLDN18",
+            "CTSE",
+            "MUC5AC",
+            "MUC5B",
+            "SPDEF",
+            "TFF1",
+            "TFF2",
+            "TFF3"
+          ],
+          "notes": "Cell state of ductal cells related to increased production of mucins",
+          "activities": {
+            "ductal-identity": 1,
+            "fluid-bicarbonate": 0,
+            "mucin-secretion": 2,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": 0,
+            "ductal-oxidative-stress": 1,
+            "panin-progression": 0,
+            "ductal-inflammation": 2,
+            "ductal-apoptosis": 0
+          },
+          "references": [
+            "ref-27",
+            "ref-64",
+            "ref-68",
+            "ref-73"
+          ]
+        },
+        {
+          "id": "ductal-panin",
+          "name": "PanIN-like transformed ductal cell",
+          "phenotype": "Early neoplastic ductal lesion driven by oncogenic KRAS, a precursor to pancreatic ductal adenocarcinoma",
+          "genes": [
+            "KRAS",
+            "MUC5AC",
+            "SOX9",
+            "TP53",
+            "CDKN2A",
+            "SMAD4",
+            "MUC1",
+            "MUC4",
+            "MUC6",
+            "S100P",
+            "CEACAM5",
+            "CLDN18",
+            "TFF1",
+            "TFF2",
+            "KRT17"
+          ],
+          "activities": {
+            "ductal-identity": -1,
+            "panin-progression": 3,
+            "mucin-secretion": 3,
+            "ductal-progenitor": 2,
+            "ductal-inflammation": 1
+          },
+          "notes": "KRAS/TP53/CDKN2A/SMAD4 are the canonical, sequentially acquired driver alterations of the PanIN-to-PDAC progression model (Hruban et al. PanIN grading/progression scheme). MUC5AC/MUC4/MUC1/MUC6 mucin re-expression is a hallmark of PanIN lesions, with MUC4 reported to appear very early and to associate with activated stromal fibroblasts (Andrianifahanana et al.; 'Oncogenic KRAS, MUC4, and Activin A-mediated fibroblast activation cooperate for PanIN initiation', 2023). S100P expression increases progressively with PanIN grade and is enriched relative to comparable biliary lesions. CEACAM5 is absent in normal ducts and increases with increasing PanIN grade. TFF1/TFF2/CLDN18/KRT17 are recurrent markers of the pyloric/gastric-like metaplastic epithelium seen in PanIN lesions.",
+          "references": [
+            "ref-24"
+          ]
+        },
+        {
+          "id": "ductal-inflamed",
+          "name": "Inflammatory ductal cell",
+          "phenotype": "Cytokine exposure typical of chronic pancreatitis",
+          "genes": [
+            "NFKBIA",
+            "IL6",
+            "CXCL8",
+            "CCL2",
+            "CCL20",
+            "TNF",
+            "ICAM1",
+            "PTGS2",
+            "CXCL1",
+            "SAA1",
+            "CD74",
+            "CXCL2",
+            "SPP1",
+            "TNFAIP3"
+          ],
+          "notes": "Single-cell RNA-seq of mouse pancreas in chronic pancreatitis found several hundred differentially expressed genes specifically in the ductal compartment, broadly reflecting NF-kB-pathway inflammatory activation ('Single-Cell Transcriptomic Analysis of the Mouse Pancreas: Characteristic Features of Pancreatic Ductal Cells in Chronic Pancreatitis', Genes, 2022). CXCL8 signaling through CXCR2 is required for neutrophil recruitment in pancreatitis, and ductal-derived CCL20-CCR6 chemokine crosstalk with Th17 cells has been specifically identified by single-cell profiling of human chronic pancreatitis. ICAM1/PTGS2(COX2)/SAA1 reflect the acute-phase/adhesion-molecule response of inflamed epithelium seen broadly in chronic pancreatitis. This panel (10 genes) involves more extrapolation from general epithelial inflammatory biology than the other ductal states, since ductal-cell-specific (as opposed to whole-tissue or immune-cell) cytokine profiling in human chronic pancreatitis remains limited.",
+          "activities": {
+            "ductal-identity": -1,
+            "fluid-bicarbonate": 0,
+            "mucin-secretion": 0,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": 1,
+            "ductal-oxidative-stress": 2,
+            "panin-progression": 0,
+            "ductal-inflammation": 3,
+            "ductal-apoptosis": 0
+          },
+          "references": [
+            "ref-28",
+            "ref-46",
+            "ref-48"
+          ]
+        },
+        {
+          "id": "proliferative-ductal-cells",
+          "name": "Proliferative ductal cells",
+          "phenotype": "State of ductal cells related to proliferation and cell cycle activity",
+          "genes": [
+            "BIRC5",
+            "CCNB1",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "MKI67",
+            "PCNA",
+            "TOP2A",
+            "UBE2C"
+          ],
+          "notes": "",
+          "activities": {
+            "ductal-identity": 0,
+            "fluid-bicarbonate": 0,
+            "mucin-secretion": 0,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": 0,
+            "ductal-oxidative-stress": 0,
+            "panin-progression": 0,
+            "ductal-inflammation": 0,
+            "ductal-apoptosis": 0
+          },
+          "references": [
+            "ref-57"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stellate-cell",
+      "name": "Stellate cell",
+      "programs": [
+        {
+          "id": "stellate-quiescent-identity",
+          "name": "Quiescent stellate-cell identity",
+          "category": "Core identity",
+          "function": "Resting pancreatic-stellate-cell transcriptional identity",
+          "genes": [
+            "GFAP",
+            "DES",
+            "PDGFRB",
+            "VIM"
+          ]
+        },
+        {
+          "id": "vitamin-a-storage",
+          "name": "Vitamin A / retinoid storage",
+          "category": "Metabolism",
+          "function": "Cytoplasmic lipid droplets storing retinyl esters, hallmark of the quiescent state",
+          "genes": [
+            "RBP1",
+            "LRAT",
+            "PPARG"
+          ]
+        },
+        {
+          "id": "stellate-activation",
+          "name": "Myofibroblast activation",
+          "category": "Cell fate",
+          "function": "Trans-differentiation into a proliferative, contractile myofibroblast-like phenotype",
+          "genes": [
+            "ACTA2",
+            "TAGLN",
+            "PDGFRB"
+          ]
+        },
+        {
+          "id": "ecm-production",
+          "name": "Extracellular matrix production",
+          "category": "Structural maintenance",
+          "function": "Collagen and fibronectin deposition driving fibrosis",
+          "genes": [
+            "COL1A1",
+            "COL1A2",
+            "COL3A1",
+            "FN1",
+            "LOX"
+          ]
+        },
+        {
+          "id": "tgf-beta-signaling",
+          "name": "TGF-beta / fibrogenic signaling",
+          "category": "Stress response",
+          "function": "Fibrogenic signal transduction",
+          "genes": [
+            "TGFB1",
+            "SMAD3",
+            "CTGF"
+          ]
+        },
+        {
+          "id": "mmp-remodeling",
+          "name": "Matrix remodeling",
+          "category": "Structural maintenance",
+          "function": "Matrix metalloproteinase-driven ECM turnover",
+          "genes": [
+            "MMP2",
+            "MMP9",
+            "TIMP1"
+          ]
+        },
+        {
+          "id": "stellate-inflammatory",
+          "name": "Inflammatory signaling",
+          "category": "Immune response",
+          "function": "Cytokine/chemokine production",
+          "genes": [
+            "IL6",
+            "CXCL1",
+            "CCL2",
+            "NFKBIA"
+          ]
+        },
+        {
+          "id": "stellate-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "stellate-proliferation",
+          "name": "Cell cycle / proliferation",
+          "category": "Cell fate",
+          "function": "Proliferative expansion upon activation",
+          "genes": [
+            "MKI67",
+            "CCND1",
+            "PCNA"
+          ]
+        },
+        {
+          "id": "stellate-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death; a mechanism of fibrosis resolution",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "quiescent-stellate",
+          "name": "Quiescent stellate cell",
+          "phenotype": "Vitamin A-storing, non-proliferative resting state in the healthy pancreas",
+          "genes": [
+            "GFAP",
+            "DES",
+            "RBP1",
+            "PDGFRB",
+            "VIM",
+            "LRAT",
+            "PPARG",
+            "NES",
+            "ADH1B",
+            "SPARC"
+          ],
+          "notes": "GFAP/DES/NES/VIM are classic quiescent pancreatic stellate cell (PSC) cytoskeletal markers shared with hepatic stellate cell biology; RBP1/LRAT/ADH1B reflect the retinoid (vitamin A) storage and metabolism program that defines the quiescent phenotype; PPARG maintains the quiescent state and is lost upon activation (Apte et al.; McCarroll/Bachem PSC reviews).",
+          "activities": {
+            "stellate-quiescent-identity": 3,
+            "vitamin-a-storage": 3,
+            "stellate-activation": -2,
+            "ecm-production": -1,
+            "tgf-beta-signaling": 0,
+            "mmp-remodeling": 0,
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": -1,
+            "stellate-apoptosis": 0
+          },
+          "references": [
+            "ref-29",
+            "ref-66",
+            "ref-70"
+          ]
+        },
+        {
+          "id": "activated-stellate",
+          "name": "Activated fibrotic stellate cell",
+          "phenotype": "Fibrogenic activation driven by injury/inflammation in pancreatitis and PDAC stroma",
+          "genes": [
+            "ACTA2",
+            "TAGLN",
+            "COL1A1",
+            "COL1A2",
+            "COL3A1",
+            "FN1",
+            "TGFB1",
+            "CTGF",
+            "SMAD3",
+            "MMP2",
+            "TIMP1",
+            "S100A4",
+            "PDGFRB",
+            "LOXL2",
+            "TAGLN",
+            "POSTN"
+          ],
+          "notes": "Myofibroblast transdifferentiation markers (ACTA2/TAGLN/S100A4) plus the TGF-beta/SMAD3-driven fibrogenic ECM-production program (COL1A1/COL1A2/COL3A1/FN1/CTGF) and matrix remodeling (MMP2/TIMP1) that define activated PSCs in pancreatitis and PDAC desmoplasia (Apte et al.; Omary et al., J Clin Invest, 2007, PSC biology review).",
+          "activities": {
+            "stellate-quiescent-identity": -2,
+            "vitamin-a-storage": 0,
+            "stellate-activation": 3,
+            "ecm-production": 3,
+            "tgf-beta-signaling": 3,
+            "mmp-remodeling": 2,
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": 2,
+            "stellate-apoptosis": 0
+          },
+          "references": [
+            "ref-44",
+            "ref-66",
+            "ref-67"
+          ]
+        },
+        {
+          "id": "stellate-fibrotic",
+          "name": "End-stage fibrotic stellate cell",
+          "phenotype": "Sustained ECM deposition characteristic of chronic-pancreatitis fibrosis",
+          "genes": [
+            "COL1A1",
+            "COL1A2",
+            "COL3A1",
+            "FN1",
+            "LOX",
+            "LOXL2",
+            "TIMP1",
+            "SPARC",
+            "POSTN",
+            "DCN",
+            "BGN",
+            "CTGF"
+          ],
+          "notes": "Distinguishes end-stage fibrotic stellate cells from actively-activating cells by emphasizing collagen cross-linking (LOX/LOXL2) and ECM maturation/proteoglycan genes (SPARC, POSTN/periostin, DCN, BGN) alongside sustained high TIMP1 (favoring net ECM accumulation over degradation). POSTN is a well-documented marker of desmoplastic fibrotic stroma in chronic pancreatitis and PDAC (Erkan et al. desmoplasia studies).",
+          "activities": {
+            "stellate-quiescent-identity": 0,
+            "vitamin-a-storage": 0,
+            "stellate-activation": 2,
+            "ecm-production": 3,
+            "tgf-beta-signaling": 2,
+            "mmp-remodeling": 1,
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": 0,
+            "stellate-apoptosis": 0
+          },
+          "references": [
+            "ref-30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endothelial-cell",
+      "name": "Endothelial cell",
+      "programs": [
+        {
+          "id": "endothelial-identity",
+          "name": "Endothelial-cell identity",
+          "category": "Core identity",
+          "function": "Mature vascular-endothelial transcriptional identity",
+          "genes": [
+            "PECAM1",
+            "CDH5",
+            "VWF",
+            "KDR"
+          ]
+        },
+        {
+          "id": "vascular-barrier",
+          "name": "Vascular barrier function",
+          "category": "Structural maintenance",
+          "function": "Tight/adherens-junction integrity restricting vascular permeability",
+          "genes": [
+            "CLDN5",
+            "OCLN",
+            "TJP1"
+          ]
+        },
+        {
+          "id": "angiogenesis",
+          "name": "Angiogenic signaling",
+          "category": "Cell fate",
+          "function": "VEGF-driven sprouting and vascular remodeling",
+          "genes": [
+            "VEGFA",
+            "FLT1",
+            "ANGPT2",
+            "NOTCH4"
+          ]
+        },
+        {
+          "id": "leukocyte-adhesion",
+          "name": "Leukocyte adhesion",
+          "category": "Immune response",
+          "function": "Adhesion molecule upregulation enabling immune-cell trafficking into tissue",
+          "genes": [
+            "ICAM1",
+            "VCAM1",
+            "SELE",
+            "SELP"
+          ]
+        },
+        {
+          "id": "nitric-oxide",
+          "name": "Nitric oxide signaling",
+          "category": "Metabolism",
+          "function": "Vasodilatory nitric-oxide production",
+          "genes": [
+            "NOS3",
+            "GUCY1A1"
+          ]
+        },
+        {
+          "id": "coagulation",
+          "name": "Coagulation and hemostasis interface",
+          "category": "Secretion",
+          "function": "Endothelial hemostatic factor production",
+          "genes": [
+            "VWF",
+            "THBD",
+            "PLAT",
+            "SERPINE1"
+          ]
+        },
+        {
+          "id": "endothelial-inflammatory",
+          "name": "Inflammatory activation",
+          "category": "Immune response",
+          "function": "NF-kB-driven cytokine/chemokine production",
+          "genes": [
+            "NFKBIA",
+            "IL6",
+            "CXCL8",
+            "CCL2"
+          ]
+        },
+        {
+          "id": "endothelial-interferon",
+          "name": "Interferon response",
+          "category": "Immune response",
+          "function": "Antiviral and inflammatory signaling",
+          "genes": [
+            "STAT1",
+            "IFIT1",
+            "IFI44L",
+            "MX1",
+            "ISG15"
+          ]
+        },
+        {
+          "id": "endothelial-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "endothelial-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "quiescent-endothelial",
+          "name": "Quiescent endothelial cell",
+          "phenotype": "Resting vascular endothelium maintaining normal islet/exocrine perfusion and barrier integrity",
+          "genes": [
+            "PECAM1",
+            "CDH5",
+            "CLDN5",
+            "VWF",
+            "KDR",
+            "OCLN",
+            "TJP1",
+            "NOS3",
+            "GUCY1A1",
+            "THBD",
+            "KLF2",
+            "KLF4"
+          ],
+          "activities": {
+            "endothelial-identity": 3,
+            "vascular-barrier": 3,
+            "angiogenesis": -1,
+            "leukocyte-adhesion": -1,
+            "endothelial-inflammatory": -1
+          },
+          "notes": "Core endothelial identity/junctional/barrier genes plus the nitric-oxide (NOS3/GUCY1A1) and anti-thrombotic (THBD) programs of resting endothelium. KLF2/KLF4 are the classic laminar-shear-stress-induced transcription factors that actively enforce and mark the quiescent, anti-inflammatory endothelial phenotype (SenBanerjee et al.; Dekker et al., Blood, 2002/2006).",
+          "references": [
+            "ref-9"
+          ]
+        },
+        {
+          "id": "angiogenic-endothelial",
+          "name": "Angiogenic endothelial cell",
+          "phenotype": "VEGF-driven vascular remodeling seen in islet growth, wound healing, and tumor neovascularization",
+          "genes": [
+            "VEGFA",
+            "ANGPT2",
+            "KDR",
+            "FLT1",
+            "NOTCH4",
+            "DLL4",
+            "ESM1",
+            "APLN",
+            "APLNR",
+            "PGF",
+            "PDGFB",
+            "CXCR4",
+            "SOX17",
+            "EFNB2"
+          ],
+          "notes": "VEGFA/KDR/FLT1/PGF are the core VEGF-receptor angiogenic axis. DLL4 is the canonical marker of angiogenic 'tip cells' that lead sprouting vessels via Notch signaling (Hellstrom et al., Nature, 2007). ESM1 (endocan) is a well-established marker of tip-cell-like activated angiogenic endothelium (Rocha et al.). APLN/APLNR and PDGFB mark proliferating/sprouting tip and stalk cells; ANGPT2 destabilizes vessels to permit VEGF-driven remodeling, consistent with islet vascular growth, wound healing, and tumor neovascularization.",
+          "activities": {
+            "endothelial-identity": 2,
+            "vascular-barrier": -1,
+            "angiogenesis": 3,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 1,
+            "endothelial-apoptosis": 0
+          },
+          "references": [
+            "ref-31",
+            "ref-59"
+          ]
+        },
+        {
+          "id": "inflamed-endothelial",
+          "name": "Inflammatory endothelial cell",
+          "phenotype": "Cytokine-activated endothelium recruiting leukocytes, characteristic of insulitis and pancreatitis",
+          "genes": [
+            "ICAM1",
+            "VCAM1",
+            "SELE",
+            "SELP",
+            "CXCL8",
+            "CCL2",
+            "CXCL10",
+            "NFKBIA",
+            "TNFAIP3",
+            "IL6",
+            "CX3CL1",
+            "CXCL1",
+            "RELB"
+          ],
+          "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
+          "activities": {
+            "endothelial-identity": -1,
+            "vascular-barrier": -2,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 3,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 3,
+            "endothelial-interferon": 2,
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
+          },
+          "references": [
+            "ref-15",
+            "ref-60"
+          ]
+        },
+        {
+          "id": "senescent-endothelial",
+          "name": "Senescent endothelial cell",
+          "phenotype": "Reduced barrier integrity and nitric-oxide signaling associated with vascular aging and diabetes-related microangiopathy",
+          "genes": [
+            "CDKN2A",
+            "CDKN1A",
+            "TP53",
+            "SERPINE1",
+            "IL6",
+            "IL1B",
+            "CXCL8",
+            "MMP3",
+            "THBS1",
+            "ICAM1",
+            "NOS3",
+            "CLDN5"
+          ],
+          "notes": "CDKN2A(p16)/CDKN1A(p21)/TP53 are the core senescence cell-cycle-arrest program, shown to be up-regulated in diabetic/high-glucose-exposed endothelial cells (retinal and wound endothelium senescence studies). SERPINE1/PAI-1 is both a marker and functional mediator of endothelial senescence, elevated in diabetic retinopathy vitreous fluid (Vasile et al.; 'PAI-1 Is a Marker and a Mediator of Senescence', ATVB). THBS1 (thrombospondin-1) mediates diabetes-induced endothelial senescence via CD47 signaling and impaired angiogenesis. IL6/IL1B/CXCL8/MMP3 are core SASP factors. NOS3 and CLDN5 are included as down-regulated markers reflecting the reduced nitric-oxide signaling and barrier integrity that define this dysfunctional state, consistent with diabetes-related microangiopathy.",
+          "activities": {
+            "endothelial-identity": 0,
+            "vascular-barrier": -2,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": -2,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 2,
+            "endothelial-apoptosis": 1
+          },
+          "references": [
+            "ref-32"
+          ]
+        },
+        {
+          "id": "islet-specific-endothelial-cell",
+          "name": "Islet-specific endothelial cell",
+          "phenotype": "Endothelial cells localized near pancreatic islets which have been reported to have distinct profiles",
+          "genes": [
+            "ACE",
+            "COL13A1",
+            "CXCR4",
+            "ESM1",
+            "F2RL3",
+            "KDR",
+            "LAMA4",
+            "PLVAP",
+            "THBS1",
+            "UNC5B"
+          ],
+          "notes": "",
+          "activities": {
+            "endothelial-identity": 0,
+            "vascular-barrier": 0,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
+          },
+          "references": [
+            "ref-58",
+            "ref-61"
+          ]
+        },
+        {
+          "id": "acinar-specific-endothelial",
+          "name": "Acinar-specific endothelial",
+          "phenotype": "Endothelial cells near acinar cells which have been reported to have distinct profiles",
+          "genes": [
+            "AQP1",
+            "CCL14",
+            "CD74",
+            "GPIHBP1",
+            "HLA-DRA",
+            "HLA-DRB1",
+            "KLF2",
+            "KLF4"
+          ],
+          "notes": "",
+          "activities": {
+            "endothelial-identity": 0,
+            "vascular-barrier": 0,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
+          },
+          "references": [
+            "ref-58",
+            "ref-61"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t-cell",
+      "name": "T cell",
+      "programs": [
+        {
+          "id": "t-cell-identity",
+          "name": "T-cell identity",
+          "category": "Core identity",
+          "function": "Mature T-cell receptor complex identity",
+          "genes": [
+            "CD3D",
+            "CD3E",
+            "CD3G",
+            "CD2"
+          ]
+        },
+        {
+          "id": "cd8-cytotoxic",
+          "name": "CD8+ cytotoxic program",
+          "category": "Immune response",
+          "function": "Cytotoxic granule-mediated killing",
+          "genes": [
+            "CD8A",
+            "CD8B",
+            "GZMB",
+            "PRF1",
+            "IFNG"
+          ]
+        },
+        {
+          "id": "cd4-helper",
+          "name": "CD4+ helper program",
+          "category": "Immune response",
+          "function": "Helper T-cell cytokine support",
+          "genes": [
+            "CD4",
+            "IL2",
+            "CD40LG"
+          ]
+        },
+        {
+          "id": "treg-program",
+          "name": "Regulatory T-cell program",
+          "category": "Immune response",
+          "function": "Immunosuppressive/tolerogenic program restraining autoreactivity",
+          "genes": [
+            "FOXP3",
+            "IL2RA",
+            "CTLA4",
+            "IKZF2"
+          ]
+        },
+        {
+          "id": "t-cell-activation",
+          "name": "TCR activation signaling",
+          "category": "Immune response",
+          "function": "T-cell receptor-driven activation",
+          "genes": [
+            "CD69",
+            "NFATC1",
+            "CD28"
+          ]
+        },
+        {
+          "id": "t-cell-exhaustion",
+          "name": "Exhaustion program",
+          "category": "Cell fate",
+          "function": "Chronic-stimulation-induced dysfunction limiting cytotoxic output",
+          "genes": [
+            "PDCD1",
+            "LAG3",
+            "HAVCR2",
+            "TOX"
+          ]
+        },
+        {
+          "id": "t-cell-migration",
+          "name": "Tissue homing and migration",
+          "category": "Structural maintenance",
+          "function": "Chemokine-receptor-driven tissue trafficking",
+          "genes": [
+            "CCR7",
+            "SELL",
+            "CXCR3",
+            "ITGAL"
+          ]
+        },
+        {
+          "id": "t-cell-cytokine",
+          "name": "Effector cytokine signaling",
+          "category": "Immune response",
+          "function": "Effector cytokine production",
+          "genes": [
+            "IFNG",
+            "TNF",
+            "IL17A"
+          ]
+        },
+        {
+          "id": "t-cell-proliferation",
+          "name": "Cell cycle / proliferation",
+          "category": "Cell fate",
+          "function": "Clonal expansion",
+          "genes": [
+            "MKI67",
+            "MYC",
+            "CCND2"
+          ]
+        },
+        {
+          "id": "t-cell-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "t-cell-survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic/persistence programs",
+          "genes": [
+            "BCL2",
+            "IL7R"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "naive-t-cell",
+          "name": "Naive/quiescent T cell",
+          "phenotype": "Circulating, antigen-inexperienced T cell",
+          "genes": [
+            "CCR7",
+            "SELL",
+            "IL7R",
+            "TCF7",
+            "LEF1",
+            "CD27",
+            "CD28",
+            "BACH2",
+            "SATB1",
+            "KLF2",
+            "S1PR1"
+          ],
+          "activities": {
+            "t-cell-identity": 3,
+            "t-cell-activation": -2,
+            "cd8-cytotoxic": -2,
+            "t-cell-migration": 2,
+            "t-cell-survival": 1
+          },
+          "notes": "Classic circulating naive/quiescent T cell signature: lymph-node homing receptors (CCR7, SELL/CD62L, S1PR1), survival/quiescence factors (IL7R, BCL2 pathway via KLF2), and stemness/naive transcription factors (TCF7, LEF1, BACH2, SATB1) that are downregulated upon effector or exhaustion differentiation. CD27/CD28 costimulatory receptors are progressively lost with differentiation, marking naive/early memory status.",
+          "references": [
+            "ref-15"
+          ]
+        },
+        {
+          "id": "cytotoxic-activated-t-cell",
+          "name": "Cytotoxic activated T cell",
+          "phenotype": "Autoreactive CD8+ effector state driving beta-cell killing in insulitis, characteristic of type 1 diabetes",
+          "genes": [
+            "GZMB",
+            "PRF1",
+            "IFNG",
+            "GZMA",
+            "GZMK",
+            "NKG7",
+            "KLRG1",
+            "CD69",
+            "TNF",
+            "TBX21",
+            "CD8A",
+            "IL2RA"
+          ],
+          "activities": {
+            "t-cell-identity": 2,
+            "cd8-cytotoxic": 3,
+            "t-cell-activation": 3,
+            "t-cell-cytokine": 3,
+            "t-cell-migration": 1
+          },
+          "notes": "Effector CD8+ cytotoxic program: cytolytic granule contents (GZMB, GZMA, GZMK, PRF1, NKG7), effector cytokines (IFNG, TNF), the master effector transcription factor TBX21 (T-bet), and canonical early/short-term activation markers CD69 and IL2RA (CD25). KLRG1 marks terminally differentiated short-lived effector cells, consistent with autoreactive effector CD8+ T cells in insulitis.",
+          "references": [
+            "ref-16"
+          ]
+        },
+        {
+          "id": "exhausted-t-cell",
+          "name": "Exhausted T cell",
+          "phenotype": "Dysfunctional state arising from chronic antigen exposure, seen in longstanding autoimmune infiltrates and tumors",
+          "genes": [
+            "PDCD1",
+            "LAG3",
+            "HAVCR2",
+            "TOX",
+            "TIGIT",
+            "ENTPD1",
+            "CD38",
+            "EOMES",
+            "CTLA4",
+            "CXCL13",
+            "BATF",
+            "TNFRSF9"
+          ],
+          "activities": {
+            "cd8-cytotoxic": -1,
+            "t-cell-exhaustion": 3,
+            "t-cell-cytokine": -1,
+            "t-cell-proliferation": -1
+          },
+          "notes": "Core chronic-antigen exhaustion signature from Wherry/Kurachi and TOX-driven exhaustion program studies: co-inhibitory receptors PDCD1 (PD-1), LAG3, HAVCR2 (TIM-3), TIGIT, CTLA4, TNFRSF9 (4-1BB); the exhaustion-defining transcription factor TOX with EOMES and BATF; and terminal-exhaustion/dysfunction markers ENTPD1 (CD39) and CD38. CXCL13 marks a well-described exhausted/dysfunctional CD8 subset in tumors and chronic infection.",
+          "references": [
+            "ref-34"
+          ]
+        },
+        {
+          "id": "regulatory-t-cell",
+          "name": "Regulatory T cell",
+          "phenotype": "Tolerogenic Treg state restraining autoimmune attack on islets",
+          "genes": [
+            "FOXP3",
+            "IL2RA",
+            "CTLA4",
+            "IKZF2",
+            "TNFRSF18",
+            "ENTPD1",
+            "NT5E",
+            "IL10",
+            "TGFB1",
+            "LRRC32",
+            "IKZF4",
+            "CCR4"
+          ],
+          "activities": {
+            "treg-program": 3,
+            "cd8-cytotoxic": -2,
+            "t-cell-cytokine": -1,
+            "t-cell-survival": 1
+          },
+          "notes": "FOXP3 lineage-defining transcription factor plus core Treg suppressive machinery: IL2RA (CD25), CTLA4, TNFRSF18 (GITR), the adenosine-generating ectoenzyme pair ENTPD1 (CD39)/NT5E (CD73), LRRC32 (GARP, latent TGF-beta presentation), and suppressive cytokines IL10/TGFB1. IKZF2 (Helios) and IKZF4 (Eos) are Treg-stabilizing transcription factors; CCR4 marks tissue-homing Tregs.",
+          "references": [
+            "ref-36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b-cell",
+      "name": "B cell",
+      "programs": [
+        {
+          "id": "b-cell-identity",
+          "name": "B-cell identity",
+          "category": "Core identity",
+          "function": "Mature B-cell transcriptional identity",
+          "genes": [
+            "CD19",
+            "MS4A1",
+            "CD79A",
+            "CD79B",
+            "PAX5"
+          ]
+        },
+        {
+          "id": "bcr-signaling",
+          "name": "B-cell receptor signaling",
+          "category": "Immune response",
+          "function": "Antigen-receptor signal transduction",
+          "genes": [
+            "CD79A",
+            "CD79B",
+            "SYK",
+            "BLNK"
+          ]
+        },
+        {
+          "id": "antigen-presentation-b",
+          "name": "Antigen presentation",
+          "category": "Immune response",
+          "function": "MHC class II antigen presentation",
+          "genes": [
+            "HLA-DRA",
+            "HLA-DRB1",
+            "CD74"
+          ]
+        },
+        {
+          "id": "antibody-secretion",
+          "name": "Antibody (immunoglobulin) secretion",
+          "category": "Secretion",
+          "function": "Plasma-cell differentiation and immunoglobulin production, including islet-autoantibody production in type 1 diabetes",
+          "genes": [
+            "IGHM",
+            "IGHG1",
+            "PRDM1",
+            "XBP1",
+            "SDC1"
+          ]
+        },
+        {
+          "id": "b-cell-costimulation",
+          "name": "Costimulation",
+          "category": "Immune response",
+          "function": "T-cell help / costimulatory signaling",
+          "genes": [
+            "CD40",
+            "CD86"
+          ]
+        },
+        {
+          "id": "b-cell-migration",
+          "name": "Tissue homing and migration",
+          "category": "Structural maintenance",
+          "function": "Chemokine-receptor-driven tissue trafficking",
+          "genes": [
+            "CXCR4",
+            "CXCR5",
+            "SELL"
+          ]
+        },
+        {
+          "id": "b-cell-proliferation",
+          "name": "Cell cycle / proliferation",
+          "category": "Cell fate",
+          "function": "Clonal expansion",
+          "genes": [
+            "MKI67",
+            "MYC",
+            "CCND2"
+          ]
+        },
+        {
+          "id": "b-cell-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "b-cell-survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic/persistence programs",
+          "genes": [
+            "BCL2",
+            "TNFRSF13B"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "naive-b-cell",
+          "name": "Naive B cell",
+          "phenotype": "Circulating antigen-inexperienced B cell",
+          "genes": [
+            "CD19",
+            "MS4A1",
+            "CD79A",
+            "CD79B",
+            "PAX5",
+            "SELL",
+            "CCR7",
+            "IGHD",
+            "TCL1A",
+            "FCER2",
+            "BACH2"
+          ],
+          "activities": {
+            "b-cell-identity": 3,
+            "bcr-signaling": 0,
+            "antibody-secretion": -2,
+            "b-cell-migration": 1
+          },
+          "notes": "Core B-cell identity/BCR complex (CD19, MS4A1/CD20, CD79A, CD79B, PAX5) combined with markers that specifically distinguish naive from antigen-experienced B cells: surface IgD (IGHD), TCL1A and FCER2 (CD23), high BACH2, and lymphoid-homing receptors SELL/CCR7 that are lost upon activation/memory formation.",
+          "references": [
+            "ref-1"
+          ]
+        },
+        {
+          "id": "activated-b-cell",
+          "name": "Activated B cell",
+          "phenotype": "Antigen-engaged, proliferating B cell",
+          "genes": [
+            "CD69",
+            "CD86",
+            "CD83",
+            "MYC",
+            "MKI67",
+            "CCND2",
+            "AICDA",
+            "IRF4",
+            "BATF",
+            "NFKB1",
+            "CD40",
+            "GPR183"
+          ],
+          "activities": {
+            "bcr-signaling": 3,
+            "b-cell-costimulation": 2,
+            "b-cell-proliferation": 3,
+            "antigen-presentation-b": 2
+          },
+          "notes": "Antigen/BCR-engagement activation markers (CD69, CD86, CD83, CD40), proliferation program (MYC, MKI67, CCND2), and germinal-center/plasmablast-commitment transcription factors (IRF4, BATF, NFKB1). AICDA (AID) marks activated germinal-center B cells undergoing somatic hypermutation/class switching; GPR183 (EBI2) directs activated B cell positioning.",
+          "references": [
+            "ref-8"
+          ]
+        },
+        {
+          "id": "plasma-like-b-cell",
+          "name": "Antibody-secreting (plasma-like) B cell",
+          "phenotype": "Terminally differentiated antibody-secreting state implicated in islet-autoantibody production in type 1 diabetes",
+          "genes": [
+            "PRDM1",
+            "XBP1",
+            "SDC1",
+            "IRF4",
+            "JCHAIN",
+            "MZB1",
+            "TNFRSF17",
+            "IGHG1",
+            "IGHM",
+            "CD27",
+            "SLAMF7",
+            "POU2AF1"
+          ],
+          "activities": {
+            "b-cell-identity": -1,
+            "antibody-secretion": 3,
+            "bcr-signaling": -1,
+            "b-cell-proliferation": -1
+          },
+          "notes": "Canonical terminal plasma-cell differentiation program (Nutt et al., Nat Rev Immunol 2015): master regulators PRDM1 (BLIMP1), XBP1, IRF4, POU2AF1 (OCA-B); secretory-pathway/ER genes JCHAIN and MZB1; surface plasma cell markers SDC1 (CD138), TNFRSF17 (BCMA), SLAMF7, CD27; and secreted immunoglobulin transcripts IGHG1/IGHM consistent with autoantibody-producing plasma cells in T1D.",
+          "references": [
+            "ref-40"
+          ]
+        },
+        {
+          "id": "memory-b-cell",
+          "name": "Memory B cell",
+          "phenotype": "Long-lived antigen-experienced B cell poised for rapid recall response",
+          "genes": [
+            "CD27",
+            "CXCR4",
+            "CD80",
+            "CD86",
+            "FAS",
+            "TNFRSF13B",
+            "CR2",
+            "CD24",
+            "IGHG1",
+            "CD44"
+          ],
+          "activities": {
+            "b-cell-survival": 2,
+            "b-cell-migration": 1,
+            "antibody-secretion": -1
+          },
+          "notes": "CD27 remains the most widely used human memory B cell marker despite known caveats (not universal, can be modulated by IL-21), so it is paired with a broader consensus memory panel: CD80/CD86 (costimulatory upregulation vs naive), FAS/CD95, TNFRSF13B (TACI), CR2 (CD21), CD24, CXCR4 (tissue recall homing), and class-switched IGHG1 transcript. Kept to 10 genes given genuine heterogeneity/lack of a single definitive memory B marker in the literature.",
+          "references": [
+            "ref-42"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "macrophage",
+      "name": "Macrophage",
+      "programs": [
+        {
+          "id": "macrophage-identity",
+          "name": "Macrophage identity",
+          "category": "Core identity",
+          "function": "Mature macrophage transcriptional identity",
+          "genes": [
+            "CD68",
+            "CD14",
+            "ITGAM",
+            "AIF1",
+            "CSF1R"
+          ]
+        },
+        {
+          "id": "phagocytosis",
+          "name": "Phagocytosis and antigen processing",
+          "category": "Immune response",
+          "function": "Efferocytosis and debris clearance",
+          "genes": [
+            "MRC1",
+            "MERTK",
+            "FCGR1A"
+          ]
+        },
+        {
+          "id": "m1-inflammatory",
+          "name": "M1 pro-inflammatory polarization",
+          "category": "Immune response",
+          "function": "Classically activated, pro-inflammatory macrophage program",
+          "genes": [
+            "NOS2",
+            "TNF",
+            "IL1B",
+            "IL6",
+            "CXCL9",
+            "CXCL10"
+          ]
+        },
+        {
+          "id": "m2-reparative",
+          "name": "M2 reparative/alternative polarization",
+          "category": "Immune response",
+          "function": "Alternatively activated, tissue-remodeling and anti-inflammatory program",
+          "genes": [
+            "MRC1",
+            "ARG1",
+            "IL10",
+            "CD163",
+            "TGFB1"
+          ]
+        },
+        {
+          "id": "antigen-presentation-mac",
+          "name": "Antigen presentation",
+          "category": "Immune response",
+          "function": "MHC class II antigen presentation",
+          "genes": [
+            "HLA-DRA",
+            "CD74",
+            "TAP1"
+          ]
+        },
+        {
+          "id": "macrophage-migration",
+          "name": "Chemotaxis and tissue infiltration",
+          "category": "Structural maintenance",
+          "function": "Chemokine-receptor-driven tissue trafficking",
+          "genes": [
+            "CCR2",
+            "CX3CR1",
+            "CCL2"
+          ]
+        },
+        {
+          "id": "macrophage-ecm-remodeling",
+          "name": "Matrix remodeling",
+          "category": "Structural maintenance",
+          "function": "Matrix metalloproteinase-driven ECM turnover",
+          "genes": [
+            "MMP9",
+            "MMP12",
+            "TIMP1"
+          ]
+        },
+        {
+          "id": "macrophage-oxidative-stress",
+          "name": "Oxidative stress response",
+          "category": "Stress response",
+          "function": "Detoxification of reactive oxygen species",
+          "genes": [
+            "TXN",
+            "PRDX1",
+            "GPX1",
+            "SOD2"
+          ]
+        },
+        {
+          "id": "macrophage-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "resident-macrophage",
+          "name": "Resident homeostatic macrophage",
+          "phenotype": "Tissue-resident macrophage maintaining homeostasis and efferocytosis in the healthy pancreas",
+          "genes": [
+            "CD68",
+            "MRC1",
+            "CX3CR1",
+            "LYVE1",
+            "TIMD4",
+            "FOLR2",
+            "MERTK",
+            "VSIG4",
+            "C1QA",
+            "C1QB",
+            "GAS6",
+            "CSF1R"
+          ],
+          "activities": {
+            "macrophage-identity": 3,
+            "phagocytosis": 2,
+            "m1-inflammatory": -2,
+            "m2-reparative": 1,
+            "macrophage-migration": -1
+          },
+          "notes": "Homeostatic tissue-resident macrophage identity conserved across organs: self-renewal/identity receptor CSF1R, complement/efferocytosis genes (C1QA, C1QB, MERTK, GAS6, VSIG4) supporting apoptotic-cell clearance, and resident-macrophage-specific surface markers LYVE1, TIMD4, FOLR2 that distinguish long-lived resident populations from recruited monocyte-derived macrophages.",
+          "references": [
+            "ref-1"
+          ]
+        },
+        {
+          "id": "m1-inflammatory-macrophage",
+          "name": "M1 inflammatory macrophage",
+          "phenotype": "Classically activated macrophage driving insulitis and acute-pancreatitis inflammation",
+          "genes": [
+            "NOS2",
+            "TNF",
+            "IL1B",
+            "IL6",
+            "CXCL9",
+            "CXCL10",
+            "CD86",
+            "IL12B",
+            "CCR7",
+            "IRF5",
+            "PTGS2",
+            "CXCL11"
+          ],
+          "activities": {
+            "m1-inflammatory": 3,
+            "macrophage-migration": 2,
+            "antigen-presentation-mac": 2,
+            "m2-reparative": -2
+          },
+          "notes": "Classical LPS/IFN-gamma-driven M1 polarization signature (Murray et al., Immunity 2014; Jablonski et al. 2015 gene-signature study): iNOS (NOS2), pro-inflammatory cytokines (TNF, IL1B, IL6, IL12B), Th1-recruiting chemokines CXCL9/CXCL10/CXCL11, costimulatory CD86, and the M1-driving transcription factor IRF5. CCR7 and PTGS2 (COX2) are additional established M1 markers.",
+          "references": [
+            "ref-37"
+          ]
+        },
+        {
+          "id": "m2-reparative-macrophage",
+          "name": "M2 reparative macrophage",
+          "phenotype": "Alternatively activated macrophage supporting tissue repair and fibrosis, also resembling tumor-associated macrophages in PDAC",
+          "genes": [
+            "MRC1",
+            "ARG1",
+            "CD163",
+            "IL10",
+            "TGFB1",
+            "CD36",
+            "CCL22",
+            "STAB1",
+            "MSR1",
+            "PDGFB",
+            "FN1",
+            "CLEC10A"
+          ],
+          "activities": {
+            "m2-reparative": 3,
+            "macrophage-ecm-remodeling": 2,
+            "m1-inflammatory": -2
+          },
+          "notes": "Alternatively-activated/wound-healing macrophage program: canonical M2 receptors MRC1 (CD206), CD163, CD36, STAB1, MSR1, CLEC10A; arginase metabolic switch ARG1; anti-inflammatory/pro-fibrotic cytokines IL10 and TGFB1; and tissue-repair factors PDGFB and FN1 (fibronectin) reflecting the reparative/fibrogenic role described in pancreatic tissue repair and PDAC stroma.",
+          "references": [
+            "ref-37"
+          ]
+        },
+        {
+          "id": "tumor-associated-macrophage",
+          "name": "Tumor-associated macrophage",
+          "phenotype": "Immunosuppressive macrophage phenotype supporting tumor growth in pancreatic ductal adenocarcinoma",
+          "genes": [
+            "CD163",
+            "ARG1",
+            "MMP9",
+            "SPP1",
+            "TREM2",
+            "MARCO",
+            "APOE",
+            "C1QC",
+            "VEGFA",
+            "CD274",
+            "IDO1",
+            "MRC1"
+          ],
+          "activities": {
+            "m2-reparative": 2,
+            "macrophage-ecm-remodeling": 3,
+            "antigen-presentation-mac": -1,
+            "m1-inflammatory": -1
+          },
+          "notes": "PDAC-specific TAM signature drawn from recent single-cell TAM atlases: SPP1+/TREM2+/APOE+/C1QC+ TAM subsets are recurrently identified pro-tumorigenic populations in PDAC scRNA-seq (e.g. CTHRC1+ fibroblast/SPP1+ macrophage crosstalk papers; MARCO+ TAM characterization in PDAC, PMID 41577813). Immunosuppressive checkpoint/enzyme genes CD274 (PD-L1) and IDO1, plus angiogenic VEGFA and matrix-remodeling MMP9, reflect the immunosuppressive, pro-angiogenic TAM phenotype supporting tumor growth.",
+          "references": [
+            "ref-39"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mast-cell",
+      "name": "Mast cell",
+      "programs": [
+        {
+          "id": "mast-cell-identity",
+          "name": "Mast-cell identity",
+          "category": "Core identity",
+          "function": "Mature mast-cell transcriptional identity",
+          "genes": [
+            "KIT",
+            "TPSAB1",
+            "CMA1",
+            "FCER1A"
+          ]
+        },
+        {
+          "id": "degranulation",
+          "name": "Degranulation",
+          "category": "Secretion",
+          "function": "Release of preformed histamine and protease-containing granules",
+          "genes": [
+            "HDC",
+            "TPSAB1",
+            "CMA1",
+            "CPA3"
+          ]
+        },
+        {
+          "id": "ige-signaling",
+          "name": "IgE receptor signaling",
+          "category": "Immune response",
+          "function": "FcepsilonRI-mediated activation",
+          "genes": [
+            "FCER1A",
+            "MS4A2",
+            "SYK"
+          ]
+        },
+        {
+          "id": "mast-cytokine",
+          "name": "Cytokine and chemokine production",
+          "category": "Immune response",
+          "function": "Inflammatory cytokine/chemokine release",
+          "genes": [
+            "IL6",
+            "TNF",
+            "CXCL8",
+            "IL13"
+          ]
+        },
+        {
+          "id": "mast-fibrogenic",
+          "name": "Fibrogenic crosstalk",
+          "category": "Stress response",
+          "function": "Protease and cytokine signaling implicated in promoting pancreatic-stellate-cell activation and fibrosis",
+          "genes": [
+            "TPSAB1",
+            "TGFB1",
+            "CMA1"
+          ]
+        },
+        {
+          "id": "mast-cell-proliferation",
+          "name": "Cell cycle / proliferation",
+          "category": "Cell fate",
+          "function": "KIT-driven proliferative maintenance",
+          "genes": [
+            "MKI67",
+            "KIT"
+          ]
+        },
+        {
+          "id": "mast-cell-apoptosis",
+          "name": "Apoptosis",
+          "category": "Cell fate",
+          "function": "Programmed cell death",
+          "genes": [
+            "BAX",
+            "BBC3",
+            "PMAIP1",
+            "CASP3"
+          ]
+        },
+        {
+          "id": "mast-cell-survival",
+          "name": "Survival",
+          "category": "Cell fate",
+          "function": "Anti-apoptotic/persistence programs",
+          "genes": [
+            "BCL2",
+            "KIT"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "resting-mast-cell",
+          "name": "Resting mast cell",
+          "phenotype": "Quiescent tissue-resident mast cell",
+          "genes": [
+            "KIT",
+            "TPSAB1",
+            "TPSB2",
+            "CMA1",
+            "CPA3",
+            "FCER1A",
+            "MS4A2",
+            "GATA2",
+            "MITF",
+            "HPGDS",
+            "SLC18A2",
+            "IL1RL1"
+          ],
+          "activities": {
+            "mast-cell-identity": 3,
+            "degranulation": -2,
+            "mast-cytokine": -1,
+            "mast-cell-survival": 1
+          },
+          "notes": "Baseline tissue-resident mast cell identity/differentiation program: KIT (CD117, mast cell growth-factor receptor), the full complement of stored granule proteases (TPSAB1, TPSB2, CMA1, CPA3) present but not yet released, FCER1A/MS4A2 (IgE receptor complex) constitutively expressed, and lineage transcription factors GATA2/MITF. HPGDS, SLC18A2, and IL1RL1 (ST2) reflect steady-state mast cell identity rather than an activation state.",
+          "references": [
+            "ref-43"
+          ]
+        },
+        {
+          "id": "activated-mast-cell",
+          "name": "Degranulated/activated mast cell",
+          "phenotype": "IgE-triggered or injury-triggered degranulation releasing histamine and proteases, implicated in acute pancreatitis and allergic-type responses",
+          "genes": [
+            "TPSAB1",
+            "CMA1",
+            "HDC",
+            "FCER1A",
+            "MS4A2",
+            "SYK",
+            "IL6",
+            "TNF",
+            "CXCL8",
+            "IL13",
+            "CD63",
+            "ENPP3"
+          ],
+          "activities": {
+            "degranulation": 3,
+            "ige-signaling": 3,
+            "mast-cytokine": 2
+          },
+          "notes": "IgE/FcepsilonRI-triggered degranulation and downstream cytokine program: proximal signaling (FCER1A, MS4A2, SYK), histamine synthesis (HDC), released granule proteases (TPSAB1, CMA1), and newly synthesized cytokines/chemokines (IL6, TNF, CXCL8, IL13) characteristic of acute activation. CD63 and ENPP3 (CD203c) are established surface activation/degranulation markers used by flow cytometry to identify degranulated mast cells/basophils.",
+          "references": [
+            "ref-43"
+          ]
+        },
+        {
+          "id": "fibrogenic-mast-cell",
+          "name": "Fibrogenic mast cell",
+          "phenotype": "Chronic activation state implicated in promoting pancreatic fibrosis via stellate-cell crosstalk",
+          "genes": [
+            "TGFB1",
+            "CPA3",
+            "TPSAB1",
+            "CMA1",
+            "VEGFA",
+            "FGF2",
+            "IL13",
+            "TIMP1"
+          ],
+          "activities": {
+            "mast-fibrogenic": 3,
+            "degranulation": 1,
+            "mast-cytokine": 2
+          },
+          "notes": "Evidence for a distinct transcriptionally-defined 'fibrogenic' mast cell state is limited; this panel is built from literature on mast cell-fibroblast/stellate-cell crosstalk (mast cell tryptase/chymase activating fibroblasts and stellate cells; mast cell-derived TGF-beta1 driving PSC activation and fibrosis, e.g. PMC6468868 in PDAC) plus general pro-fibrotic/angiogenic mast cell mediators (VEGFA, FGF2, IL13, TIMP1). Kept to 8 genes (below the 10-15 target) because direct single-cell evidence for this specific state is thin rather than padding with generic mast cell identity genes.",
+          "references": [
+            "ref-44"
+          ]
+        },
+        {
+          "id": "mast-cell-exhausted",
+          "name": "Degranulation-exhausted mast cell",
+          "phenotype": "Post-degranulation refractory state with depleted granule stores",
+          "genes": [
+            "IL10",
+            "CD200R1",
+            "FCER1A",
+            "MS4A2",
+            "SOCS1",
+            "SOCS3",
+            "CD300A"
+          ],
+          "activities": {
+            "degranulation": -1,
+            "mast-cell-survival": -1,
+            "mast-cell-apoptosis": 1
+          },
+          "notes": "No published transcriptomic signature specifically labeled 'exhausted/post-degranulation refractory mast cell' was found; this is the least literature-supported state in the panel. Genes are inferred from mast cell desensitization/hyporesponsiveness biology (a 2026 bioRxiv study on IgE-mediated mast cell desensitization describes an immunoregulatory transcriptional program distinct from activation, though its specific gene list was not accessible) and general negative-feedback regulators of FcepsilonRI signaling: inhibitory receptors CD200R1 and CD300A, negative signaling regulators SOCS1/SOCS3, the anti-inflammatory cytokine IL10, and retained IgE-receptor complex genes FCER1A/MS4A2 (receptor internalization/downregulation being a hallmark of the refractory state). Given the thinness of direct evidence, only 7 genes are provided rather than padding to 10-15.",
+          "references": [
+            "ref-45"
+          ]
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "citation": "Talchai C, Xuan S, Lin HV, Sussel L, Accili D. Pancreatic β cell dedifferentiation as a mechanism of diabetic β cell failure. Cell. 2012;150(6):1223-1234. PMID: 22980982",
+      "note": "Foundational beta-cell dedifferentiation model: loss of identity genes, gain of progenitor markers (Neurog3, Sox9, Aldh1a3), FOXO1 nuclear exclusion, and emergence of alpha-cell-like markers underlying the dedifferentiated and transdifferentiated beta-cell states.",
+      "id": "ref-1"
+    },
+    {
+      "citation": "Cinti F, Bouchi R, Kim-Muller JY, et al. Evidence of β-Cell Dedifferentiation in Human Type 2 Diabetes. J Clin Endocrinol Metab. 2016;101(3):1044-1054. PMID: 26713822",
+      "note": "Confirms ALDH1A3 as a marker of beta-cell dedifferentiation in human T2D pancreas.",
+      "id": "ref-2"
+    },
+    {
+      "citation": "Pullen TJ, Rutter GA. When less is more: the forbidden fruits of gene repression in the adult β-cell. Diabetes Obes Metab. 2013;15(6):503-512.",
+      "note": "Defines 'disallowed genes' (LDHA, SLC16A1/MCT1) whose re-expression marks loss of beta-cell identity, used in the dedifferentiated state.",
+      "id": "ref-3"
+    },
+    {
+      "citation": "Spijker HS, Song H, Ellenbroek JH, et al. Loss of β-Cell Identity Occurs in Type 2 Diabetes and Is Associated With Islet Amyloid Deposits. Diabetes. 2015;64(8):2928-2938.",
+      "note": "Human evidence for beta-to-alpha cell transdifferentiation (co-expression of ARX/MAFB/GCG in insulin-lineage cells), supporting the transdifferentiated beta-cell state.",
+      "id": "ref-4"
+    },
+    {
+      "citation": "Human pancreatic α-cell heterogeneity and trajectory inference analyses reveal SMOC1 as a β-cell dedifferentiation gene. Nat Commun. 2025. PMID: 41057332",
+      "note": "Identifies SMOC1 as an alpha-lineage gene ectopically induced along the beta-to-alpha dedifferentiation/transdifferentiation trajectory in human T2D islets.",
+      "id": "ref-5"
+    },
+    {
+      "citation": "Aguayo-Mazzucato C, Andle J, Lee TB Jr, et al. Acceleration of β Cell Aging Determines Diabetes and Senolysis Improves Disease Outcomes. Cell Metab. 2019;30(1):129-142. PMID: 31155496",
+      "note": "Defines beta-cell senescence markers (CDKN2A/p16, CDKN1A/p21) and use of B2M as a surface marker for FACS isolation of senescent beta cells.",
+      "id": "ref-6"
+    },
+    {
+      "citation": "Thompson PJ, Shah A, Ntranos V, et al. Targeted Elimination of Senescent Beta Cells Prevents Type 1 Diabetes. Cell Metab. 2019;29(5):1045-1060.",
+      "note": "Characterizes the beta-cell senescence-associated secretory phenotype (SASP: GDF15, SERPINE1, CCL2, IL1B).",
+      "id": "ref-7"
+    },
+    {
+      "citation": "Zhong L, et al. / FoxM1-related studies (e.g., FoxM1 Is Up-Regulated by Obesity and Stimulates β-Cell Proliferation, Mol Endocrinol 2010; Insulin signaling regulates the FoxM1/PLK1/CENP-A pathway, PMC5382039).",
+      "note": "FOXM1/CCND2/PLK1/CENPA/BIRC5 as drivers of adaptive human beta-cell proliferation in obesity and pregnancy, supporting the proliferating beta-cell state.",
+      "id": "ref-8"
+    },
+    {
+      "citation": "Xin Y, Gutierrez GD, Okamoto H, et al. and related human islet single-cell studies characterizing alpha-cell-enriched genes LOXL4, CRYBA2, GC, and SLC7A2.",
+      "note": "Human alpha-cell identity markers used in the mature-functional-alpha panel beyond the canonical GCG/ARX/MAFB set.",
+      "id": "ref-9"
+    },
+    {
+      "citation": "Adriaenssens AE, Svendsen B, Lam BY, et al. Transcriptomic profiling of pancreatic alpha, beta and delta cell populations identifies delta cells as a principal target for ghrelin in mouse islets. Diabetologia. 2016;59(10):2156-2165.",
+      "note": "Delta-cell-enriched markers HHEX, RBP4, LEPR, GHSR used for the mature-functional-delta and delta-hypersecretory states.",
+      "id": "ref-10"
+    },
+    {
+      "citation": "Somatostatin Containing δ-Cell Number Is Reduced in Type-2 Diabetes. PMC9959292.",
+      "note": "Direct evidence for reduced delta-cell number/mass in human T2D, underlying the delta-reduced state.",
+      "id": "ref-11"
+    },
+    {
+      "citation": "Dean ED, Li M, Prasad N, et al. Interrupted Glucagon Signaling Reveals Hepatic α Cell Axis and Role for L-Glutamine in α Cell Proliferation. Cell Metab. 2017; and Pancreatic islet α cell function and proliferation require the arginine transporter SLC7A2. JCI 2024.",
+      "note": "SLC38A5/SLC7A2 amino-acid transporter induction linked to hyperglucagonemia and alpha-cell hyperplasia, used in the hyperglucagonemic alpha-cell state.",
+      "id": "ref-12"
+    },
+    {
+      "citation": "Increased NKX6.1 expression and decreased ARX expression in alpha cells accompany reduced beta-cell volume in human subjects. Sci Rep. 2021;11:16951.",
+      "note": "Direct human evidence of alpha-cell reprogramming markers (NKX6-1 gain, ARX loss) used in the alpha-dedifferentiated state.",
+      "id": "ref-13"
+    },
+    {
+      "citation": "Andralojc KM, Mercalli A, Nowak KW, et al. Ghrelin-producing epsilon cells in the developing and adult human pancreas. Diabetologia. 2009;52(3):486-493. PMID: 19096824",
+      "note": "Defines epsilon-cell markers (GHRL, ISL1, NKX2-2, absence of NKX6-1/PAX6) and developmental abundance changes used for both epsilon-cell states.",
+      "id": "ref-14"
+    },
+    {
+      "citation": "Russell MA, Redick SD, Blodgett DM, et al. HLA Class II Antigen Processing and Presentation Pathway Components Demonstrated by Transcriptomics for Islet α, β, and δ-Cells in Type 1 Diabetes. Diabetes. 2019;68(5):988-1001.",
+      "note": "Documents interferon-stimulated gene/HLA class I-II induction across alpha, beta, delta (and by extension other) islet endocrine cell types during insulitis, supporting all *-inflammatory states.",
+      "id": "ref-15"
+    },
+    {
+      "citation": "Marhfour I, Lopez XM, Lefkaditis D, et al. Expression of endoplasmic reticulum stress markers in the islets of patients with type 1 diabetes. Diabetologia. 2012;55(9):2417-2420.",
+      "note": "Human islet evidence for terminal UPR markers (DDIT3/CHOP, HSPA5, HERPUD1, DNAJB9) used in the er-stressed beta-cell state.",
+      "id": "ref-16"
+    },
+    {
+      "citation": "Poitout V, Robertson RP. Glucolipotoxicity: fuel excess and beta-cell dysfunction. Endocr Rev. 2008;29(3):351-366.",
+      "note": "Reviews the combined glucose/lipid toxicity signature (TXNIP, CD36, SCD, ceramide pathway) used in the glucolipotoxicity beta-cell state.",
+      "id": "ref-17"
+    },
+    {
+      "citation": "Halangk W et al., J Clin Invest, 2000",
+      "note": "Cathepsin B (CTSB)-mediated intra-acinar trypsinogen activation as the initiating event of acute pancreatitis.",
+      "id": "ref-18"
+    },
+    {
+      "citation": "Gukovsky I & Gukovskaya AS, reviews on NF-kB signaling in pancreatitis",
+      "note": "NF-kB (NFKBIA/IL6/TNF/CXCL1) activation as an early, causal acinar-intrinsic event in pancreatitis.",
+      "id": "ref-19"
+    },
+    {
+      "citation": "Ji B & Logsdon CD, studies on ER stress/UPR in pancreatitis acinar cells",
+      "note": "HSPA5/DDIT3/XBP1/ATF4 unfolded protein response activation in pancreatitis.",
+      "id": "ref-20"
+    },
+    {
+      "citation": "Kopp JL et al., Cancer Cell, 2012 ('Identification of Sox9-Dependent Acinar-to-Ductal Reprogramming...')",
+      "note": "SOX9-driven acinar-to-ductal metaplasia as the principal PDAC-initiating mechanism.",
+      "id": "ref-21"
+    },
+    {
+      "citation": "De La O JP et al., PNAS, 2008",
+      "note": "Notch (HES1) and oncogenic Kras cooperatively reprogram acinar cells to ductal intermediates.",
+      "id": "ref-22"
+    },
+    {
+      "citation": "Ma Z et al., Gastroenterology, 2021 ('Single-cell transcriptomics reveals a conserved metaplasia program in pancreatic injury')",
+      "note": "TFF2/MUC6/MUC1/SPDEF mucinous ADM intermediate populations identified by scRNA-seq.",
+      "id": "ref-23"
+    },
+    {
+      "citation": "Hruban RH et al., PanIN grading/progression consensus",
+      "note": "KRAS, CDKN2A, TP53, SMAD4 as sequentially acquired PanIN-to-PDAC driver alterations.",
+      "id": "ref-24"
+    },
+    {
+      "citation": "'Oncogenic KRAS, Mucin 4, and Activin A-Mediated Fibroblast Activation Cooperate for PanIN Initiation', PMC, 2023",
+      "note": "MUC4 as an early PanIN marker associated with activated periductal fibroblasts.",
+      "id": "ref-25"
+    },
+    {
+      "citation": "'Expression of chosen carcinoembryonic-related cell adhesion molecules in PanIN...' Med Sci Monit / medsci.org",
+      "note": "CEACAM5 absent in normal ducts, increasing with PanIN grade.",
+      "id": "ref-26"
+    },
+    {
+      "citation": "Wine JJ & Reddy MM (and related), J Cell Sci, 1993; Cold Spring Harb Perspect Med, 2012",
+      "note": "CFTR and MUC1 co-expression in human pancreatic ductal epithelial cells; CFTR loss and mucus obstruction in CF pancreas.",
+      "id": "ref-27"
+    },
+    {
+      "citation": "'Single-Cell Transcriptomic Analysis of the Mouse Pancreas: Characteristic Features of Pancreatic Ductal Cells in Chronic Pancreatitis', Genes, 2022",
+      "note": "Ductal-cell-specific differential gene expression in chronic pancreatitis.",
+      "id": "ref-28"
+    },
+    {
+      "citation": "Kisseleva T et al., PNAS, 2012 ('Myofibroblasts revert to an inactive phenotype during regression of liver fibrosis')",
+      "note": "BAMBI/PPARG up-regulation and ACTA2/COL1A1/TIMP1 down-regulation defining reverted (quiescing) myofibroblasts/stellate cells; used here by extrapolation for the pancreatic stellate-quiescing state.",
+      "id": "ref-29"
+    },
+    {
+      "citation": "Erkan M et al., desmoplasia/periostin studies in chronic pancreatitis and PDAC stroma",
+      "note": "POSTN as a marker of fibrotic desmoplastic stellate-derived stroma.",
+      "id": "ref-30"
+    },
+    {
+      "citation": "Hellstrom M et al., Nature, 2007",
+      "note": "DLL4 as the canonical marker of angiogenic tip endothelial cells via Notch signaling.",
+      "id": "ref-31"
+    },
+    {
+      "citation": "Vasile E et al. / 'Plasminogen Activator Inhibitor-1 Is a Marker and a Mediator of Senescence', Arterioscler Thromb Vasc Biol",
+      "note": "SERPINE1/PAI-1 as a marker and mediator of endothelial senescence.",
+      "id": "ref-32"
+    },
+    {
+      "citation": "Diabetes-induced endothelial senescence via thrombospondin-1/CD47 signaling, PMC (2019)",
+      "note": "THBS1 and impaired angiogenesis in diabetic endothelial senescence, relevant to diabetes-related microangiopathy.",
+      "id": "ref-33"
+    },
+    {
+      "citation": "Wherry EJ, Kurachi M. Molecular and cellular insights into T cell exhaustion. Nat Rev Immunol. 2015 (PMID 26205583)",
+      "note": "Supports core T cell exhaustion markers PDCD1, LAG3, HAVCR2, TOX, EOMES, ENTPD1 and general exhaustion biology",
+      "id": "ref-34"
+    },
+    {
+      "citation": "Blank CU et al. Defining 'T cell exhaustion'. Nat Rev Immunol. 2019 (PMID 31570879)",
+      "note": "Consensus nomenclature/markers for exhausted T cells including TIGIT, CD38, BATF",
+      "id": "ref-35"
+    },
+    {
+      "citation": "Sakaguchi S, Miyara M, Costantino CM, Hafler DA. FOXP3+ regulatory T cells in the human immune system. Nat Rev Immunol. 2010 (PMID 20706272)",
+      "note": "Supports Treg markers FOXP3, IL2RA, CTLA4, IKZF2, TNFRSF18",
+      "id": "ref-36"
+    },
+    {
+      "citation": "Murray PJ et al. Macrophage activation and polarization: nomenclature and experimental guidelines. Immunity. 2014 (PMID 25035950)",
+      "note": "Standard M1 (NOS2, TNF, IL1B, CXCL9/10) vs M2 (MRC1, ARG1, CD163, IL10) polarization marker guidelines",
+      "id": "ref-37"
+    },
+    {
+      "citation": "Identification and characterization of MARCO-expressing tumor-associated macrophages in pancreatic ductal adenocarcinoma with pan-cancer relevance. (PMID 41577813)",
+      "note": "Supports MARCO as a PDAC TAM marker",
+      "id": "ref-38"
+    },
+    {
+      "citation": "CTHRC1+ fibroblasts and SPP1+ macrophages synergistically contribute to pro-tumorigenic tumor microenvironment in pancreatic ductal adenocarcinoma. (PMID 39075108)",
+      "note": "Supports SPP1, TREM2, APOE, C1QC as PDAC TAM subset markers",
+      "id": "ref-39"
+    },
+    {
+      "citation": "Nutt SL, Hodgkin PD, Tarlinton DM, Corcoran LM. The generation of antibody-secreting plasma cells. Nat Rev Immunol. 2015 (PMID 25907459)",
+      "note": "Supports plasma cell differentiation markers PRDM1, XBP1, IRF4, JCHAIN, SDC1, TNFRSF17",
+      "id": "ref-40"
+    },
+    {
+      "citation": "Palm AKE, Henry C. Remembrance of Things Past: Long-Term B Cell Memory After Infection and Vaccination. Front Immunol. 2019 (PMID 31031762)",
+      "note": "Supports memory B cell markers CD27, CD80, CD86, FAS, CR2",
+      "id": "ref-41"
+    },
+    {
+      "citation": "CD27 is not an ideal marker for human memory B cells and can be modulated by IL-21. Sci Rep. 2024 (PMID not confirmed)",
+      "note": "Caveat noted for CD27 as a memory B cell marker, informing the broader memory-B panel used here",
+      "id": "ref-42"
+    },
+    {
+      "citation": "Metcalfe DD, Baram D, Mekori YA. Mast cells. Physiol Rev. 1997; and general mast cell biology reviews",
+      "note": "Supports mast cell identity/degranulation markers KIT, TPSAB1, CMA1, CPA3, FCER1A, MS4A2, HDC",
+      "id": "ref-43"
+    },
+    {
+      "citation": "Ma Y et al. CAFs and TGF-beta Signaling Activation by Mast Cells Contribute to Resistance to Gemcitabine/Nab-paclitaxel in Pancreatic Cancer. (PMC6468868)",
+      "note": "Supports mast cell TGFB1-driven fibrogenic crosstalk with pancreatic stellate cells",
+      "id": "ref-44"
+    },
+    {
+      "citation": "Mast cell desensitization induces a distinct IgE-dependent transcriptional program associated with immune regulation. bioRxiv, 2026 (DOI 10.64898/2026.02.28.708745)",
+      "note": "Basis for the inferred, low-confidence 'exhausted/refractory' mast cell state (immunoregulatory program distinct from activation)",
+      "id": "ref-45"
+    },
+    {
+      "citation": "Maestas MM, Ishahak M, Augsornworawat P, Veronese-Paniagua DA, et al. Identification of unique cell type responses in pancreatic islets to stress. Nat Commun. 2024;15:5567. https://www.nature.com/articles/s41467-024-49724-w",
+      "note": "Multiplexed single-cell profiling of ER and inflammatory/cytokine stress responses across human islet cell types; beta, alpha, and ductal cells show the largest transcriptional stress response, supporting ER-stressed and inflammatory/cytokine-exposed state definitions across multiple cell types.",
+      "id": "ref-46"
+    },
+    {
+      "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_UNFOLDED_PROTEIN_RESPONSE: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_UNFOLDED_PROTEIN_RESPONSE.html",
+      "note": "Curated MSigDB Hallmark gene set for genes induced during the unfolded protein response; used as a cross-check for unfolded-protein-response/ER-stress program gene selection.",
+      "id": "ref-47"
+    },
+    {
+      "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_INTERFERON_ALPHA_RESPONSE: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_INTERFERON_ALPHA_RESPONSE.html",
+      "note": "Curated MSigDB Hallmark gene set for genes induced by type I (alpha) interferon signaling; used as a cross-check for interferon-stimulated-gene program selection in inflammatory/interferon-activated states.",
+      "id": "ref-48"
+    },
+    {
+      "citation": "Webster KL, Mirmira RG. Beta cell dedifferentiation in type 1 diabetes: sacrificing function for survival? Front Endocrinol (Lausanne). 2024;15:1427723. https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2024.1427723/full",
+      "note": "Review proposing beta-cell dedifferentiation as a stress-adaptive, potentially reversible response in type 1 diabetes rather than simple cell death, supporting the dedifferentiated beta-cell state's framing as a distinct, non-terminal phenotype.",
+      "id": "ref-49"
+    },
+    {
+      "citation": "Salinno C, Buttner M, Cota P, Tritschler S, Tarquis-Medina M, Bastidas-Ponce A, Scheibner K, Burtscher I, Bottcher A, Theis FJ, Bakhti M, Lickert H. CD81 marks immature and dedifferentiated pancreatic beta-cells. Mol Metab. 2021;49:101188. PMID: 33582383",
+      "note": "Identifies CD81 as a surface marker enriched in immature and dedifferentiated beta-cell subpopulations in mouse and human islets, supporting marker selection for the dedifferentiated beta-cell state.",
+      "id": "ref-50"
+    },
+    {
+      "citation": "van Gurp L, Fodoulian L, Oropeza D, Furuyama K, Bru-Tari E, Vu AN, Kaddis JS, Rodriguez I, Thorel F, Herrera PL. Generation of human islet cell type-specific identity genesets. Nat Commun. 2022;13:2020. https://www.nature.com/articles/s41467-022-29588-8",
+      "note": "Defines curated identity gene sets for each human islet endocrine and exocrine cell type from integrated single-cell atlases; cross-referenced for cell-type identity program definitions across pancreatic cell types.",
+      "id": "ref-51"
+    },
+    {
+      "citation": "Li J, Klughammer J, Farlik M, Penz T, Spittler A, Barbieux C, Berishvili E, Bock C, Kubicek S. Single-cell transcriptomes reveal characteristic features of human pancreatic islet cell types. EMBO Rep. 2016;17(2):178-187. PMID: 26691212",
+      "note": "Single-cell RNA-seq resource defining transcriptomes and novel marker transcription factors for human alpha, beta, delta, PP, acinar, and ductal cells.",
+      "id": "ref-52"
+    },
+    {
+      "citation": "Muraro MJ, Dharmadhikari G, Grun D, Groen N, Dielen T, Jansen E, van Gurp L, Engelse MA, Carlotti F, de Koning EJP, van Oudenaarden A. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst. 2016;3(4):385-394. https://www.sciencedirect.com/science/article/pii/S2405471216302927",
+      "note": "CEL-seq-based single-cell atlas of the human pancreas identifying cell-type-specific markers (including CD24/TM4SF4 sorting markers for alpha and beta cells) across endocrine and exocrine populations.",
+      "id": "ref-53"
+    },
+    {
+      "citation": "Segerstolpe A, Palasantza A, Eliasson P, Andersson EM, Andreasson AC, Sun X, Picelli S, Sabirsh A, Clausen M, Bjursell MK, Smith DM, Kasper M, Ammala C, Sandberg R. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 2016;24(4):593-607. PMID: 27667667. https://www.sciencedirect.com/science/article/pii/S1550413116304363",
+      "note": "Defines human islet cell-type transcriptional programs and type 2 diabetes-associated expression changes at single-cell resolution; the source of the 'Segerstolpe et al. 2016 Cell Metab' textbook marker panel referenced elsewhere in this model.",
+      "id": "ref-54"
+    },
+    {
+      "citation": "Schuit F, Van Lommel L, Granvik M, Goyvaerts L, de Faudeur G, Schraenen A, Lemaire K. Beta-Cell-Specific Gene Repression: A Mechanism to Protect Against Inappropriate or Maladjusted Insulin Secretion? Diabetes. 2012;61(5):969-975. PMID: 22517647",
+      "note": "Establishes the concept of beta-cell 'disallowed genes' (deeply repressed housekeeping genes such as LDHA and MCT1) whose derepression may reflect or drive inappropriate/maladjusted insulin release, supporting the dedifferentiated/stressed beta-cell state framing.",
+      "id": "ref-55"
+    },
+    {
+      "citation": "Lemaire K, Granvik M, Schraenen A, Goyvaerts L, Van Lommel L, Gomez-Ruiz A, In't Veld P, Gilon P, Schuit F. How stable is repression of disallowed genes in pancreatic islets in response to metabolic stress? PLoS One. 2017;12(8):e0181651. PMID: 28792951",
+      "note": "Shows disallowed-gene repression remains largely stable in mouse islets under metabolic stressors (aging, pregnancy, high-fat diet), providing boundary conditions for when disallowed-gene derepression should be interpreted as signaling a genuine dedifferentiated/stressed state change.",
+      "id": "ref-56"
+    },
+    {
+      "citation": "Liberzon A, Birger C, Thorvaldsdottir H, Ghandi M, Mesirov JP, Tamayo P. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Syst. 2015;1(6):417-425. HALLMARK_G2M_CHECKPOINT: https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/HALLMARK_G2M_CHECKPOINT.html",
+      "note": "Curated MSigDB Hallmark gene set for genes involved in the G2/M cell-cycle checkpoint; used as a cross-check for cell-cycle/proliferation program gene selection in proliferating states.",
+      "id": "ref-57"
+    },
+    {
+      "citation": "Craig-Schapiro R, Li G, Chen K, et al. Single-cell atlas of human pancreatic islet and acinar endothelial cells in health and diabetes. Nat Commun. 2025;16(1):1338. PMCID: PMC11802906. https://www.nature.com/articles/s41467-024-55415-3",
+      "note": "Single-cell RNA-seq atlas separating islet-specific from acinar-specific pancreatic endothelial cells and showing how their transcriptional signatures change in diabetes; supports modeling distinct islet-vascular vs. acinar-vascular endothelial cell states.",
+      "id": "ref-58"
+    },
+    {
+      "citation": "Mühleder S, Fernández-Chacón M, Garcia-Gonzalez I, Benedito R. Endothelial sprouting, proliferation, or senescence: tipping the balance from physiology to pathology. Cell Mol Life Sci. 2021;78(4):1329-1354. PMID: 33078209. https://pmc.ncbi.nlm.nih.gov/articles/PMC7904752/",
+      "note": "Review of the signaling and cell-cycle circuitry that pushes endothelial cells toward sprouting, proliferation, or senescence, providing mechanistic background for proliferative versus quiescent/senescent endothelial cell states.",
+      "id": "ref-59"
+    },
+    {
+      "citation": "Singh V, Kaur R, Kumari P, Pasricha C, Singh R. ICAM-1 and VCAM-1: Gatekeepers in various inflammatory and cardiovascular disorders. Clin Chim Acta. 2023;548:117487. PMID: 37442359. https://www.sciencedirect.com/science/article/pii/S0009898123002899",
+      "note": "Review of how ICAM-1 and VCAM-1 adhesion molecules drive leukocyte-endothelial interactions in inflammation; supports an activated/inflamed endothelial cell-state gene program (ICAM1/VCAM1 upregulation).",
+      "id": "ref-60"
+    },
+    {
+      "citation": "Hu C, Li T, Xu Y, Zhang X, Li F, Bai J, Chen J, Jiang W, Yang K, Ou Q, Li X, Wang P, Zhang Y. CellMarker 2.0: an updated database of manually curated cell markers in human/mouse and web tools based on scRNA-seq data. Nucleic Acids Res. 2023;51(D1):D870-D876. PMID: 36300619. https://www.bio-bigdata.center/",
+      "note": "Manually curated database of experimentally supported cell-type marker genes across human/mouse tissues; used as a cross-check that marker genes assigned to pancreatic cell states agree with literature-curated marker sets.",
+      "id": "ref-61"
+    },
+    {
+      "citation": "Tabula Sapiens Consortium. The Tabula Sapiens: A multiple-organ, single-cell transcriptomic atlas of humans. Science. 2022;376(6594):eabl4896. PMID: 35549404. https://www.science.org/doi/10.1126/science.abl4896",
+      "note": "Multi-organ single-cell transcriptomic reference atlas (including pancreas) built from the same human donors; serves as a baseline normal-tissue reference for validating pancreatic cell-type-specific expression.",
+      "id": "ref-62"
+    },
+    {
+      "citation": "The Human Protein Atlas: The human immune cells (single cell type section), incorporating data from Monaco G, Lee B, Xu W, et al. RNA-Seq signatures normalized by mRNA abundance allow absolute deconvolution of human immune cell types. Cell Rep. 2019;26(6):1627-1640.e7. https://www.proteinatlas.org/humanproteome/single+cell/immune+cell",
+      "note": "Web resource cataloging RNA and protein expression profiles across sorted human immune cell types; useful for identifying and validating marker genes for immune cell states infiltrating pancreatic islets.",
+      "id": "ref-63"
+    },
+    {
+      "citation": "Tosti L, Hang Y, Debnath O, et al. Single-Nucleus and In Situ RNA-Sequencing Reveal Cell Topographies in the Human Pancreas. Gastroenterology. 2021;160(4):1330-1344.e11. PMID: 33212097. https://www.sciencedirect.com/science/article/pii/S0016508520353993",
+      "note": "Single-nucleus RNA-seq combined with spatial in situ validation building a topographic cell atlas of the human pancreas; a foundational single-cell reference for defining pancreatic cell types and states.",
+      "id": "ref-64"
+    },
+    {
+      "citation": "Perez-Frances M, van Gurp L, Abate MV, et al. Pancreatic Ppy-expressing γ-cells display mixed phenotypic traits and the adaptive plasticity to engage insulin production. Nat Commun. 2021;12(1):4458. PMID: 34294685. https://www.nature.com/articles/s41467-021-24788-0",
+      "note": "Defines the transcriptional identity of pancreatic-polypeptide (gamma)-expressing islet cells and shows their capacity to shift toward an insulin-producing state after beta-cell injury; supports modeling gamma-cell identity and plasticity gene programs.",
+      "id": "ref-65"
+    },
+    {
+      "citation": "Ferdek PE, Jakubowska MA. Biology of pancreatic stellate cells-more than just pancreatic cancer. Pflugers Arch. 2017;469(9):1039-1050. doi:10.1007/s00424-017-1968-0. https://pmc.ncbi.nlm.nih.gov/articles/PMC5554282/",
+      "note": "Review covering the quiescent-to-activated (myofibroblast-like) transition of pancreatic stellate cells and their roles beyond cancer; a core supporting reference for a quiescent-versus-activated stellate cell state gene program.",
+      "id": "ref-66"
+    },
+    {
+      "citation": "Apte M. Isolation of quiescent pancreatic stellate cells from rat and human pancreas. Pancreapedia: Exocrine Pancreas Knowledge Base. 2011. doi:10.3998/panc.2011.10. https://pancreapedia.org/tools/methods/isolation-of-quiescent-pancreatic-stellate-cells-from-rat-and-human-pancreas",
+      "note": "Methods protocol describing isolation of non-activated (quiescent) pancreatic stellate cells from rat and human tissue; methodological support for distinguishing a quiescent stellate cell state from the activated/myofibroblast state.",
+      "id": "ref-67"
+    },
+    {
+      "citation": "Tonelli C, Yordanov GN, Hao Y, et al. A mucus production programme promotes classical pancreatic ductal adenocarcinoma. Gut. 2024;73(6):941-954. PMID: 38262672. https://pmc.ncbi.nlm.nih.gov/articles/PMC11088527/",
+      "note": "Identifies a mucus-secretory transcriptional program characteristic of classical-subtype pancreatic ductal cells; relevant for modeling ductal cell mucin-secretory gene programs and heterogeneity within the ductal compartment.",
+      "id": "ref-68"
+    },
+    {
+      "citation": "Nielsen MFB, Mortensen MB, Detlefsen S. Identification of markers for quiescent pancreatic stellate cells in the normal human pancreas. Histochem Cell Biol. 2017;148(4):359-380. PMID: 28540429",
+      "note": "Systematically evaluates immunohistochemical markers distinguishing quiescent stellate cells in normal human pancreas from activated counterparts; directly supports marker selection for the quiescent pancreatic stellate cell state.",
+      "id": "ref-69"
+    },
+    {
+      "citation": "Azimuth (HuBMAP Consortium): reference-based single-cell annotation web application, built on the multimodal reference-mapping method of Hao Y, Hao S, Andersen-Nissen E, et al. Integrated analysis of multimodal single-cell data. Cell. 2021;184(13):3573-3587.e29. PMID: 34062119. https://azimuth.hubmapconsortium.org/references/",
+      "note": "Reference-based cell-type/state annotation tool hosting curated single-cell reference atlases; useful as a computational reference for validating automated cell-type and cell-state annotation calls.",
+      "id": "ref-70"
+    },
+    {
+      "citation": "Zhang H, Corredor ALG, Messina-Pacheco J, et al. REG3A/REG3B promotes acinar to ductal metaplasia through binding to EXTL3 and activating the RAS-RAF-MEK-ERK signaling pathway. Commun Biol. 2021;4:688. PMID: 34099862. https://pmc.ncbi.nlm.nih.gov/articles/PMC8184755/",
+      "note": "Shows that REG3A/REG3B signaling through the EXTL3 receptor and RAS-RAF-MEK-ERK pathway drives acinar-to-ductal metaplasia in the pancreas; mechanistic support for an acinar-to-ductal metaplasia transitional cell-state gene program.",
+      "id": "ref-71"
+    },
+    {
+      "citation": "Marstrand-Dauce L, Lorenzo D, Chassac A, Nicole P, Couvelard A, Haumaitre C. Acinar-to-Ductal Metaplasia (ADM): On the Road to Pancreatic Intraepithelial Neoplasia (PanIN) and Pancreatic Cancer. Int J Mol Sci. 2023;24(12):9946. PMID: 37373094. https://pmc.ncbi.nlm.nih.gov/articles/PMC10298625/",
+      "note": "Review of the cellular and molecular biology underlying acinar-to-ductal metaplasia as a precursor lesion to PanIN and pancreatic cancer; broad supporting reference for defining the acinar-to-ductal metaplasia transitional cell state.",
+      "id": "ref-72"
+    },
+    {
+      "citation": "European Genome-Phenome Archive (EGA) study EGAS00001004653: Single nucleus and in situ RNA sequencing reveals cell topographies in the human pancreas (controlled-access dataset accompanying Tosti et al., Gastroenterology 2021). https://ega-archive.org/studies/EGAS00001004653",
+      "note": "Controlled-access raw single-nucleus RNA-seq and spatial sequencing dataset underlying the Tosti et al. human pancreas cell topography atlas; primary data source for re-analysis or validation of pancreatic cell-state marker genes.",
+      "id": "ref-73"
+    }
+  ]
+}
