@@ -1770,7 +1770,7 @@
         },
         {
           "id": "gamma-stress",
-          "name": "Stressed gamma cell",
+          "name": "ER stress gamma cell",
           "phenotype": "Secretory-overload ER stress state",
           "genes": [
             "PPY",
@@ -1779,18 +1779,30 @@
             "XBP1",
             "ATF4",
             "HERPUD1",
-            "ATF6"
+            "ATF6",
+            "DNAJB9",
+            "HSP90B1",
+            "MANF",
+            "PDIA4",
+            "PPP1R15A"
           ],
+          "notes": "No PP/gamma-cell-specific stress transcriptomic study was found; genes are inferred from the generic UPR pathway shared across secretory endocrine cells rather than from direct published PP-cell data. Flagged as lower-confidence/generic.",
           "activities": {
             "gamma-identity": 2,
             "pp-biosynthesis": 2,
+            "gamma-secretion": 0,
+            "gamma-granule": 0,
+            "gamma-metabolism": 0,
             "gamma-er-folding": 2,
             "gamma-upr": 2,
-            "gamma-oxidative-stress": 1
+            "gamma-oxidative-stress": 1,
+            "gamma-interferon": 0,
+            "gamma-apoptosis": 0
           },
-          "notes": "No PP/gamma-cell-specific stress transcriptomic study was found; genes are inferred from the generic UPR pathway shared across secretory endocrine cells rather than from direct published PP-cell data. Flagged as lower-confidence/generic.",
           "references": [
-            "ref-16"
+            "ref-16",
+            "ref-46",
+            "ref-47"
           ]
         },
         {
