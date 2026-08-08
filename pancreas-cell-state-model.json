@@ -2922,7 +2922,7 @@
         },
         {
           "id": "stellate-fibrotic",
-          "name": "Fibrotic (end-stage) stellate cell",
+          "name": "End-stage fibrotic stellate cell",
           "phenotype": "Sustained ECM deposition characteristic of chronic-pancreatitis fibrosis",
           "genes": [
             "COL1A1",
@@ -2938,40 +2938,21 @@
             "BGN",
             "CTGF"
           ],
+          "notes": "Distinguishes end-stage fibrotic stellate cells from actively-activating cells by emphasizing collagen cross-linking (LOX/LOXL2) and ECM maturation/proteoglycan genes (SPARC, POSTN/periostin, DCN, BGN) alongside sustained high TIMP1 (favoring net ECM accumulation over degradation). POSTN is a well-documented marker of desmoplastic fibrotic stroma in chronic pancreatitis and PDAC (Erkan et al. desmoplasia studies).",
           "activities": {
+            "stellate-quiescent-identity": 0,
+            "vitamin-a-storage": 0,
             "stellate-activation": 2,
             "ecm-production": 3,
-            "mmp-remodeling": 1,
             "tgf-beta-signaling": 2,
-            "stellate-proliferation": 0
+            "mmp-remodeling": 1,
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": 0,
+            "stellate-apoptosis": 0
           },
-          "notes": "Distinguishes end-stage fibrotic stellate cells from actively-activating cells by emphasizing collagen cross-linking (LOX/LOXL2) and ECM maturation/proteoglycan genes (SPARC, POSTN/periostin, DCN, BGN) alongside sustained high TIMP1 (favoring net ECM accumulation over degradation). POSTN is a well-documented marker of desmoplastic fibrotic stroma in chronic pancreatitis and PDAC (Erkan et al. desmoplasia studies).",
           "references": [
             "ref-30"
-          ]
-        },
-        {
-          "id": "stellate-quiescing",
-          "name": "Reverting (quiescing) stellate cell",
-          "phenotype": "Partial return toward quiescence during fibrosis resolution",
-          "genes": [
-            "PPARG",
-            "BAMBI",
-            "RBP1",
-            "LRAT",
-            "GFAP",
-            "DES",
-            "ADH1B"
-          ],
-          "activities": {
-            "stellate-activation": 1,
-            "ecm-production": 0,
-            "stellate-apoptosis": 1,
-            "vitamin-a-storage": 1
-          },
-          "notes": "This panel (7 genes, below the 10-15 target) is explicitly extrapolated from hepatic stellate cell (HSC) fibrosis-regression biology rather than direct in vivo pancreatic evidence: Kisseleva et al. (PNAS, 2012) showed that myofibroblasts reverting to an inactive phenotype during regression of liver fibrosis down-regulate ACTA2/COL1A1/TIMP1 while up-regulating the quiescence genes PPARG and BAMBI. Pancreatic stellate cell literature confirms in vitro deactivation upon matrigel/N-acetylcysteine exposure with re-accumulation of retinoid-storage markers (RBP1/LRAT/ADH1B) and cytoskeletal quiescence markers (GFAP/DES), but review literature explicitly states it remains unclear whether PSCs revert to quiescence in vivo, so this state is flagged as having the thinnest direct evidence base of the four stellate states.",
-          "references": [
-            "ref-29"
           ]
         }
       ]
