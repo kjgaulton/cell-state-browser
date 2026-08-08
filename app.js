@@ -1321,6 +1321,7 @@ document.querySelector("#resetData").addEventListener("click", () => {
 });
 
 document.querySelector("#exportData").addEventListener("click", openExportDialog);
+document.querySelector("#exportGmt").addEventListener("click", exportGmt);
 document.querySelector("#importData").addEventListener("change", importJson);
 document.querySelector("#addProgram").addEventListener("click", () => openProgramEditor());
 document.querySelector("#addState").addEventListener("click", () => openStateEditor());
@@ -2215,6 +2216,56 @@ function defaultExportFileName() {
 function normalizeJsonFileName(value) {
   const cleanName = clean(value).replace(/[\\/:*?"<>|]+/g, "-") || defaultExportFileName();
   return cleanName.toLowerCase().endsWith(".json") ? cleanName : `${cleanName}.json`;
+}
+
+// GMT (Gene Matrix Transposed) is the standard tab-delimited gene-set format
+// used by GSEA/MSigDB-style tools: one gene set per line, formatted as
+// <set name>\t<description>\t<gene1>\t<gene2>...  Each cell state's marker
+// gene panel becomes one gene set, named "<Cell type>_<State>" so sets stay
+// unique and identifiable once loaded into an external tool. States with no
+// marker genes are skipped rather than emitted as empty/invalid gene sets.
+function buildGmtContent() {
+  const lines = [];
+  model.cellTypes.forEach((cellType) => {
+    cellType.states.forEach((state) => {
+      const genes = Array.isArray(state.genes) ? state.genes.map((gene) => clean(gene)).filter(Boolean) : [];
+      if (genes.length === 0) return;
+      const setName = gmtToken(`${cellType.name}_${state.name}`);
+      const description = clean(state.phenotype) || cellType.name || "";
+      lines.push([setName, description, ...genes].join("\t"));
+    });
+  });
+  return lines.join("\n");
+}
+
+// GMT set names are conventionally whitespace-free tokens (many downstream
+// tools split/parse on whitespace), so collapse runs of whitespace/slashes
+// to underscores rather than leaving raw cell-type/state names as-is.
+function gmtToken(value) {
+  return clean(value).replace(/[\s/\\]+/g, "_").replace(/[^\w.-]/g, "");
+}
+
+function defaultGmtFileName() {
+  const tissue = TISSUES.find((t) => t.id === currentTissueId);
+  const base = tissue ? gmtToken(tissue.name).toLowerCase() : "cell-states";
+  const date = new Date().toISOString().slice(0, 10);
+  return `${base}-cell-states-${date}.gmt`;
+}
+
+function exportGmt() {
+  const content = buildGmtContent();
+  if (!content) {
+    showToast("No states with marker genes to export");
+    return;
+  }
+  const blob = new Blob([content + "\n"], { type: "text/tab-separated-values" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = defaultGmtFileName();
+  anchor.click();
+  URL.revokeObjectURL(url);
+  showToast(`Exported ${anchor.download}`);
 }
 
 function importJson(event) {
