@@ -2685,6 +2685,40 @@
             "ref-46",
             "ref-48"
           ]
+        },
+        {
+          "id": "proliferative-ductal-cells",
+          "name": "Proliferative ductal cells",
+          "phenotype": "State of ductal cells related to proliferation and cell cycle activity",
+          "genes": [
+            "BIRC5",
+            "CCNB1",
+            "CDC20",
+            "CDK1",
+            "CDKN3",
+            "CENPF",
+            "MKI67",
+            "PCNA",
+            "TOP2A",
+            "UBE2C"
+          ],
+          "notes": "",
+          "activities": {
+            "ductal-identity": 0,
+            "fluid-bicarbonate": 0,
+            "mucin-secretion": 0,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
+            "ductal-upr": 0,
+            "ductal-oxidative-stress": 0,
+            "panin-progression": 0,
+            "ductal-inflammation": 0,
+            "ductal-apoptosis": 0
+          },
+          "references": [
+            "ref-57"
+          ]
         }
       ]
     },
