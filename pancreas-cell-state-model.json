@@ -2965,7 +2965,7 @@
         },
         {
           "id": "inflamed-endothelial",
-          "name": "Inflamed/activated endothelial cell",
+          "name": "Inflammatory endothelial cell",
           "phenotype": "Cytokine-activated endothelium recruiting leukocytes, characteristic of insulitis and pancreatitis",
           "genes": [
             "ICAM1",
@@ -2978,7 +2978,9 @@
             "NFKBIA",
             "TNFAIP3",
             "IL6",
-            "CX3CL1"
+            "CX3CL1",
+            "CXCL1",
+            "RELB"
           ],
           "notes": "ICAM1/VCAM1/SELE/SELP are the canonical NF-kB-induced leukocyte adhesion molecules of activated endothelium. CXCL8/CCL2/CX3CL1 are endothelial-derived chemokines recruiting neutrophils/monocytes. CXCL10 is specifically well documented as a major chemokine produced by activated islet microvasculature/epithelium during insulitis, recruiting CXCR3+ T cells in type 1 diabetes pathogenesis (Uno et al.; Christen et al. insulitis literature). NFKBIA/TNFAIP3 mark the NF-kB activation/negative-feedback signature underlying this state.",
           "activities": {
@@ -2994,7 +2996,8 @@
             "endothelial-apoptosis": 0
           },
           "references": [
-            "ref-15"
+            "ref-15",
+            "ref-60"
           ]
         },
         {
