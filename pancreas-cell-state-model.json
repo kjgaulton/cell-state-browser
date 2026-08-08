@@ -2638,7 +2638,7 @@
         },
         {
           "id": "ductal-inflamed",
-          "name": "Inflamed ductal cell",
+          "name": "Inflammatory ductal cell",
           "phenotype": "Cytokine exposure typical of chronic pancreatitis",
           "genes": [
             "NFKBIA",
@@ -2650,17 +2650,30 @@
             "ICAM1",
             "PTGS2",
             "CXCL1",
-            "SAA1"
+            "SAA1",
+            "CD74",
+            "CXCL2",
+            "SPP1",
+            "TNFAIP3"
           ],
+          "notes": "Single-cell RNA-seq of mouse pancreas in chronic pancreatitis found several hundred differentially expressed genes specifically in the ductal compartment, broadly reflecting NF-kB-pathway inflammatory activation ('Single-Cell Transcriptomic Analysis of the Mouse Pancreas: Characteristic Features of Pancreatic Ductal Cells in Chronic Pancreatitis', Genes, 2022). CXCL8 signaling through CXCR2 is required for neutrophil recruitment in pancreatitis, and ductal-derived CCL20-CCR6 chemokine crosstalk with Th17 cells has been specifically identified by single-cell profiling of human chronic pancreatitis. ICAM1/PTGS2(COX2)/SAA1 reflect the acute-phase/adhesion-molecule response of inflamed epithelium seen broadly in chronic pancreatitis. This panel (10 genes) involves more extrapolation from general epithelial inflammatory biology than the other ductal states, since ductal-cell-specific (as opposed to whole-tissue or immune-cell) cytokine profiling in human chronic pancreatitis remains limited.",
           "activities": {
             "ductal-identity": -1,
-            "ductal-inflammation": 3,
+            "fluid-bicarbonate": 0,
+            "mucin-secretion": 0,
+            "ductal-junctions": 0,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
             "ductal-upr": 1,
-            "ductal-oxidative-stress": 2
+            "ductal-oxidative-stress": 2,
+            "panin-progression": 0,
+            "ductal-inflammation": 3,
+            "ductal-apoptosis": 0
           },
-          "notes": "Single-cell RNA-seq of mouse pancreas in chronic pancreatitis found several hundred differentially expressed genes specifically in the ductal compartment, broadly reflecting NF-kB-pathway inflammatory activation ('Single-Cell Transcriptomic Analysis of the Mouse Pancreas: Characteristic Features of Pancreatic Ductal Cells in Chronic Pancreatitis', Genes, 2022). CXCL8 signaling through CXCR2 is required for neutrophil recruitment in pancreatitis, and ductal-derived CCL20-CCR6 chemokine crosstalk with Th17 cells has been specifically identified by single-cell profiling of human chronic pancreatitis. ICAM1/PTGS2(COX2)/SAA1 reflect the acute-phase/adhesion-molecule response of inflamed epithelium seen broadly in chronic pancreatitis. This panel (10 genes) involves more extrapolation from general epithelial inflammatory biology than the other ductal states, since ductal-cell-specific (as opposed to whole-tissue or immune-cell) cytokine profiling in human chronic pancreatitis remains limited.",
           "references": [
-            "ref-28"
+            "ref-28",
+            "ref-46",
+            "ref-48"
           ]
         }
       ]
