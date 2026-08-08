@@ -2860,16 +2860,23 @@
             "ADH1B",
             "SPARC"
           ],
+          "notes": "GFAP/DES/NES/VIM are classic quiescent pancreatic stellate cell (PSC) cytoskeletal markers shared with hepatic stellate cell biology; RBP1/LRAT/ADH1B reflect the retinoid (vitamin A) storage and metabolism program that defines the quiescent phenotype; PPARG maintains the quiescent state and is lost upon activation (Apte et al.; McCarroll/Bachem PSC reviews).",
           "activities": {
             "stellate-quiescent-identity": 3,
             "vitamin-a-storage": 3,
             "stellate-activation": -2,
             "ecm-production": -1,
-            "stellate-proliferation": -1
+            "tgf-beta-signaling": 0,
+            "mmp-remodeling": 0,
+            "stellate-inflammatory": 0,
+            "stellate-oxidative-stress": 0,
+            "stellate-proliferation": -1,
+            "stellate-apoptosis": 0
           },
-          "notes": "GFAP/DES/NES/VIM are classic quiescent pancreatic stellate cell (PSC) cytoskeletal markers shared with hepatic stellate cell biology; RBP1/LRAT/ADH1B reflect the retinoid (vitamin A) storage and metabolism program that defines the quiescent phenotype; PPARG maintains the quiescent state and is lost upon activation (Apte et al.; McCarroll/Bachem PSC reviews).",
           "references": [
-            "ref-29"
+            "ref-29",
+            "ref-66",
+            "ref-70"
           ]
         },
         {
