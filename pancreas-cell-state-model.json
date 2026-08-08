@@ -3068,6 +3068,38 @@
             "ref-58",
             "ref-61"
           ]
+        },
+        {
+          "id": "acinar-specific-endothelial",
+          "name": "Acinar-specific endothelial",
+          "phenotype": "Endothelial cells near acinar cells which have been reported to have distinct profiles",
+          "genes": [
+            "AQP1",
+            "CCL14",
+            "CD74",
+            "GPIHBP1",
+            "HLA-DRA",
+            "HLA-DRB1",
+            "KLF2",
+            "KLF4"
+          ],
+          "notes": "",
+          "activities": {
+            "endothelial-identity": 0,
+            "vascular-barrier": 0,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 0,
+            "nitric-oxide": 0,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
+            "endothelial-oxidative-stress": 0,
+            "endothelial-apoptosis": 0
+          },
+          "references": [
+            "ref-58",
+            "ref-61"
+          ]
         }
       ]
     },
