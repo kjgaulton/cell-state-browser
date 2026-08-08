@@ -3002,7 +3002,7 @@
         },
         {
           "id": "senescent-endothelial",
-          "name": "Senescent/dysfunctional endothelial cell",
+          "name": "Senescent endothelial cell",
           "phenotype": "Reduced barrier integrity and nitric-oxide signaling associated with vascular aging and diabetes-related microangiopathy",
           "genes": [
             "CDKN2A",
@@ -3018,13 +3018,19 @@
             "NOS3",
             "CLDN5"
           ],
+          "notes": "CDKN2A(p16)/CDKN1A(p21)/TP53 are the core senescence cell-cycle-arrest program, shown to be up-regulated in diabetic/high-glucose-exposed endothelial cells (retinal and wound endothelium senescence studies). SERPINE1/PAI-1 is both a marker and functional mediator of endothelial senescence, elevated in diabetic retinopathy vitreous fluid (Vasile et al.; 'PAI-1 Is a Marker and a Mediator of Senescence', ATVB). THBS1 (thrombospondin-1) mediates diabetes-induced endothelial senescence via CD47 signaling and impaired angiogenesis. IL6/IL1B/CXCL8/MMP3 are core SASP factors. NOS3 and CLDN5 are included as down-regulated markers reflecting the reduced nitric-oxide signaling and barrier integrity that define this dysfunctional state, consistent with diabetes-related microangiopathy.",
           "activities": {
+            "endothelial-identity": 0,
             "vascular-barrier": -2,
+            "angiogenesis": 0,
+            "leukocyte-adhesion": 0,
             "nitric-oxide": -2,
+            "coagulation": 0,
+            "endothelial-inflammatory": 0,
+            "endothelial-interferon": 0,
             "endothelial-oxidative-stress": 2,
             "endothelial-apoptosis": 1
           },
-          "notes": "CDKN2A(p16)/CDKN1A(p21)/TP53 are the core senescence cell-cycle-arrest program, shown to be up-regulated in diabetic/high-glucose-exposed endothelial cells (retinal and wound endothelium senescence studies). SERPINE1/PAI-1 is both a marker and functional mediator of endothelial senescence, elevated in diabetic retinopathy vitreous fluid (Vasile et al.; 'PAI-1 Is a Marker and a Mediator of Senescence', ATVB). THBS1 (thrombospondin-1) mediates diabetes-induced endothelial senescence via CD47 signaling and impaired angiogenesis. IL6/IL1B/CXCL8/MMP3 are core SASP factors. NOS3 and CLDN5 are included as down-regulated markers reflecting the reduced nitric-oxide signaling and barrier integrity that define this dysfunctional state, consistent with diabetes-related microangiopathy.",
           "references": [
             "ref-32"
           ]
