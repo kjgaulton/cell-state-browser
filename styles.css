@@ -221,6 +221,7 @@ menu {
   gap: 10px;
   max-width: 700px;
   margin: 0;
+  font-size: 0.85rem;
 }
 
 .concept-definitions > div {
@@ -246,6 +247,7 @@ menu {
   margin: 12px 0 0;
   line-height: 1.55;
   color: var(--muted, #647178);
+  font-size: 0.85rem;
 }
 
 .concept-diagram {
