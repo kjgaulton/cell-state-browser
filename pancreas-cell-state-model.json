@@ -2548,20 +2548,32 @@
             "MUC1",
             "TFF1",
             "CLDN18",
-            "TJP1"
+            "TJP1",
+            "CLDN1",
+            "ANXA4",
+            "EPCAM",
+            "SPP1"
           ],
+          "notes": "Canonical ductal identity/transcription factor and fluid-bicarbonate secretion program of the healthy exocrine duct. Standard, well-established ductal cell markers (pancreas single-cell atlases, e.g., Muraro et al., Cell Syst 2016; Baron et al., Cell Syst 2016).",
           "activities": {
             "ductal-identity": 3,
             "fluid-bicarbonate": 3,
             "mucin-secretion": 1,
             "ductal-junctions": 2,
+            "ductal-progenitor": 0,
+            "ductal-er-folding": 0,
             "ductal-upr": -1,
+            "ductal-oxidative-stress": 0,
             "panin-progression": -2,
+            "ductal-inflammation": 0,
             "ductal-apoptosis": -1
           },
-          "notes": "Canonical ductal identity/transcription factor and fluid-bicarbonate secretion program of the healthy exocrine duct. Standard, well-established ductal cell markers (pancreas single-cell atlases, e.g., Muraro et al., Cell Syst 2016; Baron et al., Cell Syst 2016).",
           "references": [
-            "ref-9"
+            "ref-9",
+            "ref-53",
+            "ref-54",
+            "ref-61",
+            "ref-64"
           ]
         },
         {
