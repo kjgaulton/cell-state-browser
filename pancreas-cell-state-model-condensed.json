@@ -1895,14 +1895,19 @@
             "CHGB",
             "SCG2"
           ],
+          "notes": "Verified via WebSearch; fewer than 10 genes because epsilon cells are rare (~1% of adult islet cells) and poorly studied. GHRL/ISL1/NKX2-2 co-expression (notably without NKX6-1 or PAX6) is directly documented in human fetal and adult pancreas (Andralojc et al. 2009 Diabetologia); MBOAT4 (ghrelin O-acyltransferase) is required for ghrelin activation.",
           "activities": {
             "ge-identity": 3,
             "ge-hormone-biosynthesis": 3,
             "ge-secretion": 2,
             "ge-granule": 2,
-            "ge-metabolism": 1
+            "ge-metabolism": 1,
+            "ge-er-folding": 0,
+            "ge-upr": 0,
+            "ge-oxidative-stress": 0,
+            "ge-interferon": 0,
+            "ge-apoptosis": 0
           },
-          "notes": "Verified via WebSearch; fewer than 10 genes because epsilon cells are rare (~1% of adult islet cells) and poorly studied. GHRL/ISL1/NKX2-2 co-expression (notably without NKX6-1 or PAX6) is directly documented in human fetal and adult pancreas (Andralojc et al. 2009 Diabetologia); MBOAT4 (ghrelin O-acyltransferase) is required for ghrelin activation.",
           "references": [
             "ref-14"
           ]
