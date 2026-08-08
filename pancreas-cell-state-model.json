@@ -2275,22 +2275,35 @@
             "IL6",
             "TNF",
             "CXCL1",
-            "REG3A"
+            "REG3A",
+            "DMBT1",
+            "PDIA2",
+            "REG1A",
+            "REG1B",
+            "REG3G"
           ],
+          "notes": "PRSS1/SPINK1/CTRC are the classic hereditary/chronic pancreatitis susceptibility genes governing premature trypsinogen activation and its control. CTSB drives lysosomal cathepsin B-mediated intra-acinar trypsinogen activation, the initiating event of acute pancreatitis (Halangk et al., J Clin Invest, 2000). HSPA5/DDIT3/XBP1/ATF4 reflect the unfolded protein response documented in pancreatitis acinar cells (Ji & Logsdon lab studies on ER stress in pancreatitis). NFKBIA/IL6/TNF/CXCL1 reflect NF-kB-driven acinar cell-intrinsic inflammatory signaling shown to be an early, causal event in experimental pancreatitis (Gukovsky & Gukovskaya reviews on NF-kB in pancreatitis). REG3A (rat homolog PAP, 'pancreatitis-associated protein') is a long-established acute-phase/regenerative gene induced specifically in pancreatitis.",
           "activities": {
             "acinar-identity": -1,
             "digestive-enzymes": -1,
+            "zymogen-granule": 0,
+            "acinar-secretion": 0,
             "protease-inhibition": -2,
             "acinar-er-folding": 2,
             "acinar-upr": 3,
             "acinar-oxidative-stress": 2,
+            "acinar-metabolism": 0,
+            "acinar-autophagy": 0,
+            "adm": 0,
             "acinar-inflammation": 3,
             "acinar-apoptosis": 1
           },
-          "notes": "PRSS1/SPINK1/CTRC are the classic hereditary/chronic pancreatitis susceptibility genes governing premature trypsinogen activation and its control. CTSB drives lysosomal cathepsin B-mediated intra-acinar trypsinogen activation, the initiating event of acute pancreatitis (Halangk et al., J Clin Invest, 2000). HSPA5/DDIT3/XBP1/ATF4 reflect the unfolded protein response documented in pancreatitis acinar cells (Ji & Logsdon lab studies on ER stress in pancreatitis). NFKBIA/IL6/TNF/CXCL1 reflect NF-kB-driven acinar cell-intrinsic inflammatory signaling shown to be an early, causal event in experimental pancreatitis (Gukovsky & Gukovskaya reviews on NF-kB in pancreatitis). REG3A (rat homolog PAP, 'pancreatitis-associated protein') is a long-established acute-phase/regenerative gene induced specifically in pancreatitis.",
           "references": [
             "ref-18",
-            "ref-19"
+            "ref-19",
+            "ref-64",
+            "ref-71",
+            "ref-73"
           ]
         },
         {
