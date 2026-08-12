@@ -196,6 +196,19 @@ menu {
   gap: 12px;
 }
 
+.intro-toggle-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+/* Higher-specificity override so .summary-band's own `display: grid` can't
+   win a cascade tie against the generic .hidden utility class (same bug
+   pattern as the gene-programs list -- see #programActivityList.hidden). */
+#summaryBand.hidden {
+  display: none;
+}
+
 .summary-band {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 620px);

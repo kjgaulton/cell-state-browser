@@ -1270,6 +1270,8 @@ const els = {
   selectedStateMarkers: document.querySelector("#selectedStateMarkers"),
   programActivityList: document.querySelector("#programActivityList"),
   toggleProgramsList: document.querySelector("#toggleProgramsList"),
+  toggleIntro: document.querySelector("#toggleIntro"),
+  summaryBand: document.querySelector("#summaryBand"),
   viewModeList: document.querySelector("#viewModeList"),
   viewModeNetwork: document.querySelector("#viewModeNetwork"),
   networkView: document.querySelector("#networkView"),
@@ -1354,6 +1356,13 @@ els.viewModeNetwork.addEventListener("click", () => {
 els.toggleProgramsList.addEventListener("click", () => {
   programsListExpanded = !programsListExpanded;
   render();
+});
+els.toggleIntro.addEventListener("click", () => {
+  // The intro band is static markup (not touched by render()), so this can
+  // just toggle the DOM directly rather than going through app state.
+  const expanded = !els.summaryBand.classList.toggle("hidden");
+  els.toggleIntro.textContent = expanded ? "Hide intro" : "Show intro";
+  els.toggleIntro.setAttribute("aria-expanded", String(expanded));
 });
 els.expandAllPrograms.addEventListener("click", () => {
   filteredPrograms().forEach((program) => expandedProgramIds.add(program.id));

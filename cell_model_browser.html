@@ -203,6 +203,19 @@ menu {
   gap: 12px;
 }
 
+.intro-toggle-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+/* Higher-specificity override so .summary-band's own `display: grid` can't
+   win a cascade tie against the generic .hidden utility class (same bug
+   pattern as the gene-programs list -- see #programActivityList.hidden). */
+#summaryBand.hidden {
+  display: none;
+}
+
 .summary-band {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 620px);
@@ -1150,7 +1163,10 @@ menu span {
       </aside>
 
       <main>
-      <section class="summary-band">
+      <div class="intro-toggle-row">
+        <button id="toggleIntro" class="ghost" type="button" aria-expanded="false">Show intro</button>
+      </div>
+      <section id="summaryBand" class="summary-band hidden">
         <div class="summary-text">
           <h2>Cell model</h2>
           <dl class="concept-definitions">
@@ -2680,6 +2696,8 @@ const els = {
   selectedStateMarkers: document.querySelector("#selectedStateMarkers"),
   programActivityList: document.querySelector("#programActivityList"),
   toggleProgramsList: document.querySelector("#toggleProgramsList"),
+  toggleIntro: document.querySelector("#toggleIntro"),
+  summaryBand: document.querySelector("#summaryBand"),
   viewModeList: document.querySelector("#viewModeList"),
   viewModeNetwork: document.querySelector("#viewModeNetwork"),
   networkView: document.querySelector("#networkView"),
@@ -2764,6 +2782,13 @@ els.viewModeNetwork.addEventListener("click", () => {
 els.toggleProgramsList.addEventListener("click", () => {
   programsListExpanded = !programsListExpanded;
   render();
+});
+els.toggleIntro.addEventListener("click", () => {
+  // The intro band is static markup (not touched by render()), so this can
+  // just toggle the DOM directly rather than going through app state.
+  const expanded = !els.summaryBand.classList.toggle("hidden");
+  els.toggleIntro.textContent = expanded ? "Hide intro" : "Show intro";
+  els.toggleIntro.setAttribute("aria-expanded", String(expanded));
 });
 els.expandAllPrograms.addEventListener("click", () => {
   filteredPrograms().forEach((program) => expandedProgramIds.add(program.id));
