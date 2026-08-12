@@ -1,6 +1,4 @@
 {
-  "tissue": "Liver",
-  "description": "Unified gene-program/cell-state model for the human liver, covering parenchymal cells (hepatocytes across the portal-to-central zonation axis, cholangiocytes), non-parenchymal stromal/vascular cells (hepatic stellate cells, sinusoidal/lymphatic/central-vein/vascular endothelial cells, Schwann cells ensheathing portal-tract nerves), and resident/infiltrating immune populations (B cells including plasma cells, T cells, myeloid cells including Kupffer cells and lipid-associated macrophages, NK cells, and mast cells). Each gene program lists up to 15 representative genes.",
   "cellTypes": [
     {
       "id": "hepatocyte",
@@ -471,7 +469,7 @@
         },
         {
           "id": "hepatitis-injured-hepatocyte",
-          "name": "Inflamed/injured hepatocyte",
+          "name": "Inflammatory hepatocyte",
           "phenotype": "Interferon-stimulated, stressed hepatocyte state seen in viral hepatitis and drug-induced liver injury",
           "genes": [
             "ISG15",
@@ -488,15 +486,24 @@
             "FGF21",
             "EGR1"
           ],
-          "activities": {
-            "hepatocyte-interferon": 3,
-            "injury-response": 2,
-            "hepatocyte-apoptosis": 1,
-            "protein-synthesis": -1,
-            "periportal-metabolism": -1,
-            "pericentral-metabolism": -1
-          },
           "notes": "Interferon-stimulated genes (ISG15, MX1, OAS1, IFIT1, IFIT3, STAT1, IRF1) are induced in hepatocytes during viral hepatitis (HBV/HCV) as part of the intrahepatic innate antiviral response; GDF15 and FGF21 are integrated-stress-response hepatokines induced by hepatocellular injury/DILI, and CDKN1A, ATF3, EGR1, HMGB1 mark acute hepatocyte stress/damage response.",
+          "activities": {
+            "hepatocyte-identity": 0,
+            "periportal-metabolism": -1,
+            "pericentral-metabolism": -1,
+            "bile-acid-metabolism": 0,
+            "xenobiotic-metabolism": 0,
+            "lipid-lipoprotein": 0,
+            "protein-synthesis": -1,
+            "regeneration": 0,
+            "steatosis": 0,
+            "injury-response": 2,
+            "hepatocyte-er-folding": 0,
+            "hepatocyte-upr": 0,
+            "hepatocyte-oxidative-stress": 0,
+            "hepatocyte-interferon": 3,
+            "hepatocyte-apoptosis": 1
+          },
           "references": [
             "ref-3"
           ]
