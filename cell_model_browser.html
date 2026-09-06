@@ -17,6 +17,14 @@
   --red: #b64236;
   --blue: #2b5c9c;
   --gray: #e9eef0;
+  /* UI accent (buttons, focus/selected states, highlights). Kept separate
+     from --green/--blue above, which stay reserved for the network view's
+     up/down activity-tone data coding. */
+  --accent: #1f5f96;
+  --accent-dark: #123f66;
+  --accent-light: #e6eef8;
+  --accent-light-border: #bcd4ec;
+  --accent-text: #0d3a5c;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -38,8 +46,8 @@ textarea {
 }
 
 button {
-  border: 1px solid #135d4e;
-  background: var(--green);
+  border: 1px solid var(--accent-dark);
+  background: var(--accent);
   color: white;
   min-height: 38px;
   padding: 8px 13px;
@@ -54,7 +62,7 @@ button {
   place-items: center;
   min-height: 38px;
   padding: 8px 13px;
-  border: 1px solid #135d4e;
+  border: 1px solid var(--accent-dark);
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
@@ -83,7 +91,7 @@ button:hover {
 button.ghost,
 .file-button.ghost {
   background: white;
-  color: var(--green);
+  color: var(--accent);
 }
 
 button.danger {
@@ -188,8 +196,8 @@ main {
 }
 
 .tissue-item.active {
-  border-color: #135d4e;
-  background: var(--green);
+  border-color: var(--accent-dark);
+  background: var(--accent);
   color: white;
 }
 
@@ -224,7 +232,7 @@ menu {
   padding: 24px;
   border: 1px solid var(--line);
   background:
-    linear-gradient(90deg, rgba(22, 122, 98, 0.09), rgba(43, 92, 156, 0.07)),
+    linear-gradient(90deg, rgba(31, 95, 150, 0.09), rgba(43, 92, 156, 0.07)),
     white;
   border-radius: 8px;
 }
@@ -385,9 +393,9 @@ input[type="checkbox"] {
 }
 
 .state-option.selected {
-  border-color: #135d4e;
-  background: #e7f4ef;
-  box-shadow: inset 0 0 0 1px #135d4e;
+  border-color: var(--accent-dark);
+  background: var(--accent-light);
+  box-shadow: inset 0 0 0 1px var(--accent-dark);
 }
 
 .state-workspace {
@@ -597,7 +605,7 @@ th:first-child {
 
 .bar-fill {
   height: 100%;
-  background: var(--green);
+  background: var(--accent);
 }
 
 dialog {
@@ -700,9 +708,9 @@ menu span {
 }
 
 .marker-tag {
-  background: #e7f4ef;
-  border-color: #bfe0d2;
-  color: #0f4a3c;
+  background: var(--accent-light);
+  border-color: var(--accent-light-border);
+  color: var(--accent-text);
   font-weight: 650;
 }
 
@@ -854,7 +862,7 @@ menu span {
   flex-shrink: 0;
   font-size: 0.78rem;
   font-weight: 700;
-  color: var(--green);
+  color: var(--accent);
   text-transform: uppercase;
 }
 
@@ -935,7 +943,7 @@ menu span {
   border-radius: 0;
   min-height: 38px;
   background: white;
-  color: var(--green);
+  color: var(--accent);
 }
 
 .view-toggle button + button {
@@ -943,7 +951,7 @@ menu span {
 }
 
 .view-toggle button[aria-pressed="true"] {
-  background: var(--green);
+  background: var(--accent);
   color: white;
 }
 
