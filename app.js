@@ -2249,8 +2249,11 @@ function normalizeJsonFileName(value) {
 // used by GSEA/MSigDB-style tools: one gene set per line, formatted as
 // <set name>\t<description>\t<gene1>\t<gene2>...  Each cell state's marker
 // gene panel becomes one gene set, named "<Cell type>_<State>" so sets stay
-// unique and identifiable once loaded into an external tool. States with no
-// marker genes are skipped rather than emitted as empty/invalid gene sets.
+// unique and identifiable once loaded into an external tool. The description
+// field carries the state's phenotype text plus a "cell_type=<Cell type>"
+// tag, so the parent cell type is always recoverable from the description
+// alone even after the set name has been tokenized. States with no marker
+// genes are skipped rather than emitted as empty/invalid gene sets.
 function buildGmtContent() {
   const lines = [];
   model.cellTypes.forEach((cellType) => {
@@ -2258,7 +2261,9 @@ function buildGmtContent() {
       const genes = Array.isArray(state.genes) ? state.genes.map((gene) => clean(gene)).filter(Boolean) : [];
       if (genes.length === 0) return;
       const setName = gmtToken(`${cellType.name}_${state.name}`);
-      const description = clean(state.phenotype) || cellType.name || "";
+      const phenotype = clean(state.phenotype);
+      const cellTypeTag = `cell_type=${clean(cellType.name) || ""}`;
+      const description = phenotype ? `${phenotype}; ${cellTypeTag}` : cellTypeTag;
       lines.push([setName, description, ...genes].join("\t"));
     });
   });
